@@ -5,9 +5,8 @@ import java.time.LocalDateTime;
 public class StationTimetable {
     // Denne skal holde på alle avgangstider og ankomsttider til tog x på stasjon y
     private Station station;
-    private LocalDateTime expectedArrival;
-    private LocalDateTime expectedDeparture;
-    private String togID; // inneholder id'en til hvert tog
+    private ScheduledTime ScheduledDeparturesAndArrivals;
+    private Train tog; // inneholder id'en til hvert tog
     private String origin;
     private String destination;
     private int platform;
@@ -27,28 +26,20 @@ public class StationTimetable {
         this.station = station;
     }
 
-    public LocalDateTime getExpectedArrival() {
-        return expectedArrival;
+    public ScheduledTime getScheduledDeparturesAndArrivals() {
+        return ScheduledDeparturesAndArrivals;
     }
 
-    public void setExpectedArrival(LocalDateTime expectedArrival) {
-        this.expectedArrival = expectedArrival;
+    public void setScheduledDeparturesAndArrivals(ScheduledTime scheduledDeparturesAndArrivals) {
+        ScheduledDeparturesAndArrivals = scheduledDeparturesAndArrivals;
     }
 
-    public LocalDateTime getExpectedDeparture() {
-        return expectedDeparture;
+    public Train getTog() {
+        return tog;
     }
 
-    public void setExpectedDeparture(LocalDateTime expectedDeparture) {
-        this.expectedDeparture = expectedDeparture;
-    }
-
-    public String getTogID() {
-        return togID;
-    }
-
-    public void setTogID(String togID) {
-        this.togID = togID;
+    public void setTog(Train tog) {
+        this.tog = tog;
     }
 
     public String getOrigin() {
