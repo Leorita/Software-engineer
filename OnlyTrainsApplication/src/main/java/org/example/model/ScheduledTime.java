@@ -1,24 +1,30 @@
 package org.example.model;
 
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 public class ScheduledTime {
-    private LocalDateTime scheduledArrival;
-    private LocalDateTime scheduledDeparture;
+    private LocalTime scheduledArrival;
+    private LocalTime scheduledDeparture;
 
-    public LocalDateTime getScheduledArrival() {
+    public ScheduledTime(LocalTime scheduledArrival, LocalTime scheduledDeparture) {
+        this.scheduledArrival = scheduledArrival;
+        this.scheduledDeparture = scheduledDeparture;
+    }
+
+    public LocalTime getScheduledArrival() {
         return scheduledArrival;
     }
 
-    public void setScheduledArrival(LocalDateTime scheduledArrival) {
+    public void setScheduledArrival(LocalTime scheduledArrival) {
         this.scheduledArrival = scheduledArrival;
     }
 
-    public LocalDateTime getScheduledDeparture() {
+    public LocalTime getScheduledDeparture() {
         return scheduledDeparture;
     }
 
-    public void setScheduledDeparture(LocalDateTime scheduledDeparture) {
+    public void setScheduledDeparture(LocalTime scheduledDeparture) {
         this.scheduledDeparture = scheduledDeparture;
     }
 }

@@ -1,10 +1,9 @@
 package org.example;
 
-import org.example.model.Rute;
-import org.example.model.Station;
-import org.example.model.StationTimetable;
-import org.example.model.Train;
+import org.example.model.*;
 
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.ArrayList;
 
 public class Main {
@@ -19,7 +18,26 @@ public class Main {
 
         Rute rute1 = new Rute("001", stations);
 
-        Train re20 = new Train("re20", "Oslo S", rute1, "Goteborg");
+        Train re20 = new Train("re20", stations.getFirst().getName(), rute1, stations.getLast().getName());
+
+
+        ScheduledTime scheduledTime = new ScheduledTime(LocalTime.of(13, 15), LocalTime.of(9, 20));
+
+        System.out.println(scheduledTime.getScheduledDeparture());
+
+        Station osloS = new Station("1", "Oslo S");
+        StationTimetable osloSTimeTable = new StationTimetable(
+                osloS,
+                scheduledTime,
+                re20,
+                re20.getOrigin(),
+                re20.getDestination(),
+                2);
+
+        System.out.println(osloSTimeTable);
+
+
+
 
 
 

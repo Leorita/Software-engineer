@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 public class StationTimetable {
     // Denne skal holde på alle avgangstider og ankomsttider til tog x på stasjon y
     private Station station;
-    private ScheduledTime ScheduledDeparturesAndArrivals;
+    private ScheduledTime scheduledDeparturesAndArrivals;
     private Train tog; // inneholder id'en til hvert tog
     private String origin;
     private String destination;
@@ -18,6 +18,15 @@ public class StationTimetable {
 
     }
 
+    public StationTimetable(Station station, ScheduledTime scheduledDeparturesAndArrivals, Train tog, String origin, String destination, int platform) {
+        this.station = station;
+        this.scheduledDeparturesAndArrivals = scheduledDeparturesAndArrivals;
+        this.tog = tog;
+        this.origin = origin;
+        this.destination = destination;
+        this.platform = platform;
+    }
+
     public Station getStation() {
         return station;
     }
@@ -27,11 +36,11 @@ public class StationTimetable {
     }
 
     public ScheduledTime getScheduledDeparturesAndArrivals() {
-        return ScheduledDeparturesAndArrivals;
+        return scheduledDeparturesAndArrivals;
     }
 
     public void setScheduledDeparturesAndArrivals(ScheduledTime scheduledDeparturesAndArrivals) {
-        ScheduledDeparturesAndArrivals = scheduledDeparturesAndArrivals;
+        this.scheduledDeparturesAndArrivals = scheduledDeparturesAndArrivals;
     }
 
     public Train getTog() {
@@ -64,6 +73,19 @@ public class StationTimetable {
 
     public void setPlatform(int platform) {
         this.platform = platform;
+    }
+
+    @Override
+    public String toString() {
+        return "StationTimetable{\n" +
+                "   station=" + station.getName() + ",\n" +
+                "  ScheduledDeparture=" + scheduledDeparturesAndArrivals.getScheduledDeparture() + ",\n" +
+                "  ScheduledArrival=" + scheduledDeparturesAndArrivals.getScheduledArrival() + ",\n" +
+                "  tog=" + tog.getId() + ",\n" +
+                "  origin='" + origin + ",\n" +
+                "  destination='" + destination + ",\n" +
+                "  platform=" + platform + ",\n" +
+                '}';
     }
 }
 
