@@ -21,9 +21,9 @@ public class Main {
         Train re20 = new Train("re20", stations.getFirst().getName(), rute1, stations.getLast().getName());
 
 
-        ScheduledTime scheduledTime = new ScheduledTime(LocalTime.of(13, 15), LocalTime.of(9, 20));
+        ScheduledTime scheduledTime = new ScheduledTime(LocalTime.of(23, 15), LocalTime.of(9, 20));
 
-        System.out.println(scheduledTime.getScheduledDeparture());
+        System.out.println( "Avgangstid: " + scheduledTime.getScheduledDeparture());
 
         Station osloS = new Station("1", "Oslo S");
         StationTimetable osloSTimeTable = new StationTimetable(
@@ -36,7 +36,11 @@ public class Main {
 
         System.out.println(osloSTimeTable);
 
-
+        System.out.print("\n Rute for tog " + re20.getId() + ": [ ");
+        for (Station stop : re20.getRoute().getStops()){
+            System.out.print(stop.getName() + ", ");
+        }
+        System.out.print("]");
 
 
 

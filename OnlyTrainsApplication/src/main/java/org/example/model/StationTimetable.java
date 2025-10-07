@@ -78,7 +78,7 @@ public class StationTimetable {
     @Override
     public String toString() {
         return "StationTimetable{\n" +
-                "   station=" + station.getName() + ",\n" +
+                "  station=" + station.getName() + ",\n" +
                 "  ScheduledDeparture=" + scheduledDeparturesAndArrivals.getScheduledDeparture() + ",\n" +
                 "  ScheduledArrival=" + scheduledDeparturesAndArrivals.getScheduledArrival() + ",\n" +
                 "  tog=" + tog.getId() + ",\n" +
