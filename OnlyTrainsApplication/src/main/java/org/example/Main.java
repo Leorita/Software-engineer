@@ -2,7 +2,6 @@ package org.example;
 
 import org.example.model.*;
 
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
@@ -21,7 +20,7 @@ public class Main {
         Train re20 = new Train("re20", stations.getFirst().getName(), rute1, stations.getLast().getName());
 
 
-        ScheduledTime scheduledTime = new ScheduledTime(LocalTime.of(23, 15), LocalTime.of(9, 20));
+        TimeSchedule scheduledTime = new TimeSchedule(LocalTime.of(23, 15), LocalTime.of(9, 20));
 
         System.out.println( "Avgangstid: " + scheduledTime.getScheduledDeparture());
 

@@ -1,11 +1,9 @@
 package org.example.model;
 
-import java.time.LocalDateTime;
-
 public class StationTimetable {
     // Denne skal holde på alle avgangstider og ankomsttider til tog x på stasjon y
     private Station station;
-    private ScheduledTime scheduledDeparturesAndArrivals;
+    private TimeSchedule scheduledDeparturesAndArrivals;
     private Train tog; // inneholder id'en til hvert tog
     private String origin;
     private String destination;
@@ -18,7 +16,7 @@ public class StationTimetable {
 
     }
 
-    public StationTimetable(Station station, ScheduledTime scheduledDeparturesAndArrivals, Train tog, String origin, String destination, int platform) {
+    public StationTimetable(Station station, TimeSchedule scheduledDeparturesAndArrivals, Train tog, String origin, String destination, int platform) {
         this.station = station;
         this.scheduledDeparturesAndArrivals = scheduledDeparturesAndArrivals;
         this.tog = tog;
@@ -35,11 +33,11 @@ public class StationTimetable {
         this.station = station;
     }
 
-    public ScheduledTime getScheduledDeparturesAndArrivals() {
+    public TimeSchedule getScheduledDeparturesAndArrivals() {
         return scheduledDeparturesAndArrivals;
     }
 
-    public void setScheduledDeparturesAndArrivals(ScheduledTime scheduledDeparturesAndArrivals) {
+    public void setScheduledDeparturesAndArrivals(TimeSchedule scheduledDeparturesAndArrivals) {
         this.scheduledDeparturesAndArrivals = scheduledDeparturesAndArrivals;
     }
 
