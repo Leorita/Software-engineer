@@ -15,8 +15,8 @@ public class Train {
 
     private String id;// Variabel for ankomsttid
     private String origin;
-    private Rute route; // Ruten toget har
     private String destination;
+    private Rute route; // Ruten toget har
 
 
     public String getId() {
