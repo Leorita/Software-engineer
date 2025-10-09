@@ -7,8 +7,8 @@ public class TimeSchedule {
     private LocalTime scheduledDeparture;
 
     public TimeSchedule(LocalTime scheduledArrival, LocalTime scheduledDeparture) {
-        this.scheduledArrival = scheduledArrival;
         this.scheduledDeparture = scheduledDeparture;
+        this.scheduledArrival = scheduledArrival;
     }
 
     public LocalTime getScheduledArrival() {
@@ -25,5 +25,11 @@ public class TimeSchedule {
 
     public void setScheduledDeparture(LocalTime scheduledDeparture) {
         this.scheduledDeparture = scheduledDeparture;
+    }
+
+    @Override
+    public String toString(){
+        return "Avgang: " + scheduledDeparture + ", Ankomst" + (scheduledArrival != null ? scheduledArrival : "N/A");
+
     }
 }

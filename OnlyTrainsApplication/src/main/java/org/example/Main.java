@@ -16,6 +16,8 @@ public class Main {
         stations.add(new Station("7", "Goteborg S"));
 
         Rute rute1 = new Rute("001", stations);
+        Rute rute2 = new Rute(002,  )
+
 
         Train re20 = new Train("re20", stations.getFirst().getName(), rute1, stations.getLast().getName());
 
