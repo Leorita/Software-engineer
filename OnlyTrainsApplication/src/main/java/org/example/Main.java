@@ -80,7 +80,6 @@ public class Main {
         System.out.println("Til: " + destination);
         System.out.println("Dato: " + date);
         System.out.println("Tid: " + time);
-
         input.close();
 
 

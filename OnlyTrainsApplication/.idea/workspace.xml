@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="La til repositories for lagring av ruter, og avgangstider + ankomsttider">
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Lagde script i main for å teste om ruten ble laget korrekt.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Rute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Rute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Train.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteTiderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteTiderRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +100,10 @@
       <workItem from="1759925273167" duration="3195000" />
       <workItem from="1759928888217" duration="2460000" />
       <workItem from="1759933480825" duration="699000" />
+      <workItem from="1760009688526" duration="466000" />
+      <workItem from="1760086841252" duration="1780000" />
+      <workItem from="1760340326388" duration="355000" />
+      <workItem from="1760345581510" duration="2597000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -146,7 +147,14 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1759824923054</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="Lagde script i main for å teste om ruten ble laget korrekt.">
+      <option name="closed" value="true" />
+      <created>1760009735525</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1760009735525</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +189,7 @@
     <MESSAGE value="Fikset gettere og settere i ScheduledTime klassen, samtidig endret på StationTimeTable slik at den skal kunne holde på objekter av typen ScheduledTime." />
     <MESSAGE value="Lekte litt med dummy data, og opprettelse av klasser av typen StationTimetable" />
     <MESSAGE value="La til repositories for lagring av ruter, og avgangstider + ankomsttider" />
-    <option name="LAST_COMMIT_MESSAGE" value="La til repositories for lagring av ruter, og avgangstider + ankomsttider" />
+    <MESSAGE value="Lagde script i main for å teste om ruten ble laget korrekt." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lagde script i main for å teste om ruten ble laget korrekt." />
   </component>
 </project>
