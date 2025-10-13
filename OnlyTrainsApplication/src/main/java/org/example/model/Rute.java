@@ -22,9 +22,7 @@ public class Rute {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
+    public void setId(String id) {this.id = id;}
 
     public ArrayList<Station> getStops() {
         return stops;
