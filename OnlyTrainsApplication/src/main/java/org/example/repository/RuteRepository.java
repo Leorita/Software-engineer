@@ -12,6 +12,7 @@ public class RuteRepository {
     public RuteRepository() {
 
         Rute l2 = new Rute("L2");
+
         Station stabekk = new Station("1", "stabekk");
         l2.addStop(stabekk);
         Station lysaker = new Station("2", "Lysaker");
