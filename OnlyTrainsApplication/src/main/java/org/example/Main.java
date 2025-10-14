@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.model.*;
 import org.example.repository.RuteRepository;
+import org.example.repository.StationRepository;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -50,6 +51,7 @@ public class Main {
 
         // TODO vi tester rute repository
         RuteRepository ruteRepository = new RuteRepository();
+        StationRepository stationRepository = new StationRepository();
 
         Rute l2 = ruteRepository.getRuteByName("l2");
         System.out.println("Stopp for rute: " + l2.getId());
@@ -81,7 +83,6 @@ public class Main {
         System.out.println("Til: " + destination);
         System.out.println("Dato: " + date);
         System.out.println("Tid: " + time);
-
         input.close();
 
 
