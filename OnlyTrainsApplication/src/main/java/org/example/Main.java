@@ -32,15 +32,15 @@ public class Main {
         System.out.println( "Avgangstid: " + scheduledTime.getScheduledDeparture());
 
         Station osloS = new Station("1", "Oslo S");
-        StationTimetable osloSTimeTable = new StationTimetable(
-                osloS,
-                scheduledTime,
-                re20,
-                re20.getOrigin(),
-                re20.getDestination(),
-                2);
+//        StationTimetable osloSTimeTable = new StationTimetable(
+//                osloS,
+//                scheduledTime,
+//                re20,
+//                re20.getOrigin(),
+//                re20.getDestination(),
+//                2);
 
-        System.out.println(osloSTimeTable);
+        //System.out.println(osloSTimeTable);
 
         System.out.print("\n Rute for tog " + re20.getId() + ": [ ");
         for (Station stop : re20.getRoute().getStops()){

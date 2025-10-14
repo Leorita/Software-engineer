@@ -1,22 +1,24 @@
 package org.example.model;
 
+import java.util.ArrayList;
+
 public class Train {
     // Denne klassen inneholder informasjon om tog ankomster og avganger
 
     public Train() {
     }
 
-    public Train(String id, String origin, Rute route, String destination) {
+    public Train(String id, Rute route) {
         this.id = id;
-        this.origin = origin;
         this.route = route;
-        this.destination = destination;
     }
 
     private String id;// Variabel for ankomsttid
-    private String origin;
-    private String destination;
     private Rute route; // Ruten toget har
+
+    //Denne listen inneholder alle stopp i ruten, og inkluderer avgangstider og ankomsttider
+    private ArrayList<TrainStop> trainStops = new ArrayList<>();
+
 
 
     public String getId() {
@@ -27,13 +29,7 @@ public class Train {
         this.id = id;
     }
 
-    public String getOrigin() {
-        return origin;
-    }
 
-    public void setOrigin(String origin) {
-        this.origin = origin;
-    }
 
     public Rute getRoute() {
         return route;
@@ -43,11 +39,5 @@ public class Train {
         this.route = route;
     }
 
-    public String getDestination() {
-        return destination;
-    }
 
-    public void setDestination(String destination) {
-        this.destination = destination;
-    }
 }
