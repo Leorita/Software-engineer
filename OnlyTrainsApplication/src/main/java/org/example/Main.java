@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         System.out.println("Hello, World!");
 
         ArrayList<Station> stations = new ArrayList<>();
@@ -24,12 +24,12 @@ public class Main {
         Rute rute1 = new Rute("001", stations);
 
 
-        Train re20 = new Train("re20", stations.getFirst().getName(), rute1, stations.getLast().getName());
+        //Train re20 = new Train("re20", stations.getFirst().getName(), rute1, stations.getLast().getName());
 
 
-        TimeSchedule scheduledTime = new TimeSchedule(LocalTime.of(23, 15), LocalTime.of(9, 20));
+        //TimeSchedule scheduledTime = new TimeSchedule(LocalTime.of(23, 15), LocalTime.of(9, 20));
 
-        System.out.println( "Avgangstid: " + scheduledTime.getScheduledDeparture());
+        //System.out.println( "Avgangstid: " + scheduledTime.getScheduledDeparture());
 
         Station osloS = new Station("1", "Oslo S");
 //        StationTimetable osloSTimeTable = new StationTimetable(
@@ -42,11 +42,11 @@ public class Main {
 
         //System.out.println(osloSTimeTable);
 
-        System.out.print("\n Rute for tog " + re20.getId() + ": [ ");
-        for (Station stop : re20.getRoute().getStops()){
-            System.out.print(stop.getName() + ", ");
-        }
-        System.out.print("]\n");
+//        System.out.print("\n Rute for tog " + re20.getId() + ": [ ");
+//        for (Station stop : re20.getRoute().getStops()){
+//            System.out.print(stop.getName() + ", ");
+//        }
+//        System.out.print("]\n");
 
 
         // TODO vi tester rute repository
@@ -77,6 +77,10 @@ public class Main {
         System.out.print("Hva er avreisetidspunktet? (format: HH:mm): ");
         String timeInput = input.nextLine();
         LocalTime time = LocalTime.parse(timeInput, DateTimeFormatter.ofPattern("HH:mm")); //Klokkelsett
+
+
+
+
 
         System.out.println("\n--- Reiseinformasjon ---");
         System.out.println("Fra: " + origin);
