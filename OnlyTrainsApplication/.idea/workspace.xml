@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Fikset gettere og settere i ScheduledTime klassen, samtidig endret på StationTimeTable slik at den skal kunne holde på objekter av typen ScheduledTime." />
-=======
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="La til repositories for lagring av ruter, og avgangstider + ankomsttider">
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Fikset gettere og settere i ScheduledTime klassen, samtidig endret på StationTimeTable slik at den skal kunne holde på objekter av typen ScheduledTime.">
+      <change afterPath="$PROJECT_DIR$/src/Klassediagram.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/csv/stations.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Rute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Rute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Train.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Station.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteTiderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteTiderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" afterDir="false" />
     </list>
->>>>>>> 5fa21893b238efb67f7eedeb2952e43e1d23dd7a
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,11 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-<<<<<<< HEAD
-=======
-        <option value="Interface" />
->>>>>>> 5fa21893b238efb67f7eedeb2952e43e1d23dd7a
         <option value="Class" />
+        <option value="UML Sequence" />
       </list>
     </option>
   </component>
@@ -46,12 +41,12 @@
     &quot;assignee&quot;: &quot;Jsorens&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Leorita/Software-engineer.git",
-    "accountId": "ab328359-e5bc-4135-9d76-326ef24ca17f"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Leorita/Software-engineer.git&quot;,
+    &quot;accountId&quot;: &quot;ab328359-e5bc-4135-9d76-326ef24ca17f&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -61,32 +56,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Develop&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Skole/Informatikk/Semester 3/Software Engineering/GithubRepo/Software-engineer/OnlyTrainsApplication/src/main/java/org/example/model&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Sequence",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Develop",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/leorita/Desktop/Software-engineer/OnlyTrainsApplication",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.general",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Skole\Informatikk\Semester 3\Software Engineering\GithubRepo\Software-engineer\OnlyTrainsApplication\src\main\java\org\example\model" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/csv" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/example" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
       </set>
     </attachedChunks>
   </component>
@@ -100,20 +115,23 @@
       <updated>1759736254502</updated>
       <workItem from="1759736255659" duration="121000" />
       <workItem from="1759737180252" duration="4915000" />
-<<<<<<< HEAD
       <workItem from="1759775914098" duration="3064000" />
-=======
-      <workItem from="1759775914098" duration="3698000" />
-      <workItem from="1759779866674" duration="3066000" />
-      <workItem from="1759819564777" duration="3633000" />
-      <workItem from="1759824791583" duration="175000" />
-      <workItem from="1759824976770" duration="15000" />
-      <workItem from="1759825844055" duration="3722000" />
-      <workItem from="1759832439494" duration="1273000" />
-      <workItem from="1759925273167" duration="3195000" />
-      <workItem from="1759928888217" duration="2460000" />
-      <workItem from="1759933480825" duration="699000" />
->>>>>>> 5fa21893b238efb67f7eedeb2952e43e1d23dd7a
+      <workItem from="1759925391549" duration="5809000" />
+      <workItem from="1760191001186" duration="1716000" />
+      <workItem from="1760375672074" duration="231000" />
+      <workItem from="1760376229728" duration="106000" />
+      <workItem from="1760377299268" duration="47000" />
+      <workItem from="1760430171742" duration="988000" />
+      <workItem from="1760431174903" duration="4003000" />
+      <workItem from="1760441847244" duration="2027000" />
+      <workItem from="1760443998659" duration="340000" />
+      <workItem from="1760444510140" duration="18185000" />
+      <workItem from="1760907405451" duration="139000" />
+      <workItem from="1760907721939" duration="227000" />
+      <workItem from="1760907957522" duration="7000" />
+      <workItem from="1760908045076" duration="283000" />
+      <workItem from="1760908385829" duration="1157000" />
+      <workItem from="1760909553422" duration="11105000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -136,32 +154,7 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1759777796273</updated>
     </task>
-<<<<<<< HEAD
     <option name="localTasksCounter" value="4" />
-=======
-    <task id="LOCAL−00004" summary="Lekte litt med dummy data, og opprettelse av klasser av typen StationTimetable">
-      <option name="closed" value="true" />
-      <created>1759779361603</created>
-      <option name="number" value="LOCAL−00004" />
-      <option name="presentableId" value="LOCAL−00004" />
-      <updated>1759779361603</updated>
-    </task>
-    <task id="LOCAL−00005" summary="Lekte litt med dummy data, og opprettelse av klasser av typen StationTimetable">
-      <option name="closed" value="true" />
-      <created>1759819978905</created>
-      <option name="number" value="LOCAL−00005" />
-      <option name="presentableId" value="LOCAL−00005" />
-      <updated>1759819978905</updated>
-    </task>
-    <task id="LOCAL−00006" summary="La til repositories for lagring av ruter, og avgangstider + ankomsttider">
-      <option name="closed" value="true" />
-      <created>1759824923054</created>
-      <option name="number" value="LOCAL−00006" />
-      <option name="presentableId" value="LOCAL−00006" />
-      <updated>1759824923054</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
->>>>>>> 5fa21893b238efb67f7eedeb2952e43e1d23dd7a
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +171,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/Develop" />
                       </list>
                     </value>
                   </entry>
@@ -194,12 +187,20 @@
     <MESSAGE value="La til klassene, som representerer entitetene som inneholder dataene vi trenger." />
     <MESSAGE value="La til en klasse for scheduledTime, denne klassen skal inneholde informasjon om ankomst/avgangstider." />
     <MESSAGE value="Fikset gettere og settere i ScheduledTime klassen, samtidig endret på StationTimeTable slik at den skal kunne holde på objekter av typen ScheduledTime." />
-<<<<<<< HEAD
     <option name="LAST_COMMIT_MESSAGE" value="Fikset gettere og settere i ScheduledTime klassen, samtidig endret på StationTimeTable slik at den skal kunne holde på objekter av typen ScheduledTime." />
-=======
-    <MESSAGE value="Lekte litt med dummy data, og opprettelse av klasser av typen StationTimetable" />
-    <MESSAGE value="La til repositories for lagring av ruter, og avgangstider + ankomsttider" />
-    <option name="LAST_COMMIT_MESSAGE" value="La til repositories for lagring av ruter, og avgangstider + ankomsttider" />
->>>>>>> 5fa21893b238efb67f7eedeb2952e43e1d23dd7a
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

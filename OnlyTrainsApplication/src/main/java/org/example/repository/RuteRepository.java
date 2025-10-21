@@ -2,68 +2,133 @@ package org.example.repository;
 
 import org.example.model.Rute;
 import org.example.model.Station;
+import org.neo4j.driver.*;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
-public class RuteRepository {
-    // Dette inneholder en samling av alle rutene
-    private ArrayList<Rute> ruter = new ArrayList<>();
+import static org.neo4j.driver.Values.parameters;
 
-    public RuteRepository() {
+public class RuteRepository implements AutoCloseable {
 
-        Rute l2 = new Rute("L2");
+    private final Driver driver;
 
-        Station stabekk = new Station("1", "stabekk");
-        l2.addStop(stabekk);
-        Station lysaker = new Station("2", "Lysaker");
-        l2.addStop(lysaker);
-        Station skoyen = new Station("3", "Skøyen");
-        l2.addStop(skoyen);
-        Station nationaltheatret = new Station("4", "Nationaltheatret");
-        l2.addStop(nationaltheatret);
-        Station osloS = new Station("5", "Oslo S");
-        l2.addStop(osloS);
-        Station nordstrand = new Station("6", "Nordstrand");
-        l2.addStop(nordstrand);
-        Station ljan = new Station("7", "Ljan");
-        l2.addStop(ljan);
-        Station hauketo = new Station("8", "Hauketo");
-        l2.addStop(hauketo);
-        Station holmlia = new Station("9", "Holmlia");
-        l2.addStop(holmlia);
-        Station rosenholm = new Station("10", "Rosenholm");
-        l2.addStop(rosenholm);
-        Station kolbotn = new Station("11", "Kolbotn");
-        l2.addStop(kolbotn);
-        Station solbratan = new Station("12", "Solbråtan");
-        l2.addStop(solbratan);
-        Station myrvoll = new Station("13", "Myrvoll");
-        l2.addStop(myrvoll);
-        Station greverud = new Station("14", "Greverud");
-        l2.addStop(greverud);
-        Station oppegard = new Station("15", "Oppegård");
-        l2.addStop(oppegard);
-        Station vevelstad = new Station("16", "Vevelstad");
-        l2.addStop(vevelstad);
-        Station langhus = new Station("17", "Langhus");
-        l2.addStop(langhus);
-        Station ski = new Station("18", "Ski");
-        l2.addStop(ski);
-
-        this.ruter.add(l2);
+    //Konstruktør: kobler til Neo4j-databasen
+    public RuteRepository(String uri, String user, String password) {
+        driver = GraphDatabase.driver(uri, AuthTokens.basic(user, password));
     }
 
-    public ArrayList<Rute> getRuter() {
-        return ruter;
+    //Sørger for at driveren lukkes etter bruk
+    @Override
+    public void close() {
+        driver.close();
     }
 
-    public Rute getRuteByName(String ruteName){
-        for (Rute rute : ruter){
-            // Vi sjekker rute repositoriet vårt for en rute.
-            if (ruteName.toUpperCase().equals(rute.getId())){
-                return rute;
+    //Lagrer én rute med alle stasjoner i Neo4j
+    public void saveRoute(Rute rute) {
+        try (Session session = driver.session()) {
+            // Opprett eller finn ruten
+            session.run("MERGE (r:Rute {id: $id})",
+                    parameters("id", rute.getId()));
+
+            //Opprett stasjoner og relasjoner
+            for (Station station : rute.getStops()) {
+                session.run("""
+                        MERGE (s:Station {id: $id})
+                        SET s.name = $name
+                        MERGE (r:Rute {id: $ruteId})
+                        MERGE (r)-[:HAS_STOP]->(s)
+                        """,
+                        parameters("id", station.getId(),
+                                "name", station.getName(),
+                                "ruteId", rute.getId()));
             }
+
+            // Koble stasjonene i riktig rekkefølge
+            for (int i = 0; i < rute.getStops().size() - 1; i++) {
+                Station current = rute.getStops().get(i);
+                Station next = rute.getStops().get(i + 1);
+                session.run("""
+                        MATCH (a:Station {id: $idA}), (b:Station {id: $idB})
+                        MERGE (a)-[:NEXT_STOP]->(b)
+                        """,
+                        parameters("idA", current.getId(),
+                                "idB", next.getId()));
+            }
+
+            System.out.println("✅ Lagret rute " + rute.getId() + " i Neo4j!");
+        } catch (Exception e) {
+            System.err.println("❌ Feil under lagring av rute " + rute.getId() + ": " + e.getMessage());
         }
-        return null;
+    }
+
+    // Henter én rute med alle stasjoner fra Neo4j
+    public Rute getRuteByName(String ruteId) {
+        try (Session session = driver.session()) {
+            var result = session.run("""
+                MATCH (r:Rute {id: $id})-[:HAS_STOP]->(s:Station)
+                RETURN r.id AS routeId, collect({id: s.id, name: s.name}) AS stops
+                """, parameters("id", ruteId));
+
+            if (result.hasNext()) {
+                var record = result.next();
+                Rute rute = new Rute(record.get("routeId").asString());
+
+                var stopsList = record.get("stops").asList();
+                for (Object stopObj : stopsList) {
+                    @SuppressWarnings("unchecked")
+                    Map<String, Object> map = (Map<String, Object>) stopObj;
+                    rute.addStop(new Station(
+                            map.get("id").toString(),
+                            map.get("name").toString()
+                    ));
+                }
+
+                System.out.println("✅ Fant rute " + ruteId + " i Neo4j");
+                return rute;
+            } else {
+                System.out.println("❌ Ingen rute funnet med id: " + ruteId);
+                return null;
+            }
+        } catch (Exception e) {
+            System.err.println("⚠️ Feil under henting av rute " + ruteId + ": " + e.getMessage());
+            return null;
+        }
+    }
+
+    // Henter alle ruter fra Neo4j
+    public ArrayList<Rute> getAllRoutes() {
+        ArrayList<Rute> routes = new ArrayList<>();
+
+        try (Session session = driver.session()) {
+            var result = session.run("""
+                MATCH (r:Rute)-[:HAS_STOP]->(s:Station)
+                RETURN r.id AS routeId, collect({id: s.id, name: s.name}) AS stops
+                ORDER BY routeId
+            """);
+
+            while (result.hasNext()) {
+                var record = result.next();
+                String routeId = record.get("routeId").asString();
+                Rute route = new Rute(routeId);
+                List<Object> stopsList = record.get("stops").asList();
+
+                for (Object stopObj : stopsList) {
+                    @SuppressWarnings("unchecked")
+                    Map<String, Object> map = (Map<String, Object>) stopObj;
+                    String id = map.get("id").toString();
+                    String name = map.get("name").toString();
+                    route.addStop(new Station(id, name));
+                }
+
+                routes.add(route);
+            }
+            System.out.println("✅ Hentet " + routes.size() + " ruter fra Neo4j");
+        } catch (Exception e) {
+            System.err.println("⚠️ Feil under henting av alle ruter: " + e.getMessage());
+        }
+
+        return routes;
     }
 }

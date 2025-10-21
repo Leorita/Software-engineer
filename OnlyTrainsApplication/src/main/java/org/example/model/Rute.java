@@ -7,8 +7,7 @@ public class Rute {
     private String id;
     ArrayList<Station> stops = new ArrayList<>();
     //Legge til tider her??
-
-
+    
     public Rute(String id) {
         this.id = id;
     }
