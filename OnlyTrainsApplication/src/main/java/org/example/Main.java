@@ -4,82 +4,56 @@ import org.example.model.*;
 import org.example.repository.RuteRepository;
 import org.example.repository.StationRepository;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Hello, World!");
 
-        //Til neo4j kobling
-        String uri = "bolt://localhost:7687";
-        String user= "neo4j";
-        String password = "Gruppe20";
+        ArrayList<Station> stations = new ArrayList<>();
+        stations.add(new Station("1", "Oslo S"));
+        stations.add(new Station("2", "Fredrikstad S"));
+        stations.add(new Station("5", "Halden S"));
+        stations.add(new Station("7", "Goteborg S"));
 
-        String filePath = "src/main/resources/ruter.csv";
+        Rute rute1 = new Rute("001", stations);
 
-        try (RuteRepository ruteRepo = new RuteRepository(uri, user, password)) {
 
-            // 🔹 Les ruter fra CSV
-            Map<String, Rute> ruterMap = new HashMap<>();
+        Train re20 = new Train("re20", stations.getFirst().getName(), rute1, stations.getLast().getName());
 
-            try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-                br.readLine(); // hopp over overskrift
-                String line;
-                while ((line = br.readLine()) != null) {
-                    String[] parts = line.split(",");
-                    if (parts.length >= 3) {
-                        String ruteId = parts[0].trim();
-                        String stasjonId = parts[1].trim();
-                        String stasjonNavn = parts[2].trim();
 
-                        // Opprett rute hvis den ikke finnes fra før
-                        ruterMap.putIfAbsent(ruteId, new Rute(ruteId));
+        TimeSchedule scheduledTime = new TimeSchedule(LocalTime.of(23, 15), LocalTime.of(9, 20));
 
-                        // Legg til stasjon i ruten
-                        ruterMap.get(ruteId).addStop(new Station(stasjonId, stasjonNavn));
-                    }
-                }
-            } catch (IOException e) {
-                System.err.println("❌ Feil ved lesing av CSV: " + e.getMessage());
-            }
+        System.out.println( "Avgangstid: " + scheduledTime.getScheduledDeparture());
 
-            // 🔹 Lagre alle ruter i Neo4j
-            for (Rute r : ruterMap.values()) {
-                ruteRepo.saveRoute(r);
-            }
+        Station osloS = new Station("1", "Oslo S");
+//        StationTimetable osloSTimeTable = new StationTimetable(
+//                osloS,
+//                scheduledTime,
+//                re20,
+//                re20.getOrigin(),
+//                re20.getDestination(),
+//                2);
 
-            // 🔹 Hent alle ruter fra Neo4j etterpå (for å bekrefte)
-            System.out.println("\n🗺️ Ruter i Neo4j:");
-            for (Rute r : ruteRepo.getAllRoutes()) {
-                System.out.println("Rute " + r.getId() + ":");
-                for (Station s : r.getStops()) {
-                    System.out.println("   • " + s.getName());
-                }
-            }
+        //System.out.println(osloSTimeTable);
 
-        } catch (Exception e) {
-            System.err.println("⚠️ Feil: " + e.getMessage());
-            e.printStackTrace();
+        System.out.print("\n Rute for tog " + re20.getId() + ": [ ");
+        for (Station stop : re20.getRoute().getStops()){
+            System.out.print(stop.getName() + ", ");
         }
-
-        System.out.println("\n🔚 Program avsluttet.");
-
+        System.out.print("]\n");
 
 
         // TODO vi tester rute repository
-        RuteRepository ruteRepository = new RuteRepository(uri, user, password);
+        RuteRepository ruteRepository = new RuteRepository();
         StationRepository stationRepository = new StationRepository();
 
-        Rute l2 = ruteRepository.getRuteByName("L2");
+        Rute l2 = ruteRepository.getRuteByName("l2");
         System.out.println("Stopp for rute: " + l2.getId());
         System.out.println("{");
         for (Station station : l2.getStops()){
@@ -112,11 +86,13 @@ public class Main {
         input.close();
 
 
-        StationRepository stationRepo = new StationRepository();
 
-        System.out.println("📍 Stasjoner i nettverket vårt:");
-        for (Station s : stationRepo.getAll()) {
-            System.out.println(s.getId() + " - " + s.getName());
-        }
+
+
+
+
+
+
+
     }
 }
