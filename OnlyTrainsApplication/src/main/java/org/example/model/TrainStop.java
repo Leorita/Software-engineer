@@ -7,7 +7,7 @@ public class TrainStop{
     private LocalTime arrivalTime;
     private LocalTime departureTime;
     private int track;
-
+    private boolean isDelayed;
     public TrainStop(Station station, LocalTime arrivalTime, LocalTime departureTime) {
         this.stop = station;
         this.arrivalTime = arrivalTime;

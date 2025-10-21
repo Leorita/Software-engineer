@@ -1,0 +1,94 @@
+@startuml
+title Klassediagram – Togsystem (OnlyTrains)
+hide empty members
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor #F8F8F8
+    BorderColor #333333
+}
+
+' =======================
+' Klasser
+' =======================
+
+class Rute {
+    - id : String
+    - stops : ArrayList<Station>
+    + getId() : String
+    + setId(id : String)
+    + getStops() : ArrayList<Station>
+    + setStops(stops : ArrayList<Station>)
+}
+
+class Station {
+    - id : String
+    - name : String
+    + getId() : String
+    + getName() : String
+    + setId(id : String)
+    + setName(name : String)
+}
+
+class Train {
+    - id : String
+    - rute : Rute
+    + getId() : String
+    + getRute() : Rute
+    + getOrigin() : Station
+    + getDestination() : Station
+}
+
+class TrainStop {
+    - station : Station
+    - arrivalTime : LocalTime
+    - departureTime : LocalTime
+    + getStation() : Station
+    + getArrivalTime() : LocalTime
+    + getDepartureTime() : LocalTime
+}
+
+class RuteRepository {
+    - ruter : ArrayList<Rute>
+    + getAll() : ArrayList<Rute>
+    + addRute(r : Rute)
+    + findById(id : String) : Rute
+}
+
+class RuteTiderRepository {
+    - tider : ArrayList<TrainStop>
+    + getAll() : ArrayList<TrainStop>
+    + addTider(t : TrainStop)
+}
+
+class StationRepository {
+    - stations : ArrayList<Station>
+    + getAll() : ArrayList<Station>
+    + addStation(s : Station)
+}
+
+class TrainRepository {
+    - trains : ArrayList<Train>
+    + getAll() : ArrayList<Train>
+    + addTrain(t : Train)
+}
+
+class Main
+
+' =======================
+' Relasjoner
+' =======================
+
+Rute "1" *-- "*" TrainStop : består av
+TrainStop --> Station : refererer til
+Train --> Rute : følger
+Train --> Station : origin/destination
+RuteRepository o-- Rute : lagrer
+RuteTiderRepository o-- TrainStop : lagrer
+StationRepository o-- Station : lagrer
+TrainRepository o-- Train : lagrer
+Main --> RuteRepository : bruker
+Main --> StationRepository : bruker
+Main --> TrainRepository : bruker
+Main --> RuteTiderRepository : bruker
+
+@enduml
