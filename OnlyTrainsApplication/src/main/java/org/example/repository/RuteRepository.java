@@ -10,7 +10,7 @@ import java.util.Map;
 
 import static org.neo4j.driver.Values.parameters;
 
-public class RuteRepository implements AutoCloseable {
+public class RuteRepository implements AutoCloseable, ruterPort {
 
     // TODO instansvariabel som holder på alle rutene.
     private ArrayList<Rute> ruter = new ArrayList<>();
@@ -37,11 +37,11 @@ public class RuteRepository implements AutoCloseable {
             //Opprett stasjoner og relasjoner
             for (Station station : rute.getStops()) {
                 session.run("""
-                        MERGE (s:Station {id: $id})
-                        SET s.name = $name
-                        MERGE (r:Rute {id: $ruteId})
-                        MERGE (r)-[:HAS_STOP]->(s)
-                        """,
+                                MERGE (s:Station {id: $id})
+                                SET s.name = $name
+                                MERGE (r:Rute {id: $ruteId})
+                                MERGE (r)-[:HAS_STOP]->(s)
+                                """,
                         parameters("id", station.getId(),
                                 "name", station.getName(),
                                 "ruteId", rute.getId()));
@@ -52,16 +52,16 @@ public class RuteRepository implements AutoCloseable {
                 Station current = rute.getStops().get(i);
                 Station next = rute.getStops().get(i + 1);
                 session.run("""
-                        MATCH (a:Station {id: $idA}), (b:Station {id: $idB})
-                        MERGE (a)-[:NEXT_STOP]->(b)
-                        """,
+                                MATCH (a:Station {id: $idA}), (b:Station {id: $idB})
+                                MERGE (a)-[:NEXT_STOP]->(b)
+                                """,
                         parameters("idA", current.getId(),
                                 "idB", next.getId()));
             }
 
-            System.out.println("✅ Lagret rute " + rute.getId() + " i Neo4j!");
+            System.out.println("Lagret rute " + rute.getId() + " i Neo4j!");
         } catch (Exception e) {
-            System.err.println("❌ Feil under lagring av rute " + rute.getId() + ": " + e.getMessage());
+            System.err.println("Feil under lagring av rute " + rute.getId() + ": " + e.getMessage());
         }
     }
 
@@ -87,14 +87,14 @@ public class RuteRepository implements AutoCloseable {
                     ));
                 }
 
-                System.out.println("✅ Fant rute " + ruteId + " i Neo4j");
+                System.out.println("Fant rute " + ruteId + " i Neo4j");
                 return rute;
             } else {
-                System.out.println("❌ Ingen rute funnet med id: " + ruteId);
+                System.out.println("Ingen rute funnet med id: " + ruteId);
                 return null;
             }
         } catch (Exception e) {
-            System.err.println("⚠️ Feil under henting av rute " + ruteId + ": " + e.getMessage());
+            System.err.println("Feil under henting av rute " + ruteId + ": " + e.getMessage());
             return null;
         }
     }
@@ -126,9 +126,9 @@ public class RuteRepository implements AutoCloseable {
 
                 routes.add(route);
             }
-            System.out.println("✅ Hentet " + routes.size() + " ruter fra Neo4j");
+            System.out.println("Hentet " + routes.size() + " ruter fra Neo4j");
         } catch (Exception e) {
-            System.err.println("⚠️ Feil under henting av alle ruter: " + e.getMessage());
+            System.err.println("Feil under henting av alle ruter: " + e.getMessage());
         }
 
         return routes;
