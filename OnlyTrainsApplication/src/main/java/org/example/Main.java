@@ -14,17 +14,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Hello, World!");
-
         // TODO vi tester rute repository
         RuteRepository ruteRepository = new RuteRepository();
         StationRepository stationRepository = new StationRepository();
 
-
-        stationRepository.addStation("Trondheim S");
-        stationRepository.addStation("Trondheim S");
-
-        stationRepository.addStation("Kirkenes S");
-        System.out.println(stationRepository);
 
     }
 }

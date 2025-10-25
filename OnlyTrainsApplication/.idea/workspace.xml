@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Fikset URL pathen til stations.csv, slik at den fungerer. Endret også på getmetode i StationRepository. Testet at StationRepository lagrer stasjonene riktig i Main.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/json/routes.json" afterDir="false" />
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Endret litt på TrainStop og TrainRepository">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/port/RuteRepositoryPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/port/StationRepositoryPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/port/TrainRepositoryPort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -57,22 +50,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Develop&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Skole/Informatikk/Semester 3/Software Engineering/GithubRepo/Software-engineer/OnlyTrainsApplication/src/main/java/org/example/model&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Develop",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Skole/Informatikk/Semester 3/Software Engineering/GithubRepo/Software-engineer/OnlyTrainsApplication/src/main/java/org/example/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Skole\Informatikk\Semester 3\Software Engineering\GithubRepo\Software-engineer\OnlyTrainsApplication\src\main\java\org\example\model" />
@@ -107,10 +100,6 @@
       <workItem from="1759928888217" duration="2460000" />
       <workItem from="1759933480825" duration="699000" />
       <workItem from="1760533339477" duration="4342000" />
-      <workItem from="1761134842093" duration="1326000" />
-      <workItem from="1761556860358" duration="4735000" />
-      <workItem from="1761561666129" duration="1311000" />
-      <workItem from="1761658196758" duration="627000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -168,42 +157,7 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1760538225952</updated>
     </task>
-    <task id="LOCAL−00009" summary="La til Porter for hvert repository. Slettet RuteTiderRepository.java siden det ikke var noe behov for den.">
-      <option name="closed" value="true" />
-      <created>1761557166759</created>
-      <option name="number" value="LOCAL−00009" />
-      <option name="presentableId" value="LOCAL−00009" />
-      <updated>1761557166759</updated>
-    </task>
-    <task id="LOCAL−00010" summary="La til metoder for TrainRepositoryPort, og implementerte dem i TrainRepository.java. Logikken er enda ikke ferdig definert.">
-      <option name="closed" value="true" />
-      <created>1761558317206</created>
-      <option name="number" value="LOCAL−00010" />
-      <option name="presentableId" value="LOCAL−00010" />
-      <updated>1761558317206</updated>
-    </task>
-    <task id="LOCAL−00011" summary="La til flere metoder i TrainRepositoryPort, og implementerte de i TrainRepository.java">
-      <option name="closed" value="true" />
-      <created>1761558792295</created>
-      <option name="number" value="LOCAL−00011" />
-      <option name="presentableId" value="LOCAL−00011" />
-      <updated>1761558792295</updated>
-    </task>
-    <task id="LOCAL−00012" summary="La til flere metoder i TrainRepositoryPort, og implementerte de i TrainRepository.java">
-      <option name="closed" value="true" />
-      <created>1761558804070</created>
-      <option name="number" value="LOCAL−00012" />
-      <option name="presentableId" value="LOCAL−00012" />
-      <updated>1761558804070</updated>
-    </task>
-    <task id="LOCAL−00013" summary="Fikset URL pathen til stations.csv, slik at den fungerer. Endret også på getmetode i StationRepository. Testet at StationRepository lagrer stasjonene riktig i Main.">
-      <option name="closed" value="true" />
-      <created>1761559688460</created>
-      <option name="number" value="LOCAL−00013" />
-      <option name="presentableId" value="LOCAL−00013" />
-      <updated>1761559688460</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,10 +194,6 @@
     <MESSAGE value="La til repositories for lagring av ruter, og avgangstider + ankomsttider" />
     <MESSAGE value="Endret litt på TrainStop og TrainRepository" />
     <MESSAGE value="La til TODO liste i TrainRepository, og la til en isDelayed attributt i trainStop slik at vi skal kunne se om et tog er forsinket til et stopp. Ryddet også opp i Main klassen." />
-    <MESSAGE value="La til Porter for hvert repository. Slettet RuteTiderRepository.java siden det ikke var noe behov for den." />
-    <MESSAGE value="La til metoder for TrainRepositoryPort, og implementerte dem i TrainRepository.java. Logikken er enda ikke ferdig definert." />
-    <MESSAGE value="La til flere metoder i TrainRepositoryPort, og implementerte de i TrainRepository.java" />
-    <MESSAGE value="Fikset URL pathen til stations.csv, slik at den fungerer. Endret også på getmetode i StationRepository. Testet at StationRepository lagrer stasjonene riktig i Main." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fikset URL pathen til stations.csv, slik at den fungerer. Endret også på getmetode i StationRepository. Testet at StationRepository lagrer stasjonene riktig i Main." />
+    <option name="LAST_COMMIT_MESSAGE" value="La til TODO liste i TrainRepository, og la til en isDelayed attributt i trainStop slik at vi skal kunne se om et tog er forsinket til et stopp. Ryddet også opp i Main klassen." />
   </component>
 </project>
