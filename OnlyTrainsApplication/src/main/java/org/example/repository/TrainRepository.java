@@ -13,7 +13,6 @@ public class TrainRepository implements TrainRepositoryPort {
 
 
     }
-
     // TODO lage metode for å hente tog
     public ArrayList<Train> getTrains() {
         // TODO Denne metoden skal hente alle tog i systemet

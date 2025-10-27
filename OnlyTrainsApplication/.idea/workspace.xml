@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="La til metoder for TrainRepositoryPort, og implementerte dem i TrainRepository.java. Logikken er enda ikke ferdig definert.">
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="La til flere metoder i TrainRepositoryPort, og implementerte de i TrainRepository.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepositoryPort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +103,7 @@
       <workItem from="1759933480825" duration="699000" />
       <workItem from="1760533339477" duration="4342000" />
       <workItem from="1761134842093" duration="1326000" />
-      <workItem from="1761556860358" duration="1871000" />
+      <workItem from="1761556860358" duration="2796000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -175,7 +175,21 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1761558317206</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="La til flere metoder i TrainRepositoryPort, og implementerte de i TrainRepository.java">
+      <option name="closed" value="true" />
+      <created>1761558792295</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1761558792295</updated>
+    </task>
+    <task id="LOCAL−00012" summary="La til flere metoder i TrainRepositoryPort, og implementerte de i TrainRepository.java">
+      <option name="closed" value="true" />
+      <created>1761558804070</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1761558804070</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +228,7 @@
     <MESSAGE value="La til TODO liste i TrainRepository, og la til en isDelayed attributt i trainStop slik at vi skal kunne se om et tog er forsinket til et stopp. Ryddet også opp i Main klassen." />
     <MESSAGE value="La til Porter for hvert repository. Slettet RuteTiderRepository.java siden det ikke var noe behov for den." />
     <MESSAGE value="La til metoder for TrainRepositoryPort, og implementerte dem i TrainRepository.java. Logikken er enda ikke ferdig definert." />
-    <option name="LAST_COMMIT_MESSAGE" value="La til metoder for TrainRepositoryPort, og implementerte dem i TrainRepository.java. Logikken er enda ikke ferdig definert." />
+    <MESSAGE value="La til flere metoder i TrainRepositoryPort, og implementerte de i TrainRepository.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="La til flere metoder i TrainRepositoryPort, og implementerte de i TrainRepository.java" />
   </component>
 </project>

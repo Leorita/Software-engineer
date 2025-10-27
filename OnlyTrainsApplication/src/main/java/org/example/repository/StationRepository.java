@@ -12,7 +12,7 @@ public class StationRepository {
 
     private ArrayList<Station> stations = new ArrayList<>(); // liste over alle stasjonsobjekter
     public StationRepository() {
-        loadStationsFromCSV("/Users/leorita/Desktop/Software-engineer/OnlyTrainsApplication/src/main/java/org/example/stations.csv");
+        loadStationsFromCSV("src/main/java/org/example/csv/stations.csv");
     }
 
     private void loadStationsFromCSV(String filePath) {
@@ -32,7 +32,7 @@ public class StationRepository {
         }
     }
 
-    public List<Station> getAll() {
+    public ArrayList<Station> getStations() {
         return stations;
     }
 
