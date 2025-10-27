@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="La til Porter for hvert repository. Slettet RuteTiderRepository.java siden det ikke var noe behov for den.">
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="La til metoder for TrainRepositoryPort, og implementerte dem i TrainRepository.java. Logikken er enda ikke ferdig definert.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepository.java" afterDir="false" />
@@ -103,7 +103,7 @@
       <workItem from="1759933480825" duration="699000" />
       <workItem from="1760533339477" duration="4342000" />
       <workItem from="1761134842093" duration="1326000" />
-      <workItem from="1761556860358" duration="1241000" />
+      <workItem from="1761556860358" duration="1871000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -168,7 +168,14 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1761557166759</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="La til metoder for TrainRepositoryPort, og implementerte dem i TrainRepository.java. Logikken er enda ikke ferdig definert.">
+      <option name="closed" value="true" />
+      <created>1761558317206</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1761558317206</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +213,7 @@
     <MESSAGE value="Endret litt på TrainStop og TrainRepository" />
     <MESSAGE value="La til TODO liste i TrainRepository, og la til en isDelayed attributt i trainStop slik at vi skal kunne se om et tog er forsinket til et stopp. Ryddet også opp i Main klassen." />
     <MESSAGE value="La til Porter for hvert repository. Slettet RuteTiderRepository.java siden det ikke var noe behov for den." />
-    <option name="LAST_COMMIT_MESSAGE" value="La til Porter for hvert repository. Slettet RuteTiderRepository.java siden det ikke var noe behov for den." />
+    <MESSAGE value="La til metoder for TrainRepositoryPort, og implementerte dem i TrainRepository.java. Logikken er enda ikke ferdig definert." />
+    <option name="LAST_COMMIT_MESSAGE" value="La til metoder for TrainRepositoryPort, og implementerte dem i TrainRepository.java. Logikken er enda ikke ferdig definert." />
   </component>
 </project>
