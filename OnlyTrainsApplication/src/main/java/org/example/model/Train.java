@@ -40,4 +40,12 @@ public class Train {
     }
 
 
+    @Override
+    public String toString() {
+        return "Train{" +
+                "id='" + id + '\'' +
+                ", route=" + route +
+                ", trainStops=" + trainStops +
+                '}';
+    }
 }

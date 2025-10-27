@@ -18,10 +18,12 @@ public class Main {
         //RuteRepository ruteRepository = new RuteRepository();
         StationRepository stationRepository = new StationRepository();
 
-        for (Station s : stationRepository.getStations()){
-            System.out.println(s.getId() + "." + s.getName());
-        }
 
+        stationRepository.addStation("Trondheim S");
+        stationRepository.addStation("Trondheim S");
+
+        stationRepository.addStation("Kirkenes S");
+        System.out.println(stationRepository);
 
     }
 }

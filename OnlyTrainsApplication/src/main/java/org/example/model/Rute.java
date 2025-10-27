@@ -31,4 +31,12 @@ public class Rute {
 
         this.stops.add(stop);
     }
+
+    @Override
+    public String toString() {
+        return "Rute{" +
+                "id='" + id + '\'' +
+                ", stops=" + stops +
+                '}';
+    }
 }
