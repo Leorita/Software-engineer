@@ -17,4 +17,10 @@ public interface TrainRepositoryPort {
 
     // TODO lage metode for å oppdatere tog
     public void UpdateTrain(Train train);
+
+
+    public void clearAllTrains(String password);
+
+    // TODO metode for å hente tog basert på rute.
+    public ArrayList<Train> getTrainsByRoute(String routeId);
 }

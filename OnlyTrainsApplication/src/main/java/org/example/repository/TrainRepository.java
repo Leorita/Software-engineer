@@ -43,7 +43,17 @@ public class TrainRepository implements TrainRepositoryPort {
 
     }
 
+    // TODO metode for å fjerne alle tog (admin)
+    @Override
+    public void clearAllTrains(String password) {
+        // Denne metoden krever et passord, som kun er tilgjengelig for admin
 
+    }
+
+    @Override
+    public ArrayList<Train> getTrainsByRoute(String routeId) {
+        return null;
+    }
 
 
 }
