@@ -1,4 +1,4 @@
-package org.example.repository;
+package org.example.port;
 
 import java.util.ArrayList;
 import org.example.model.Train;

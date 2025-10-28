@@ -1,4 +1,4 @@
-package org.example.repository;
+package org.example.port;
 
 public interface StationRepositoryPort {
 

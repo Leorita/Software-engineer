@@ -1,15 +1,14 @@
 package org.example.repository;
 
 import org.example.model.Station;
+import org.example.port.StationRepositoryPort;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.rmi.ServerError;
 import java.util.ArrayList;
-import java.util.List;
 
-public class StationRepository implements StationRepositoryPort{
+public class StationRepository implements StationRepositoryPort {
 
     private ArrayList<Station> stations = new ArrayList<>(); // liste over alle stasjonsobjekter
     private static int counter = 1;

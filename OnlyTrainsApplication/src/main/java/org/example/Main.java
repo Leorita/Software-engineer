@@ -14,8 +14,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Hello, World!");
+
         // TODO vi tester rute repository
-        //RuteRepository ruteRepository = new RuteRepository();
+        RuteRepository ruteRepository = new RuteRepository();
         StationRepository stationRepository = new StationRepository();
 
 

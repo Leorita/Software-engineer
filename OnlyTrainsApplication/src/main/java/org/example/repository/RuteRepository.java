@@ -12,6 +12,8 @@ import static org.neo4j.driver.Values.parameters;
 
 public class RuteRepository implements AutoCloseable {
 
+    // TODO instansvariabel som holder på alle rutene.
+    private ArrayList<Rute> ruter = new ArrayList<>();
     private final Driver driver;
 
     //Konstruktør: kobler til Neo4j-databasen
@@ -131,4 +133,6 @@ public class RuteRepository implements AutoCloseable {
 
         return routes;
     }
+
+
 }

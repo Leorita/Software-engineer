@@ -1,6 +1,7 @@
 package org.example.repository;
 
 import org.example.model.Train;
+import org.example.port.TrainRepositoryPort;
 
 import java.time.LocalTime;
 import java.util.ArrayList;
