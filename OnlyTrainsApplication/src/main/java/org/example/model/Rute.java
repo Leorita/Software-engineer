@@ -34,6 +34,22 @@ public class Rute {
         this.stops.add(stop);
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public boolean isOutbound() {
+        return outbound;
+    }
+
+    public void setOutbound(boolean outbound) {
+        this.outbound = outbound;
+    }
+
     @Override
     public String toString() {
         return "Rute{" +

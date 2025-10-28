@@ -1,6 +1,7 @@
 package org.example.repository;
 
 import org.example.model.Station;
+import org.example.port.StationRepositoryPort;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,14 +9,23 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StationRepository {
+public class StationRepository implements StationRepositoryPort {
 
     private ArrayList<Station> stations = new ArrayList<>(); // liste over alle stasjonsobjekter
-    public StationRepository() {
-        loadStationsFromCSV("/Users/leorita/Desktop/Software-engineer/OnlyTrainsApplication/src/main/java/org/example/stations.csv");
+
+    public StationRepository(String inputType) {
+
+        if (inputType.equals("csv")) {
+            loadStationsFromCSV("src/main/java/org/example/csv/stations.csv");
+        } else if (inputType.equals("json")) {
+            loadStationsFromJson("/path/to/stations.json");
+        } else {
+            System.out.println("Ugyldig input type. Vennligst bruk 'csv' eller 'json'.");
+        }
     }
 
-    private void loadStationsFromCSV(String filePath) {
+    @Override
+    public void loadStationsFromCSV(String filePath) {
         String line;
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             br.readLine(); // hopper over første linje (overskriften)
@@ -32,6 +42,11 @@ public class StationRepository {
         }
     }
 
+    @Override
+    public void loadStationsFromJson(String filepath) {
+
+    }
+
     public List<Station> getAll() {
         return stations;
     }
@@ -43,5 +58,15 @@ public class StationRepository {
             }
         }
         return null;
+    }
+
+    @Override
+    public void addStation(String stationName) {
+
+    }
+
+    @Override
+    public boolean stationExists(String stationName) {
+        return false;
     }
 }

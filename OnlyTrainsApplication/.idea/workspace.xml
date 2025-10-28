@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="La til dummy data for stasjoner i json format.">
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Lagde dummy data for ruter, i route.json delvis med hjelp av kunstig intelligens. Stoppene i routes.json, refererer til id'ene til stasjonene i stations.json, slik at vi kan forebygge skrivefeil.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/json/routes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/json/routes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/json/stations.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/json/stations.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Rute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Rute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/port/StationRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/port/StationRepositoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +168,14 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1761659776998</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="Lagde dummy data for ruter, i route.json delvis med hjelp av kunstig intelligens. Stoppene i routes.json, refererer til id'ene til stasjonene i stations.json, slik at vi kan forebygge skrivefeil.">
+      <option name="closed" value="true" />
+      <created>1761662138818</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1761662138818</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +213,7 @@
     <MESSAGE value="Endret litt på TrainStop og TrainRepository" />
     <MESSAGE value="La til TODO liste i TrainRepository, og la til en isDelayed attributt i trainStop slik at vi skal kunne se om et tog er forsinket til et stopp. Ryddet også opp i Main klassen." />
     <MESSAGE value="La til dummy data for stasjoner i json format." />
-    <option name="LAST_COMMIT_MESSAGE" value="La til dummy data for stasjoner i json format." />
+    <MESSAGE value="Lagde dummy data for ruter, i route.json delvis med hjelp av kunstig intelligens. Stoppene i routes.json, refererer til id'ene til stasjonene i stations.json, slik at vi kan forebygge skrivefeil." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lagde dummy data for ruter, i route.json delvis med hjelp av kunstig intelligens. Stoppene i routes.json, refererer til id'ene til stasjonene i stations.json, slik at vi kan forebygge skrivefeil." />
   </component>
 </project>
