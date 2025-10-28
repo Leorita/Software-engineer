@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class Rute {
     // Klassen skal inneholde alle stopp for hvert tog
     private String id;
+    private String name;
+    private boolean outbound; // True hvis ruten går mot sentrum, false hvis den går ut fra sentrum
     ArrayList<Station> stops = new ArrayList<>();
     //Legge til tider her??
     
