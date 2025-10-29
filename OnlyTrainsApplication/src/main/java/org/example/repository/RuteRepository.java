@@ -10,7 +10,7 @@ import java.util.Map;
 
 import static org.neo4j.driver.Values.parameters;
 
-public class RuteRepository implements AutoCloseable, ruterPort {
+public class RuteRepository implements AutoCloseable {
 
     // TODO instansvariabel som holder på alle rutene.
     private ArrayList<Rute> ruter = new ArrayList<>();
