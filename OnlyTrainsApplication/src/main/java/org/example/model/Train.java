@@ -21,8 +21,6 @@ public class Train {
 
     private String id;// Variabel for ankomsttid
     private Rute route; // Ruten toget har
-
-
     //Denne listen inneholder alle stopp i ruten, og inkluderer avgangstider og ankomsttider
     private ArrayList<TrainStop> trainStops = new ArrayList<>();
 

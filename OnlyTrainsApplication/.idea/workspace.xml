@@ -9,6 +9,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Train.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/TrainStop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/TrainStop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/port/RuteRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/port/RuteRepositoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/port/TrainRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/port/TrainRepositoryPort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepository.java" afterDir="false" />
     </list>
@@ -66,7 +68,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -109,6 +111,11 @@
       <workItem from="1761734831168" duration="34000" />
       <workItem from="1761734883996" duration="4839000" />
       <workItem from="1761740027442" duration="479000" />
+      <workItem from="1761743165701" duration="794000" />
+      <workItem from="1761744048092" duration="3241000" />
+      <workItem from="1761747361302" duration="467000" />
+      <workItem from="1761747839103" duration="2609000" />
+      <workItem from="1761752636308" duration="1354000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -244,5 +251,9 @@
     <MESSAGE value="Slettet en port vi ikke skulle bruke" />
     <MESSAGE value="Opprettet alle stasjonsobjektene i StationRepository med å lese stations.json. Opprettet Alle ruteobjektene ved å lage en metode &quot;loadRoutesFromjson&quot; som oppretter alle ruteobjektene med å lese routes.json. Måten vi legger til stasjonobjektene riktig er å mappe stasjonsobjektene fra StationRepository til dens korresponderende id i routes.json." />
     <option name="LAST_COMMIT_MESSAGE" value="Opprettet alle stasjonsobjektene i StationRepository med å lese stations.json. Opprettet Alle ruteobjektene ved å lage en metode &quot;loadRoutesFromjson&quot; som oppretter alle ruteobjektene med å lese routes.json. Måten vi legger til stasjonobjektene riktig er å mappe stasjonsobjektene fra StationRepository til dens korresponderende id i routes.json." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

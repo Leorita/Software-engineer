@@ -8,6 +8,7 @@ public class TrainStop{
     private LocalTime departureTime;
     private int track;
     private boolean isDelayed;
+    private boolean isCancelled;
 
     public TrainStop() {
     }
@@ -70,6 +71,7 @@ public class TrainStop{
                 ", departureTime=" + departureTime +
                 ", track=" + track +
                 ", isDelayed=" + isDelayed +
+                ", isDelayed=" + isCancelled +
                 '}';
     }
 }
