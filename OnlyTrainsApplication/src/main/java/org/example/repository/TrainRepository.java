@@ -105,7 +105,11 @@ public class TrainRepository implements TrainRepositoryPort {
                 for (JsonNode trainNode : rootNode) {
                     // TODO Vi itererer gjennom hele listen i JSON-filen
                     Train train = new Train();
+
+                    // TODO hent ID'en
                     String id = trainNode.get("id").asText();
+
+                    // TODO: hent ruten
                     String ruteName = trainNode.get("route").get("name").asText();
                     Rute trainRoute = availableRoutes.getRuteByName(ruteName);
                     train.setRoute(trainRoute);
@@ -116,11 +120,12 @@ public class TrainRepository implements TrainRepositoryPort {
                         for (JsonNode trainStopNode : trainStopsNode) {
                             TrainStop trainStop = new TrainStop();
 
-                            // Get station
+                            // TODO hent stoppet
                             String stationId = trainStopNode.get("stop").get("id").asText();
                             Station stop = availableRoutes.getAvailableStations().findById(stationId);
                             trainStop.setStop(stop);
 
+                            // TODO: hent Departure time
                             JsonNode departureNode = trainStopNode.get("departureTime");
                             LocalTime departureTime = null;
                             if (departureNode != null && !departureNode.isNull() && departureNode.isArray()) {
@@ -134,7 +139,7 @@ public class TrainRepository implements TrainRepositoryPort {
                             }
                             trainStop.setDepartureTime(departureTime);
 
-                            // Handle arrival time (can be null)
+                            // TODO: hent arrival time
                             JsonNode arrivalNode = trainStopNode.get("arrivalTime");
                             LocalTime arrivalTime = null;
                             if (arrivalNode != null && !arrivalNode.isNull() && arrivalNode.isArray()) {
@@ -148,13 +153,17 @@ public class TrainRepository implements TrainRepositoryPort {
                             }
                             trainStop.setArrivalTime(arrivalTime);
 
-                            // Set other properties
+                            // TODO hent track
                             trainStop.setTrack(trainStopNode.get("track").asInt());
+
+                            // TODO hent delayed
                             trainStop.setDelayed(trainStopNode.get("delayed").asBoolean());
 
+                            // TODO Legg til stoppet i togobjektet.
                             train.addTrainStop(trainStop);
                         }
                     }
+                    // TODO legg til togobjektet i trains
                     trains.add(train);
                 }
 
