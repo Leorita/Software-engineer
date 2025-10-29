@@ -13,8 +13,15 @@ public class Train {
         this.route = route;
     }
 
+    public Train(String id, Rute route, ArrayList<TrainStop> trainStops) {
+        this.id = id;
+        this.route = route;
+        this.trainStops = trainStops;
+    }
+
     private String id;// Variabel for ankomsttid
     private Rute route; // Ruten toget har
+
 
     //Denne listen inneholder alle stopp i ruten, og inkluderer avgangstider og ankomsttider
     private ArrayList<TrainStop> trainStops = new ArrayList<>();
@@ -39,6 +46,12 @@ public class Train {
         this.route = route;
     }
 
+    public ArrayList<TrainStop> getTrainStops() {
+        return trainStops;
+    }
+    public void addTrainStop(TrainStop trainStop) {
+        trainStops.add(trainStop);
+    }
 
     @Override
     public String toString() {

@@ -21,6 +21,7 @@ public class RuteRepository implements AutoCloseable, RuteRepositoryPort {
     // TODO instansvariabel som holder på alle rutene.
     private ArrayList<Rute> ruter = new ArrayList<>();
     //private final Driver driver;
+    // TODO lager en konstant instans av StationRepository for å hente stasjonsdata.
     private final StationRepository AvailableStations = new StationRepository("json");
 
     //Konstruktør: kobler til Neo4j-databasen
