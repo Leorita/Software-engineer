@@ -19,6 +19,13 @@ public class Rute {
         this.stops = stops;
     }
 
+    public Rute(String id, String name, boolean outbound, ArrayList<Station> stops) {
+        this.id = id;
+        this.name = name;
+        this.outbound = outbound;
+        this.stops = stops;
+    }
+
     public String getId() {
         return id;
     }
@@ -54,6 +61,8 @@ public class Rute {
     public String toString() {
         return "Rute{" +
                 "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", outbound=" + outbound +
                 ", stops=" + stops +
                 '}';
     }

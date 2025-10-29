@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Lagde dummy data for ruter, i route.json delvis med hjelp av kunstig intelligens. Stoppene i routes.json, refererer til id'ene til stasjonene i stations.json, slik at vi kan forebygge skrivefeil.">
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Slettet en port vi ikke skulle bruke">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/json/stations.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/json/stations.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Rute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Rute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/port/StationRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/port/StationRepositoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/port/RuteRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/port/RuteRepositoryPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +105,8 @@
       <workItem from="1759928888217" duration="2460000" />
       <workItem from="1759933480825" duration="699000" />
       <workItem from="1760533339477" duration="4342000" />
+      <workItem from="1761726794038" duration="6926000" />
+      <workItem from="1761733899011" duration="527000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -175,7 +178,21 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1761662138818</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="Setter opp StationRepository og RuteRepository slik at man kan opprette objekter med å lese fra en json fil. Gjorde endringer i StationRepositoryPort og i RuteRepositoryPort.">
+      <option name="closed" value="true" />
+      <created>1761663584440</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1761663584440</updated>
+    </task>
+    <task id="LOCAL−00012" summary="Slettet en port vi ikke skulle bruke">
+      <option name="closed" value="true" />
+      <created>1761663722069</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1761663722069</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +231,8 @@
     <MESSAGE value="La til TODO liste i TrainRepository, og la til en isDelayed attributt i trainStop slik at vi skal kunne se om et tog er forsinket til et stopp. Ryddet også opp i Main klassen." />
     <MESSAGE value="La til dummy data for stasjoner i json format." />
     <MESSAGE value="Lagde dummy data for ruter, i route.json delvis med hjelp av kunstig intelligens. Stoppene i routes.json, refererer til id'ene til stasjonene i stations.json, slik at vi kan forebygge skrivefeil." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagde dummy data for ruter, i route.json delvis med hjelp av kunstig intelligens. Stoppene i routes.json, refererer til id'ene til stasjonene i stations.json, slik at vi kan forebygge skrivefeil." />
+    <MESSAGE value="Setter opp StationRepository og RuteRepository slik at man kan opprette objekter med å lese fra en json fil. Gjorde endringer i StationRepositoryPort og i RuteRepositoryPort." />
+    <MESSAGE value="Slettet en port vi ikke skulle bruke" />
+    <option name="LAST_COMMIT_MESSAGE" value="Slettet en port vi ikke skulle bruke" />
   </component>
 </project>

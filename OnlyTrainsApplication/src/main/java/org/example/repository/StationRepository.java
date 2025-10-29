@@ -1,12 +1,16 @@
 package org.example.repository;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.internal.bind.util.ISO8601Utils;
 import org.example.model.Station;
 import org.example.port.StationRepositoryPort;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class StationRepository implements StationRepositoryPort {
@@ -18,7 +22,7 @@ public class StationRepository implements StationRepositoryPort {
         if (inputType.equals("csv")) {
             loadStationsFromCSV("src/main/java/org/example/csv/stations.csv");
         } else if (inputType.equals("json")) {
-            loadStationsFromJson("/path/to/stations.json");
+            loadStationsFromJson("src/main/java/org/example/json/stations.json");
         } else {
             System.out.println("Ugyldig input type. Vennligst bruk 'csv' eller 'json'.");
         }
@@ -44,10 +48,32 @@ public class StationRepository implements StationRepositoryPort {
 
     @Override
     public void loadStationsFromJson(String filepath) {
+        // TODO lese stasjoner fra JSON-fil og legge dem til i stations-listen
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            File stationJsonFile = new File(filepath);
+
+            // TODO lese JSON-filen, iterere gjennom stasjonene og legge dem til i stations-listen
+
+            JsonNode rootNode = objectMapper.readTree(stationJsonFile); // Denne er generert av AI.
+            if (rootNode.isArray()) {
+                for (JsonNode stationNode : rootNode) {
+                    String id = stationNode.get("id").asText();
+                    String name = stationNode.get("name").asText();
+                    stations.add(new Station(id, name));
+                }
+            }
+        }
+        catch(FileNotFoundException fileNotFoundException){
+            System.out.println("Finner ikke filen: " + fileNotFoundException.getMessage());
+        }
+        catch (IOException e) {
+            System.out.println("Feil ved lesing av JSON-fil: " + e.getMessage());
+        }
 
     }
 
-    public List<Station> getAll() {
+    public List<Station> getStations() {
         return stations;
     }
 
