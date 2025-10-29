@@ -1,6 +1,7 @@
 package org.example.repository;
 
 import org.example.model.Station;
+import org.example.port.StationRepositoryPort;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,11 +9,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StationRepository {
+public class StationRepository implements StationRepositoryPort {
 
     private ArrayList<Station> stations = new ArrayList<>(); // liste over alle stasjonsobjekter
     public StationRepository() {
-        loadStationsFromCSV("src/main/java/org/example/csv/stations.csv");
+        loadStationsFromCSV("/Users/leorita/Desktop/Software-engineer/OnlyTrainsApplication/src/main/java/org/example/stations.csv");
     }
 
     private void loadStationsFromCSV(String filePath) {
@@ -32,6 +33,11 @@ public class StationRepository {
         }
     }
 
+    @Override
+    public void loadStationsFromJson(String filepath) {
+
+    }
+
     public List<Station> getAll() {
         return stations;
     }
@@ -43,5 +49,15 @@ public class StationRepository {
             }
         }
         return null;
+    }
+
+    @Override
+    public void addStation(String stationName) {
+
+    }
+
+    @Override
+    public boolean stationExists(String stationName) {
+        return false;
     }
 }

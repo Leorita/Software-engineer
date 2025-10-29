@@ -1,6 +1,6 @@
 [
   { "id": "S01", "name": "Oslo S" },
-  { "id": "S02", "name": "Nordstrand" },
+  { "id": "S02", "name": "Nordstrand"},
   { "id": "S03", "name": "Ljan" },
   { "id": "S04", "name": "Hauketo" },
   { "id": "S05", "name": "Holmlia" },
