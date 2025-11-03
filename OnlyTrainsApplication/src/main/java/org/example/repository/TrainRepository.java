@@ -92,7 +92,7 @@ public class TrainRepository implements TrainRepositoryPort {
 
     // TODO Metode for å hente alle tog fra en stasjon til en tid.
     @Override
-    public ArrayList<Train> getTrainsFromStationFromTime(String stationID, LocalTime time) {
+    public ArrayList<Train> getTrainsWithStopFromTime(String stationID, LocalTime time) {
         ArrayList<Train> trainsFromStationFromTime = new ArrayList<>();
         for (Train train : trains){
 
@@ -112,7 +112,7 @@ public class TrainRepository implements TrainRepositoryPort {
             }
 
             // Vi ønsker å finne ut om toget har dette stoppet
-            boolean trainHasStop = train.getRoute().stationInRoute(stationID);
+            boolean trainHasStop = train.trainStopsAtStation(stopName);
             // Vi finner ut om toget kommer etter denne gitte tiden.
             boolean trainComesAfterTime = !trainDepartureTime.isBefore(time);
             if(trainHasStop && trainComesAfterTime){

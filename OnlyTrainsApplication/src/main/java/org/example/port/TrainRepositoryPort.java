@@ -10,7 +10,7 @@ public interface TrainRepositoryPort {
     public void Addtrain(Train  train);
 
     // TODO metode for å hente tog fra en stasjon fra en gitt tid.
-    public ArrayList<Train> getTrainsFromStationFromTime(String StationName, LocalTime time);
+    public ArrayList<Train> getTrainsWithStopFromTime(String StationName, LocalTime time);
 
     // TODO Metode for å opprette
     public void loadTrainsFromJson(String filepath);

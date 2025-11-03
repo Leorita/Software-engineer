@@ -46,25 +46,25 @@ public class Main {
         System.out.println("KL: " + departureTime + "\n");
         int visAntall = 5;
         int counter = 1;
-        String stationID = "S01";
-        for (Train train : trainRepository.getTrainsFromStationFromTime(stationID, departureTime)) {
+        String stationID = "S02";
+        for (Train train : trainRepository.getTrainsWithStopFromTime(stationID, departureTime)) {
             System.out.println("Tog ID: " + train.getId() + ", Rute: " + train.getRoute().getId() + " ," + train.getRoute().getName()
                     + "\nTrain Stops: ");
             for (TrainStop trainstop : train.getTrainStops()) {
                 {
-                    System.out.println("   ---- Train Stop ----");
-                    System.out.println("   Stopp: " + trainstop.getStop().getName());
-                    System.out.println("   ArrivalTime: " + trainstop.getArrivalTime());
-                    System.out.println("   DepartureTime: " + trainstop.getDepartureTime());
-                    System.out.println("   Track: " + trainstop.getTrack());
-                    System.out.println("   isDelayed: " + trainstop.isDelayed());
-                    System.out.println("   isCancelled: " + trainstop.isCancelled());
-                    System.out.println("   -----------------");
+                    if (trainstop.getStop().getId().equals(stationID)){
+                        System.out.println("   ---- Train Stop ----");
+                        System.out.println("   Stopp: " + trainstop.getStop().getName());
+                        System.out.println("   ArrivalTime: " + trainstop.getArrivalTime());
+                        System.out.println("   DepartureTime: " + trainstop.getDepartureTime());
+                        System.out.println("   Track: " + trainstop.getTrack());
+                        System.out.println("   isDelayed: " + trainstop.isDelayed());
+                        System.out.println("   isCancelled: " + trainstop.isCancelled());
+                        System.out.println("   -----------------");
+                    }
                 }
-                System.out.println("-----------------------------------");
             }
-
-
+            System.out.println("-----------------------------------");
         }
     }
 

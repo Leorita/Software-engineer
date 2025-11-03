@@ -42,7 +42,15 @@ public class Train {
         throw new IllegalArgumentException("Stopp med navn " + stationName + " ikke funnet i togets stopp.");
     }
 
-
+    public boolean trainStopsAtStation(String stationName){
+        // Metode for å sjekke om toget stopper på en gitt stasjon
+        for (TrainStop stop : trainStops){
+            if (stop.getStop().getName().toLowerCase().equals(stationName.toLowerCase())){
+                return true;
+            }
+        }
+        return false;
+    }
     public String getId() {
         return id;
     }

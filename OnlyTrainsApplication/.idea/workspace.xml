@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Laget en metode i TrainRepository.java som kan lage togobjekter ved å lese en Json fil. mao vi kan lagre togene våre persistent. Koden er delvis generert av AI siden det var spesielt utfordrende å hente verdier fra nøkkelen &quot;tranStops&quot;">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/StationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" afterDir="false" />
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Har lagt til forskjellige metoder i StationRepository, RuteRepository, og TrainRepository. Har jobbet med metoden getTrainsFromStationFromTime. Har også lagt til enhetstester">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Rute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Rute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Train.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/TrainStop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/TrainStop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/port/StationRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/port/StationRepositoryPort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/port/TrainRepositoryPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/port/TrainRepositoryPort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +116,8 @@
       <workItem from="1761752636308" duration="1994000" />
       <workItem from="1762156454301" duration="6387000" />
       <workItem from="1762162997991" duration="1951000" />
-      <workItem from="1762165149879" duration="1037000" />
+      <workItem from="1762165149879" duration="2545000" />
+      <workItem from="1762167750531" duration="49000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -223,7 +217,14 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1761754105562</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="Har lagt til forskjellige metoder i StationRepository, RuteRepository, og TrainRepository. Har jobbet med metoden getTrainsFromStationFromTime. Har også lagt til enhetstester">
+      <option name="closed" value="true" />
+      <created>1762166464887</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1762166464887</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +267,8 @@
     <MESSAGE value="Slettet en port vi ikke skulle bruke" />
     <MESSAGE value="Opprettet alle stasjonsobjektene i StationRepository med å lese stations.json. Opprettet Alle ruteobjektene ved å lage en metode &quot;loadRoutesFromjson&quot; som oppretter alle ruteobjektene med å lese routes.json. Måten vi legger til stasjonobjektene riktig er å mappe stasjonsobjektene fra StationRepository til dens korresponderende id i routes.json." />
     <MESSAGE value="Laget en metode i TrainRepository.java som kan lage togobjekter ved å lese en Json fil. mao vi kan lagre togene våre persistent. Koden er delvis generert av AI siden det var spesielt utfordrende å hente verdier fra nøkkelen &quot;tranStops&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laget en metode i TrainRepository.java som kan lage togobjekter ved å lese en Json fil. mao vi kan lagre togene våre persistent. Koden er delvis generert av AI siden det var spesielt utfordrende å hente verdier fra nøkkelen &quot;tranStops&quot;" />
+    <MESSAGE value="Har lagt til forskjellige metoder i StationRepository, RuteRepository, og TrainRepository. Har jobbet med metoden getTrainsFromStationFromTime. Har også lagt til enhetstester" />
+    <option name="LAST_COMMIT_MESSAGE" value="Har lagt til forskjellige metoder i StationRepository, RuteRepository, og TrainRepository. Har jobbet med metoden getTrainsFromStationFromTime. Har også lagt til enhetstester" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
