@@ -57,6 +57,7 @@ public class TrainRepository implements TrainRepositoryPort {
                     trainStop.setArrivalTime(arrivalTime);
                     trainStop.setTrack(1 + randomGenerator.nextInt(5)); // Tilfeldig spor mellom 1 og 5
                     trainStop.setDelayed(false);
+                    trainStop.setCancelled(false);
                     train.addTrainStop(trainStop);
 
                 }
@@ -71,7 +72,7 @@ public class TrainRepository implements TrainRepositoryPort {
         }
     }
     public TrainRepository(String inputType) {
-        loadTrainsFromJson("src/main/java/org/example/json/trains.json");
+        loadTrainsFromJson("src/main/java/org/example/json/trains2.json");
     }
 
     // TODO lage metode for å hente tog
@@ -83,13 +84,44 @@ public class TrainRepository implements TrainRepositoryPort {
     // TODO lage metode for å legge til tog
     @Override
     public void Addtrain(Train train) {
-
+        if (train == null) {
+            throw new IllegalArgumentException("Train cannot be null");
+        }
+        trains.add(train);
     }
 
     // TODO Metode for å hente alle tog fra en stasjon til en tid.
     @Override
-    public ArrayList<Train> getTrainsFromStationFromTime(String StationName, LocalTime time) {
-        return null;
+    public ArrayList<Train> getTrainsFromStationFromTime(String stationID, LocalTime time) {
+        ArrayList<Train> trainsFromStationFromTime = new ArrayList<>();
+        for (Train train : trains){
+
+            // Vi ønsker å lagre navnet på stoppet i en variabel
+            String stopName = availableRoutes.getAvailableStations().getStationByID(stationID).getName();
+
+            // Vi ønsker å hente trainstop objektet via navn
+            TrainStop stop = train.getStopByName(stopName);
+
+            // Vi henter avgangstiden toget har fra dette stoppet
+            LocalTime trainDepartureTime;
+            if (stop.getDepartureTime() == null){
+                // Dette håndterer tilfeller for første stasjon hvor departure time er null
+                trainDepartureTime = stop.getArrivalTime();
+            } else {
+                trainDepartureTime = stop.getDepartureTime();
+            }
+
+            // Vi ønsker å finne ut om toget har dette stoppet
+            boolean trainHasStop = train.getRoute().stationInRoute(stationID);
+            // Vi finner ut om toget kommer etter denne gitte tiden.
+            boolean trainComesAfterTime = !trainDepartureTime.isBefore(time);
+            if(trainHasStop && trainComesAfterTime){
+                // Vi ønsker å legge til toget i arrayen vår
+                trainsFromStationFromTime.add(train);
+            }
+        }
+
+        return trainsFromStationFromTime;
     }
 
     @Override
@@ -108,7 +140,7 @@ public class TrainRepository implements TrainRepositoryPort {
 
                     // TODO hent ID'en
                     String id = trainNode.get("id").asText();
-
+                    train.setId(id);
                     // TODO: hent ruten
                     String ruteName = trainNode.get("route").get("name").asText();
                     Rute trainRoute = availableRoutes.getRuteByName(ruteName);
@@ -159,6 +191,7 @@ public class TrainRepository implements TrainRepositoryPort {
                             // TODO hent delayed
                             trainStop.setDelayed(trainStopNode.get("delayed").asBoolean());
 
+                            trainStop.setDelayed(trainStopNode.get("cancelled").asBoolean());
                             // TODO Legg til stoppet i togobjektet.
                             train.addTrainStop(trainStop);
                         }
@@ -180,13 +213,15 @@ public class TrainRepository implements TrainRepositoryPort {
     // TODO lage metode for å fjerne tog
     @Override
     public void removeTrain(String trainId) {
-
+        // Vi ønsker å kunne fjerne et tog fra systemet basert på ID.
+        trains.remove(getTrainById(trainId));
     }
     // TODO lage metode for å oppdatere tog
     @Override
     public void UpdateTrain(Train train) {
 
     }
+
 
     // TODO metode for å fjerne alle tog (admin)
     @Override
@@ -196,7 +231,26 @@ public class TrainRepository implements TrainRepositoryPort {
     }
 
     @Override
+    public Train getTrainById(String trainId) {
+        // TODO hente tog basert på ID
+        for (Train train : trains) {
+            if (train.getId().equals(trainId)) {
+                return train;
+            }
+        }
+        return null;
+    }
+
+    @Override
     public ArrayList<Train> getTrainsByRoute(String routeId) {
+        // Vi ønsker å kunne hente tog basert på rute.
+        for (Train train : trains) {
+            if (train.getRoute().getId().equals(routeId)) {
+                ArrayList<Train> trainsByRoute = new ArrayList<>();
+                trainsByRoute.add(train);
+                return trainsByRoute;
+            }
+        }
         return null;
     }
 

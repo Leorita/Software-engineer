@@ -25,6 +25,23 @@ public class Train {
     private ArrayList<TrainStop> trainStops = new ArrayList<>();
 
 
+    public TrainStop getStopByName(String stationName) {
+        // Vi ønsker å hente et stopp via navn.
+        try {
+            for (TrainStop stop : trainStops) {
+                String stopName = stop.getStop().getName().toLowerCase();
+                if (stopName.equals(stationName.toLowerCase())) {
+                    return stop;
+                }
+            }
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        } catch (NullPointerException e) {
+            System.out.println(e.getMessage());
+        }
+        throw new IllegalArgumentException("Stopp med navn " + stationName + " ikke funnet i togets stopp.");
+    }
+
 
     public String getId() {
         return id;

@@ -195,6 +195,8 @@ public class RuteRepository implements AutoCloseable, RuteRepositoryPort {
         }
     }
 
+
+
     @Override
     public Rute getRuteByName(String name) {
         for (Rute r : ruter) {

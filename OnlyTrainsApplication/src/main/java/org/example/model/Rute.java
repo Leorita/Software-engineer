@@ -53,6 +53,15 @@ public class Rute {
         return outbound;
     }
 
+    public boolean stationInRoute(String stationID){
+        // Metode for å vite om en stasjons finnes i en rute
+        for (Station stop : stops){
+            // Vi ønsker å finne ut om stasjonen finnes i ruten.
+            return stop.getId().equals(stationID);
+        }
+        return false;
+    }
+
     public void setOutbound(boolean outbound) {
         this.outbound = outbound;
     }

@@ -27,7 +27,6 @@ public class TrainStop{
         this.isDelayed = isDelayed;
     }
 
-    public Station getStation() { return stop; }
     public LocalTime getArrivalTime() { return arrivalTime; }
     public LocalTime getDepartureTime() { return departureTime; }
 
@@ -61,6 +60,14 @@ public class TrainStop{
 
     public void setDelayed(boolean delayed) {
         isDelayed = delayed;
+    }
+
+    public boolean isCancelled() {
+        return isCancelled;
+    }
+
+    public void setCancelled(boolean cancelled) {
+        isCancelled = cancelled;
     }
 
     @Override

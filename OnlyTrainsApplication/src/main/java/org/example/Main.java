@@ -30,7 +30,7 @@ public class Main {
         // TODO vi tester rute repository
         RuteRepository ruteRepository = new RuteRepository();
 
-        for (Rute rute : ruteRepository.getRuter()){
+        for (Rute rute : ruteRepository.getRuter()) {
             System.out.println("Rute ID: " + rute.getId() + " Origin-Destinasjon: " + rute.getStops().getFirst().getName()
                     + " -> " +
                     rute.getStops().getLast().getName());
@@ -38,27 +38,34 @@ public class Main {
 
         // TODO vi tester train repository
         TrainRepository trainRepository = new TrainRepository("json");
-        for (Train train : trainRepository.getTrains()){
-            System.out.println("Tog ID: " + train.getId() + ", Rute: " + train.getRoute().getId() + " ," + train.getRoute().getName()
-                    + "\nTrain Stops: ");
-
-            for (TrainStop trainstop : train.getTrainStops()){
-                System.out.println("   ---- Train Stop ----");
-                System.out.println("   Stopp: " + trainstop.getStop().getName());
-                System.out.println("   ArrivalTime: " + trainstop.getArrivalTime());
-                System.out.println("   DepartureTime: " + trainstop.getDepartureTime());
-                System.out.println("   Track: " + trainstop.getTrack());
-                System.out.println("   isDelayed: " + trainstop.isDelayed());
-                System.out.println("   -----------------" );
-            }
-            System.out.println("-----------------------------------");
-        }
-
-
-        //File trainJsonFile = new File("src/main/java/org/example/json/trains.json");
+        //File trainJsonFile = new File("src/main/java/org/example/json/trains2.json");
         //writeSuperHeroesToJSON(trainRepository.getTrains(), trainJsonFile);
 
 
+        LocalTime departureTime = LocalTime.of(12, 0);
+        System.out.println("KL: " + departureTime + "\n");
+        int visAntall = 5;
+        int counter = 1;
+        String stationID = "S01";
+        for (Train train : trainRepository.getTrainsFromStationFromTime(stationID, departureTime)) {
+            System.out.println("Tog ID: " + train.getId() + ", Rute: " + train.getRoute().getId() + " ," + train.getRoute().getName()
+                    + "\nTrain Stops: ");
+            for (TrainStop trainstop : train.getTrainStops()) {
+                {
+                    System.out.println("   ---- Train Stop ----");
+                    System.out.println("   Stopp: " + trainstop.getStop().getName());
+                    System.out.println("   ArrivalTime: " + trainstop.getArrivalTime());
+                    System.out.println("   DepartureTime: " + trainstop.getDepartureTime());
+                    System.out.println("   Track: " + trainstop.getTrack());
+                    System.out.println("   isDelayed: " + trainstop.isDelayed());
+                    System.out.println("   isCancelled: " + trainstop.isCancelled());
+                    System.out.println("   -----------------");
+                }
+                System.out.println("-----------------------------------");
+            }
+
+
+        }
     }
 
     public static void writeSuperHeroesToJSON(ArrayList<Train> listOfTrains, File file) {

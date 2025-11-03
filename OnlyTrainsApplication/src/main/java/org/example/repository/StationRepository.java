@@ -95,4 +95,24 @@ public class StationRepository implements StationRepositoryPort {
     public boolean stationExists(String stationName) {
         return false;
     }
+
+    @Override
+    public Station getStationByName(String stationName) {
+        for (Station station : stations){
+            if (station.getName().toLowerCase().equals(stationName.toLowerCase())){
+                return station;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public Station getStationByID(String stationId) {
+        for (Station station : stations){
+            if (station.getId().equals(stationId)){
+                return station;
+            }
+        }
+        return null;
+    }
 }

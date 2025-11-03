@@ -23,6 +23,8 @@ public interface TrainRepositoryPort {
 
     public void clearAllTrains(String password);
 
+    public Train getTrainById(String trainId);
+
     // TODO metode for å hente tog basert på rute.
     public ArrayList<Train> getTrainsByRoute(String routeId);
 }
