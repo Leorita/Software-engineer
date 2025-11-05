@@ -73,6 +73,11 @@ public class StationRepository implements StationRepositoryPort {
 
     }
 
+    @Override
+    public void loadStationsFromNeo4j(String filepath) {
+
+    }
+
     public List<Station> getStations() {
         return stations;
     }
