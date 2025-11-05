@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Har lagt til forskjellige metoder i StationRepository, RuteRepository, og TrainRepository. Har jobbet med metoden getTrainsFromStationFromTime. Har også lagt til enhetstester" />
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="la til en metode i StationRepositoryPort">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,26 +51,86 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Develop&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Skole/Informatikk/Semester 3/Software Engineering/GithubRepo/Software-engineer/OnlyTrainsApplication/src/main/java/org/example/model&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.TrainTest.ArrivalTimeLessThanDepartureTime.executor": "Run",
+    "JUnit.TrainTest.arrivalTimeNullAtFirstStop.executor": "Run",
+    "JUnit.TrainTest.departureTimeNullAtLastStop.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Develop",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Skole/Informatikk/Semester 3/Software Engineering/GithubRepo/Software-engineer/OnlyTrainsApplication/src/main/java/org/example/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Skole\Informatikk\Semester 3\Software Engineering\GithubRepo\Software-engineer\OnlyTrainsApplication\src\main\java\org\example\model" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TrainTest.ArrivalTimeLessThanDepartureTime">
+    <configuration name="TrainTest.ArrivalTimeLessThanDepartureTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlyTrainsApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.OnlyTrainsApplication.test.UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.OnlyTrainsApplication.test.UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.TrainTest" />
+      <option name="METHOD_NAME" value="ArrivalTimeLessThanDepartureTime" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrainTest.arrivalTimeNullAtFirstStop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlyTrainsApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.OnlyTrainsApplication.test.UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.OnlyTrainsApplication.test.UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.TrainTest" />
+      <option name="METHOD_NAME" value="arrivalTimeNullAtFirstStop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrainTest.departureTimeNullAtLastStop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlyTrainsApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.OnlyTrainsApplication.test.UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.OnlyTrainsApplication.test.UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.TrainTest" />
+      <option name="METHOD_NAME" value="departureTimeNullAtLastStop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TrainTest.ArrivalTimeLessThanDepartureTime" />
+        <item itemvalue="JUnit.TrainTest.departureTimeNullAtLastStop" />
+        <item itemvalue="JUnit.TrainTest.arrivalTimeNullAtFirstStop" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -111,7 +175,8 @@
       <workItem from="1762162997991" duration="1951000" />
       <workItem from="1762165149879" duration="2545000" />
       <workItem from="1762167750531" duration="49000" />
-      <workItem from="1762330629507" duration="818000" />
+      <workItem from="1762330629507" duration="4565000" />
+      <workItem from="1762344134226" duration="2749000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -218,7 +283,14 @@
       <option name="presentableId" value="LOCAL−00015" />
       <updated>1762166464887</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL−00016" summary="la til en metode i StationRepositoryPort">
+      <option name="closed" value="true" />
+      <created>1762333472244</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1762333472244</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +334,8 @@
     <MESSAGE value="Opprettet alle stasjonsobjektene i StationRepository med å lese stations.json. Opprettet Alle ruteobjektene ved å lage en metode &quot;loadRoutesFromjson&quot; som oppretter alle ruteobjektene med å lese routes.json. Måten vi legger til stasjonobjektene riktig er å mappe stasjonsobjektene fra StationRepository til dens korresponderende id i routes.json." />
     <MESSAGE value="Laget en metode i TrainRepository.java som kan lage togobjekter ved å lese en Json fil. mao vi kan lagre togene våre persistent. Koden er delvis generert av AI siden det var spesielt utfordrende å hente verdier fra nøkkelen &quot;tranStops&quot;" />
     <MESSAGE value="Har lagt til forskjellige metoder i StationRepository, RuteRepository, og TrainRepository. Har jobbet med metoden getTrainsFromStationFromTime. Har også lagt til enhetstester" />
-    <option name="LAST_COMMIT_MESSAGE" value="Har lagt til forskjellige metoder i StationRepository, RuteRepository, og TrainRepository. Har jobbet med metoden getTrainsFromStationFromTime. Har også lagt til enhetstester" />
+    <MESSAGE value="la til en metode i StationRepositoryPort" />
+    <option name="LAST_COMMIT_MESSAGE" value="la til en metode i StationRepositoryPort" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
