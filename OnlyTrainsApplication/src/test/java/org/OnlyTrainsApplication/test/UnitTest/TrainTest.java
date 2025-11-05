@@ -45,7 +45,7 @@ public class TrainTest {
     }
 
     @Test
-    public void departureTimeNullAtLastStop() throws Exception{
+    void departureTimeNullAtLastStop(){
         // Arrange
         Train train1 = trainRepository.getTrains().get(0);
         Train train2 = trainRepository.getTrains().get(1);

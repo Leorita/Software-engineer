@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="la til en metode i StationRepositoryPort">
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="lagde et script som printer ut n togavganger etter x tidspunkt fra y stasjon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +56,7 @@
     "JUnit.TrainTest.ArrivalTimeLessThanDepartureTime.executor": "Run",
     "JUnit.TrainTest.arrivalTimeNullAtFirstStop.executor": "Run",
     "JUnit.TrainTest.departureTimeNullAtLastStop.executor": "Run",
+    "JUnit.TrainTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "Develop",
@@ -75,7 +75,22 @@
       <recent name="C:\Skole\Informatikk\Semester 3\Software Engineering\GithubRepo\Software-engineer\OnlyTrainsApplication\src\main\java\org\example\model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TrainTest.ArrivalTimeLessThanDepartureTime">
+  <component name="RunManager" selected="JUnit.TrainTest">
+    <configuration name="TrainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlyTrainsApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.OnlyTrainsApplication.test.UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.OnlyTrainsApplication.test.UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.TrainTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TrainTest.ArrivalTimeLessThanDepartureTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OnlyTrainsApplication" />
       <extension name="coverage">
@@ -126,8 +141,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TrainTest.ArrivalTimeLessThanDepartureTime" />
+        <item itemvalue="JUnit.TrainTest" />
         <item itemvalue="JUnit.TrainTest.departureTimeNullAtLastStop" />
+        <item itemvalue="JUnit.TrainTest.ArrivalTimeLessThanDepartureTime" />
         <item itemvalue="JUnit.TrainTest.arrivalTimeNullAtFirstStop" />
       </list>
     </recent_temporary>
@@ -176,7 +192,9 @@
       <workItem from="1762165149879" duration="2545000" />
       <workItem from="1762167750531" duration="49000" />
       <workItem from="1762330629507" duration="4565000" />
-      <workItem from="1762344134226" duration="2749000" />
+      <workItem from="1762344134226" duration="3088000" />
+      <workItem from="1762348684628" duration="403000" />
+      <workItem from="1762351690046" duration="1337000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -290,7 +308,21 @@
       <option name="presentableId" value="LOCAL−00016" />
       <updated>1762333472244</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL−00017" summary="Lagde et par enhetstester for tog: testet om ankomsttid var større enn avgangstiden, testet også ankomsttiden var null på første stopp, og avgangstiden var null på siste stopp">
+      <option name="closed" value="true" />
+      <created>1762347024233</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1762347024233</updated>
+    </task>
+    <task id="LOCAL−00018" summary="lagde et script som printer ut n togavganger etter x tidspunkt fra y stasjon">
+      <option name="closed" value="true" />
+      <created>1762347073256</created>
+      <option name="number" value="LOCAL−00018" />
+      <option name="presentableId" value="LOCAL−00018" />
+      <updated>1762347073256</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +367,9 @@
     <MESSAGE value="Laget en metode i TrainRepository.java som kan lage togobjekter ved å lese en Json fil. mao vi kan lagre togene våre persistent. Koden er delvis generert av AI siden det var spesielt utfordrende å hente verdier fra nøkkelen &quot;tranStops&quot;" />
     <MESSAGE value="Har lagt til forskjellige metoder i StationRepository, RuteRepository, og TrainRepository. Har jobbet med metoden getTrainsFromStationFromTime. Har også lagt til enhetstester" />
     <MESSAGE value="la til en metode i StationRepositoryPort" />
-    <option name="LAST_COMMIT_MESSAGE" value="la til en metode i StationRepositoryPort" />
+    <MESSAGE value="Lagde et par enhetstester for tog: testet om ankomsttid var større enn avgangstiden, testet også ankomsttiden var null på første stopp, og avgangstiden var null på siste stopp" />
+    <MESSAGE value="lagde et script som printer ut n togavganger etter x tidspunkt fra y stasjon" />
+    <option name="LAST_COMMIT_MESSAGE" value="lagde et script som printer ut n togavganger etter x tidspunkt fra y stasjon" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
