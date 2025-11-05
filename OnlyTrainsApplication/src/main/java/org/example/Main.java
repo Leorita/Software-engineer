@@ -65,7 +65,14 @@ public class Main {
                 }
             }
             System.out.println("-----------------------------------");
+            if (counter >= visAntall){
+                System.out.println("Viste " + visAntall + " tog. Avslutter.");
+                break;
+            }
+            counter++;
         }
+
+
     }
 
     public static void writeSuperHeroesToJSON(ArrayList<Train> listOfTrains, File file) {
