@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class Rute {
     // Klassen skal inneholde alle stopp for hvert tog
     private String id;
+    private String name;
+    private boolean outbound; // True hvis ruten går mot sentrum, false hvis den går ut fra sentrum
     ArrayList<Station> stops = new ArrayList<>();
     //Legge til tider her??
     
@@ -14,6 +16,13 @@ public class Rute {
 
     public Rute(String id, ArrayList<Station> stops) {
         this.id = id;
+        this.stops = stops;
+    }
+
+    public Rute(String id, String name, boolean outbound, ArrayList<Station> stops) {
+        this.id = id;
+        this.name = name;
+        this.outbound = outbound;
         this.stops = stops;
     }
 
@@ -30,5 +39,32 @@ public class Rute {
     public void addStop(Station stop) {
 
         this.stops.add(stop);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public boolean isOutbound() {
+        return outbound;
+    }
+
+
+    public void setOutbound(boolean outbound) {
+        this.outbound = outbound;
+    }
+
+    @Override
+    public String toString() {
+        return "Rute{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", outbound=" + outbound +
+                ", stops=" + stops +
+                '}';
     }
 }

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Endret litt på TrainStop og TrainRepository">
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="lagde et script som printer ut n togavganger etter x tidspunkt fra y stasjon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +53,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.TrainTest.ArrivalTimeLessThanDepartureTime.executor": "Run",
+    "JUnit.TrainTest.arrivalTimeNullAtFirstStop.executor": "Run",
+    "JUnit.TrainTest.departureTimeNullAtLastStop.executor": "Run",
+    "JUnit.TrainTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "Develop",
@@ -62,7 +66,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -70,6 +74,79 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Skole\Informatikk\Semester 3\Software Engineering\GithubRepo\Software-engineer\OnlyTrainsApplication\src\main\java\org\example\model" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TrainTest">
+    <configuration name="TrainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlyTrainsApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.OnlyTrainsApplication.test.UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.OnlyTrainsApplication.test.UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.TrainTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrainTest.ArrivalTimeLessThanDepartureTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlyTrainsApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.OnlyTrainsApplication.test.UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.OnlyTrainsApplication.test.UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.TrainTest" />
+      <option name="METHOD_NAME" value="ArrivalTimeLessThanDepartureTime" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrainTest.arrivalTimeNullAtFirstStop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlyTrainsApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.OnlyTrainsApplication.test.UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.OnlyTrainsApplication.test.UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.TrainTest" />
+      <option name="METHOD_NAME" value="arrivalTimeNullAtFirstStop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrainTest.departureTimeNullAtLastStop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlyTrainsApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.OnlyTrainsApplication.test.UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.OnlyTrainsApplication.test.UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.TrainTest" />
+      <option name="METHOD_NAME" value="departureTimeNullAtLastStop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TrainTest" />
+        <item itemvalue="JUnit.TrainTest.departureTimeNullAtLastStop" />
+        <item itemvalue="JUnit.TrainTest.ArrivalTimeLessThanDepartureTime" />
+        <item itemvalue="JUnit.TrainTest.arrivalTimeNullAtFirstStop" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -100,6 +177,24 @@
       <workItem from="1759928888217" duration="2460000" />
       <workItem from="1759933480825" duration="699000" />
       <workItem from="1760533339477" duration="4342000" />
+      <workItem from="1761726794038" duration="6926000" />
+      <workItem from="1761733899011" duration="887000" />
+      <workItem from="1761734831168" duration="34000" />
+      <workItem from="1761734883996" duration="4839000" />
+      <workItem from="1761740027442" duration="479000" />
+      <workItem from="1761743165701" duration="794000" />
+      <workItem from="1761744048092" duration="3241000" />
+      <workItem from="1761747361302" duration="467000" />
+      <workItem from="1761747839103" duration="2609000" />
+      <workItem from="1761752636308" duration="1994000" />
+      <workItem from="1762156454301" duration="6387000" />
+      <workItem from="1762162997991" duration="1951000" />
+      <workItem from="1762165149879" duration="2545000" />
+      <workItem from="1762167750531" duration="49000" />
+      <workItem from="1762330629507" duration="4565000" />
+      <workItem from="1762344134226" duration="3088000" />
+      <workItem from="1762348684628" duration="403000" />
+      <workItem from="1762351690046" duration="1337000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -157,7 +252,77 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1760538225952</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="La til dummy data for stasjoner i json format.">
+      <option name="closed" value="true" />
+      <created>1761659776998</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1761659776998</updated>
+    </task>
+    <task id="LOCAL−00010" summary="Lagde dummy data for ruter, i route.json delvis med hjelp av kunstig intelligens. Stoppene i routes.json, refererer til id'ene til stasjonene i stations.json, slik at vi kan forebygge skrivefeil.">
+      <option name="closed" value="true" />
+      <created>1761662138818</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1761662138818</updated>
+    </task>
+    <task id="LOCAL−00011" summary="Setter opp StationRepository og RuteRepository slik at man kan opprette objekter med å lese fra en json fil. Gjorde endringer i StationRepositoryPort og i RuteRepositoryPort.">
+      <option name="closed" value="true" />
+      <created>1761663584440</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1761663584440</updated>
+    </task>
+    <task id="LOCAL−00012" summary="Slettet en port vi ikke skulle bruke">
+      <option name="closed" value="true" />
+      <created>1761663722069</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1761663722069</updated>
+    </task>
+    <task id="LOCAL−00013" summary="Opprettet alle stasjonsobjektene i StationRepository med å lese stations.json. Opprettet Alle ruteobjektene ved å lage en metode &quot;loadRoutesFromjson&quot; som oppretter alle ruteobjektene med å lese routes.json. Måten vi legger til stasjonobjektene riktig er å mappe stasjonsobjektene fra StationRepository til dens korresponderende id i routes.json.">
+      <option name="closed" value="true" />
+      <created>1761734443032</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1761734443032</updated>
+    </task>
+    <task id="LOCAL−00014" summary="Laget en metode i TrainRepository.java som kan lage togobjekter ved å lese en Json fil. mao vi kan lagre togene våre persistent. Koden er delvis generert av AI siden det var spesielt utfordrende å hente verdier fra nøkkelen &quot;tranStops&quot;">
+      <option name="closed" value="true" />
+      <created>1761754105562</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1761754105562</updated>
+    </task>
+    <task id="LOCAL−00015" summary="Har lagt til forskjellige metoder i StationRepository, RuteRepository, og TrainRepository. Har jobbet med metoden getTrainsFromStationFromTime. Har også lagt til enhetstester">
+      <option name="closed" value="true" />
+      <created>1762166464887</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1762166464887</updated>
+    </task>
+    <task id="LOCAL−00016" summary="la til en metode i StationRepositoryPort">
+      <option name="closed" value="true" />
+      <created>1762333472244</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1762333472244</updated>
+    </task>
+    <task id="LOCAL−00017" summary="Lagde et par enhetstester for tog: testet om ankomsttid var større enn avgangstiden, testet også ankomsttiden var null på første stopp, og avgangstiden var null på siste stopp">
+      <option name="closed" value="true" />
+      <created>1762347024233</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1762347024233</updated>
+    </task>
+    <task id="LOCAL−00018" summary="lagde et script som printer ut n togavganger etter x tidspunkt fra y stasjon">
+      <option name="closed" value="true" />
+      <created>1762347073256</created>
+      <option name="number" value="LOCAL−00018" />
+      <option name="presentableId" value="LOCAL−00018" />
+      <updated>1762347073256</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +359,20 @@
     <MESSAGE value="La til repositories for lagring av ruter, og avgangstider + ankomsttider" />
     <MESSAGE value="Endret litt på TrainStop og TrainRepository" />
     <MESSAGE value="La til TODO liste i TrainRepository, og la til en isDelayed attributt i trainStop slik at vi skal kunne se om et tog er forsinket til et stopp. Ryddet også opp i Main klassen." />
-    <option name="LAST_COMMIT_MESSAGE" value="La til TODO liste i TrainRepository, og la til en isDelayed attributt i trainStop slik at vi skal kunne se om et tog er forsinket til et stopp. Ryddet også opp i Main klassen." />
+    <MESSAGE value="La til dummy data for stasjoner i json format." />
+    <MESSAGE value="Lagde dummy data for ruter, i route.json delvis med hjelp av kunstig intelligens. Stoppene i routes.json, refererer til id'ene til stasjonene i stations.json, slik at vi kan forebygge skrivefeil." />
+    <MESSAGE value="Setter opp StationRepository og RuteRepository slik at man kan opprette objekter med å lese fra en json fil. Gjorde endringer i StationRepositoryPort og i RuteRepositoryPort." />
+    <MESSAGE value="Slettet en port vi ikke skulle bruke" />
+    <MESSAGE value="Opprettet alle stasjonsobjektene i StationRepository med å lese stations.json. Opprettet Alle ruteobjektene ved å lage en metode &quot;loadRoutesFromjson&quot; som oppretter alle ruteobjektene med å lese routes.json. Måten vi legger til stasjonobjektene riktig er å mappe stasjonsobjektene fra StationRepository til dens korresponderende id i routes.json." />
+    <MESSAGE value="Laget en metode i TrainRepository.java som kan lage togobjekter ved å lese en Json fil. mao vi kan lagre togene våre persistent. Koden er delvis generert av AI siden det var spesielt utfordrende å hente verdier fra nøkkelen &quot;tranStops&quot;" />
+    <MESSAGE value="Har lagt til forskjellige metoder i StationRepository, RuteRepository, og TrainRepository. Har jobbet med metoden getTrainsFromStationFromTime. Har også lagt til enhetstester" />
+    <MESSAGE value="la til en metode i StationRepositoryPort" />
+    <MESSAGE value="Lagde et par enhetstester for tog: testet om ankomsttid var større enn avgangstiden, testet også ankomsttiden var null på første stopp, og avgangstiden var null på siste stopp" />
+    <MESSAGE value="lagde et script som printer ut n togavganger etter x tidspunkt fra y stasjon" />
+    <option name="LAST_COMMIT_MESSAGE" value="lagde et script som printer ut n togavganger etter x tidspunkt fra y stasjon" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
