@@ -39,7 +39,7 @@ public class Main {
         // TODO vi tester train repository
         TrainRepository trainRepository = new TrainRepository("json");
         //File trainJsonFile = new File("src/main/java/org/example/json/trains2.json");
-        //writeSuperHeroesToJSON(trainRepository.getTrains(), trainJsonFile);
+        //writeTrainsToJSON(trainRepository.getTrains(), trainJsonFile);
 
 
         LocalTime departureTime = LocalTime.of(12, 0);
@@ -75,7 +75,7 @@ public class Main {
 
     }
 
-    public static void writeSuperHeroesToJSON(ArrayList<Train> listOfTrains, File file) {
+    public static void writeTrainsToJSON(ArrayList<Train> listOfTrains, File file) {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule());
         try {
