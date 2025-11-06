@@ -1,4 +1,5 @@
-package org.OnlyTrainsApplication.test.UnitTest;
+/**package org.OnlyTrainsApplication.test.UnitTest;
 
 public class StationTest {
 }
+**/

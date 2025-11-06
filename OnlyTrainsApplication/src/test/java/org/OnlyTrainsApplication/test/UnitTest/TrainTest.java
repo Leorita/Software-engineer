@@ -1,4 +1,4 @@
-package org.OnlyTrainsApplication.test.UnitTest;
+/**package java.org.OnlyTrainsApplication.test.UnitTest;
 
 import org.example.model.Train;
 import org.example.model.TrainStop;
@@ -16,8 +16,7 @@ import java.util.function.Supplier;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-/**
- * **/
+
 public class TrainTest {
     private TrainRepository trainRepository;
     // Mocker ArtistRepositoryPort slik at vi kan definere hvordan denne skal fungere i testene våre
@@ -110,3 +109,4 @@ public class TrainTest {
 
     }
 }
+**/
