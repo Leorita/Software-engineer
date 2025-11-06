@@ -17,6 +17,9 @@ import java.util.function.Supplier;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ *
+ **/
 public class TrainTest {
     /**
     private TrainRepository trainRepository;
@@ -51,6 +54,7 @@ public class TrainTest {
         Train train1 = trainRepository.getTrains().get(0);
         Train train2 = trainRepository.getTrains().get(1);
         Train train3 = trainRepository.getTrains().get(2);
+
         // Act
         LocalTime departureTimeTimeTrain1 = train1.getTrainStops().getLast().getDepartureTime();
         LocalTime departureTimeTrain2 = train2.getTrainStops().getLast().getDepartureTime();
