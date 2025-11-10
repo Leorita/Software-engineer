@@ -206,9 +206,48 @@ public class RuteRepository implements AutoCloseable, RuteRepositoryPort {
         return null;
     }
 
+    @Override
+    public Rute getRuteById(String id) {
+        for (Rute r : ruter) {
+            if (r.getId().equals(id)) {
+                return r;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public ArrayList<Station> commonStopsBetweenTwoRoutes(String IdRoute1, String IdRoute2) {
+        // TODO Vi ønsker å finne felles stasjoner mellom to ruter
+        ArrayList<Station> commonStops = new ArrayList<>();
+        Rute route1 = getRuteById(IdRoute1);
+        Rute route2 = getRuteById(IdRoute2);
+
+        for (Station stop: route1.getStops()){
+            if (stopExistsInRoute(stop, route2)){
+                commonStops.add(stop);
+            }
+        }
+
+        return commonStops;
+    }
+
+    @Override
+    public boolean stopExistsInRoute(Station stop, Rute route) {
+        // TODO vi ønsker å sjekke om et stopp eksisterer i en rute.
+        for (Station s : route.getStops()){
+            if(s.equals(stop)){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public StationRepository getAvailableStations() {
         return AvailableStations;
     }
+
+
 
     @Override
     public String toString() {

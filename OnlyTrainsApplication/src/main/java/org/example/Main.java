@@ -36,10 +36,15 @@ public class Main {
                     rute.getStops().getLast().getName());
         }
 
+        System.out.println("Felles stasjoner for rute RE20 og R21");
+        for (Station station : ruteRepository.commonStopsBetweenTwoRoutes("RE20", "R21")){
+            System.out.println(station);
+        }
         // TODO vi tester train repository
         TrainRepository trainRepository = new TrainRepository("json");
         //File trainJsonFile = new File("src/main/java/org/example/json/trains2.json");
         //writeTrainsToJSON(trainRepository.getTrains(), trainJsonFile);
+
 
 
         LocalTime departureTime = LocalTime.of(12, 0);
