@@ -9,6 +9,9 @@
       <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" afterDir="false" />
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Endret navn på metode for å skrive togdata til json">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,6 +202,8 @@
       <workItem from="1762351690046" duration="2642000" />
       <workItem from="1762427994905" duration="1028000" />
       <workItem from="1762765504008" duration="321000" />
+      <workItem from="1762427994905" duration="2113000" />
+      <workItem from="1762761809810" duration="1310000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -333,7 +338,14 @@
       <option name="presentableId" value="LOCAL−00019" />
       <updated>1762353738655</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL−00020" summary="Endret navn på metode for å skrive togdata til json">
+      <option name="closed" value="true" />
+      <created>1762430480999</created>
+      <option name="number" value="LOCAL−00020" />
+      <option name="presentableId" value="LOCAL−00020" />
+      <updated>1762430480999</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +393,8 @@
     <MESSAGE value="Lagde et par enhetstester for tog: testet om ankomsttid var større enn avgangstiden, testet også ankomsttiden var null på første stopp, og avgangstiden var null på siste stopp" />
     <MESSAGE value="lagde et script som printer ut n togavganger etter x tidspunkt fra y stasjon" />
     <MESSAGE value="lagde tester i traintest" />
-    <option name="LAST_COMMIT_MESSAGE" value="lagde tester i traintest" />
+    <MESSAGE value="Endret navn på metode for å skrive togdata til json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Endret navn på metode for å skrive togdata til json" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
