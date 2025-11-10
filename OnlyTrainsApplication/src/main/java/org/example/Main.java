@@ -37,7 +37,7 @@ public class Main {
         }
 
         System.out.println("Felles stasjoner for rute RE20 og R21");
-        for (Station station : ruteRepository.commonStopsBetweenTwoRoutes("RE20", "R21")){
+        for (Station station : ruteRepository.commonStopsBetweenTwoRoutes("RE20", "R2221")){
             System.out.println(station);
         }
         // TODO vi tester train repository

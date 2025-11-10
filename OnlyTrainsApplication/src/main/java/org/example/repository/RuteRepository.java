@@ -223,6 +223,9 @@ public class RuteRepository implements AutoCloseable, RuteRepositoryPort {
         Rute route1 = getRuteById(IdRoute1);
         Rute route2 = getRuteById(IdRoute2);
 
+        if (route1 == null || route2 == null) {
+            throw new IllegalArgumentException("Error: One or both routes do not exist\n");
+        }
         for (Station stop: route1.getStops()){
             if (stopExistsInRoute(stop, route2)){
                 commonStops.add(stop);
