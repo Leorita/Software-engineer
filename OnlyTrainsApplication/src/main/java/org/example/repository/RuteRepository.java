@@ -176,13 +176,12 @@ public class RuteRepository implements AutoCloseable, RuteRepositoryPort {
                         stopsIDs.add(stopNode.asText());
                     }
                     ArrayList<Station> stops = new ArrayList<>();
-                    for(String stopId : stopsIDs){
-                        if(AvailableStations.findById(stopId) != null){
+                    for(String stopId : stopsIDs) {
+                        if (AvailableStations.findById(stopId) != null) {
                             // TODO vi sjekker om stasjonen finnes i available stations før vi legger den til
                             stops.add(AvailableStations.findById(stopId));
                         }
                     }
-
                     ruter.add(new Rute(id, name, outbound, stops));
                 }
             }
