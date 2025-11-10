@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  *
  **/
 public class TrainTest {
-    /**
+
     private TrainRepository trainRepository;
     // Mocker ArtistRepositoryPort slik at vi kan definere hvordan denne skal fungere i testene våre
 
@@ -113,5 +113,5 @@ public class TrainTest {
         assertTrue(result3);
 
     }
-    **/
+
 }
