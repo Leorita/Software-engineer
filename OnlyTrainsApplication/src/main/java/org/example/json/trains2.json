@@ -1,0 +1,7993 @@
+[ {
+  "id" : "T064",
+  "route" : {
+    "id" : "RE20",
+    "name" : "Oslo S – Göteborg C",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S15",
+      "name" : "Ås"
+    }, {
+      "id" : "S16",
+      "name" : "Vestby"
+    }, {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    }, {
+      "id" : "S18",
+      "name" : "Kambo"
+    }, {
+      "id" : "S19",
+      "name" : "Moss"
+    }, {
+      "id" : "S20",
+      "name" : "Rygge"
+    }, {
+      "id" : "S21",
+      "name" : "Råde"
+    }, {
+      "id" : "S22",
+      "name" : "Fredrikstad"
+    }, {
+      "id" : "S23",
+      "name" : "Sarpsborg"
+    }, {
+      "id" : "S24",
+      "name" : "Halden"
+    }, {
+      "id" : "S25",
+      "name" : "Ed"
+    }, {
+      "id" : "S26",
+      "name" : "Öxnered"
+    }, {
+      "id" : "S27",
+      "name" : "Trollhättan C"
+    }, {
+      "id" : "S28",
+      "name" : "Göteborg C"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 6, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 6, 10 ],
+    "departureTime" : [ 6, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 6, 25 ],
+    "departureTime" : [ 6, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 6, 40 ],
+    "departureTime" : [ 6, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 6, 55 ],
+    "departureTime" : [ 7, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 7, 10 ],
+    "departureTime" : [ 7, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 7, 25 ],
+    "departureTime" : [ 7, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 7, 40 ],
+    "departureTime" : [ 7, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 7, 55 ],
+    "departureTime" : [ 8, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 8, 10 ],
+    "departureTime" : [ 8, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 8, 25 ],
+    "departureTime" : [ 8, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 8, 40 ],
+    "departureTime" : [ 8, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 8, 55 ],
+    "departureTime" : [ 9, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S15",
+      "name" : "Ås"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S16",
+      "name" : "Vestby"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S18",
+      "name" : "Kambo"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : [ 10, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S19",
+      "name" : "Moss"
+    },
+    "arrivalTime" : [ 10, 25 ],
+    "departureTime" : [ 10, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S20",
+      "name" : "Rygge"
+    },
+    "arrivalTime" : [ 10, 40 ],
+    "departureTime" : [ 10, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S21",
+      "name" : "Råde"
+    },
+    "arrivalTime" : [ 10, 55 ],
+    "departureTime" : [ 11, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S22",
+      "name" : "Fredrikstad"
+    },
+    "arrivalTime" : [ 11, 10 ],
+    "departureTime" : [ 11, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S23",
+      "name" : "Sarpsborg"
+    },
+    "arrivalTime" : [ 11, 25 ],
+    "departureTime" : [ 11, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S24",
+      "name" : "Halden"
+    },
+    "arrivalTime" : [ 11, 40 ],
+    "departureTime" : [ 11, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S25",
+      "name" : "Ed"
+    },
+    "arrivalTime" : [ 11, 55 ],
+    "departureTime" : [ 12, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S26",
+      "name" : "Öxnered"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S27",
+      "name" : "Trollhättan C"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S28",
+      "name" : "Göteborg C"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : null,
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T066",
+  "route" : {
+    "id" : "RE20",
+    "name" : "Oslo S – Göteborg C",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S15",
+      "name" : "Ås"
+    }, {
+      "id" : "S16",
+      "name" : "Vestby"
+    }, {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    }, {
+      "id" : "S18",
+      "name" : "Kambo"
+    }, {
+      "id" : "S19",
+      "name" : "Moss"
+    }, {
+      "id" : "S20",
+      "name" : "Rygge"
+    }, {
+      "id" : "S21",
+      "name" : "Råde"
+    }, {
+      "id" : "S22",
+      "name" : "Fredrikstad"
+    }, {
+      "id" : "S23",
+      "name" : "Sarpsborg"
+    }, {
+      "id" : "S24",
+      "name" : "Halden"
+    }, {
+      "id" : "S25",
+      "name" : "Ed"
+    }, {
+      "id" : "S26",
+      "name" : "Öxnered"
+    }, {
+      "id" : "S27",
+      "name" : "Trollhättan C"
+    }, {
+      "id" : "S28",
+      "name" : "Göteborg C"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 9, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : [ 10, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 10, 25 ],
+    "departureTime" : [ 10, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 10, 40 ],
+    "departureTime" : [ 10, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 10, 55 ],
+    "departureTime" : [ 11, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 11, 10 ],
+    "departureTime" : [ 11, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 11, 25 ],
+    "departureTime" : [ 11, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 11, 40 ],
+    "departureTime" : [ 11, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 11, 55 ],
+    "departureTime" : [ 12, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S15",
+      "name" : "Ås"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S16",
+      "name" : "Vestby"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S18",
+      "name" : "Kambo"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : [ 13, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S19",
+      "name" : "Moss"
+    },
+    "arrivalTime" : [ 13, 25 ],
+    "departureTime" : [ 13, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S20",
+      "name" : "Rygge"
+    },
+    "arrivalTime" : [ 13, 40 ],
+    "departureTime" : [ 13, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S21",
+      "name" : "Råde"
+    },
+    "arrivalTime" : [ 13, 55 ],
+    "departureTime" : [ 14, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S22",
+      "name" : "Fredrikstad"
+    },
+    "arrivalTime" : [ 14, 10 ],
+    "departureTime" : [ 14, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S23",
+      "name" : "Sarpsborg"
+    },
+    "arrivalTime" : [ 14, 25 ],
+    "departureTime" : [ 14, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S24",
+      "name" : "Halden"
+    },
+    "arrivalTime" : [ 14, 40 ],
+    "departureTime" : [ 14, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S25",
+      "name" : "Ed"
+    },
+    "arrivalTime" : [ 14, 55 ],
+    "departureTime" : [ 15, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S26",
+      "name" : "Öxnered"
+    },
+    "arrivalTime" : [ 15, 10 ],
+    "departureTime" : [ 15, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S27",
+      "name" : "Trollhättan C"
+    },
+    "arrivalTime" : [ 15, 25 ],
+    "departureTime" : [ 15, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S28",
+      "name" : "Göteborg C"
+    },
+    "arrivalTime" : [ 15, 40 ],
+    "departureTime" : null,
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T004",
+  "route" : {
+    "id" : "RE20",
+    "name" : "Oslo S – Göteborg C",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S15",
+      "name" : "Ås"
+    }, {
+      "id" : "S16",
+      "name" : "Vestby"
+    }, {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    }, {
+      "id" : "S18",
+      "name" : "Kambo"
+    }, {
+      "id" : "S19",
+      "name" : "Moss"
+    }, {
+      "id" : "S20",
+      "name" : "Rygge"
+    }, {
+      "id" : "S21",
+      "name" : "Råde"
+    }, {
+      "id" : "S22",
+      "name" : "Fredrikstad"
+    }, {
+      "id" : "S23",
+      "name" : "Sarpsborg"
+    }, {
+      "id" : "S24",
+      "name" : "Halden"
+    }, {
+      "id" : "S25",
+      "name" : "Ed"
+    }, {
+      "id" : "S26",
+      "name" : "Öxnered"
+    }, {
+      "id" : "S27",
+      "name" : "Trollhättan C"
+    }, {
+      "id" : "S28",
+      "name" : "Göteborg C"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 12, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : [ 13, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 13, 25 ],
+    "departureTime" : [ 13, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 13, 40 ],
+    "departureTime" : [ 13, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 13, 55 ],
+    "departureTime" : [ 14, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 14, 10 ],
+    "departureTime" : [ 14, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 14, 25 ],
+    "departureTime" : [ 14, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 14, 40 ],
+    "departureTime" : [ 14, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 14, 55 ],
+    "departureTime" : [ 15, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 15, 10 ],
+    "departureTime" : [ 15, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S15",
+      "name" : "Ås"
+    },
+    "arrivalTime" : [ 15, 25 ],
+    "departureTime" : [ 15, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S16",
+      "name" : "Vestby"
+    },
+    "arrivalTime" : [ 15, 40 ],
+    "departureTime" : [ 15, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    },
+    "arrivalTime" : [ 15, 55 ],
+    "departureTime" : [ 16, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S18",
+      "name" : "Kambo"
+    },
+    "arrivalTime" : [ 16, 10 ],
+    "departureTime" : [ 16, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S19",
+      "name" : "Moss"
+    },
+    "arrivalTime" : [ 16, 25 ],
+    "departureTime" : [ 16, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S20",
+      "name" : "Rygge"
+    },
+    "arrivalTime" : [ 16, 40 ],
+    "departureTime" : [ 16, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S21",
+      "name" : "Råde"
+    },
+    "arrivalTime" : [ 16, 55 ],
+    "departureTime" : [ 17, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S22",
+      "name" : "Fredrikstad"
+    },
+    "arrivalTime" : [ 17, 10 ],
+    "departureTime" : [ 17, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S23",
+      "name" : "Sarpsborg"
+    },
+    "arrivalTime" : [ 17, 25 ],
+    "departureTime" : [ 17, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S24",
+      "name" : "Halden"
+    },
+    "arrivalTime" : [ 17, 40 ],
+    "departureTime" : [ 17, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S25",
+      "name" : "Ed"
+    },
+    "arrivalTime" : [ 17, 55 ],
+    "departureTime" : [ 18, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S26",
+      "name" : "Öxnered"
+    },
+    "arrivalTime" : [ 18, 10 ],
+    "departureTime" : [ 18, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S27",
+      "name" : "Trollhättan C"
+    },
+    "arrivalTime" : [ 18, 25 ],
+    "departureTime" : [ 18, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S28",
+      "name" : "Göteborg C"
+    },
+    "arrivalTime" : [ 18, 40 ],
+    "departureTime" : null,
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T003",
+  "route" : {
+    "id" : "RE20",
+    "name" : "Göteborg C – Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S28",
+      "name" : "Göteborg C"
+    }, {
+      "id" : "S27",
+      "name" : "Trollhättan C"
+    }, {
+      "id" : "S26",
+      "name" : "Öxnered"
+    }, {
+      "id" : "S25",
+      "name" : "Ed"
+    }, {
+      "id" : "S24",
+      "name" : "Halden"
+    }, {
+      "id" : "S23",
+      "name" : "Sarpsborg"
+    }, {
+      "id" : "S22",
+      "name" : "Fredrikstad"
+    }, {
+      "id" : "S21",
+      "name" : "Råde"
+    }, {
+      "id" : "S20",
+      "name" : "Rygge"
+    }, {
+      "id" : "S19",
+      "name" : "Moss"
+    }, {
+      "id" : "S18",
+      "name" : "Kambo"
+    }, {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    }, {
+      "id" : "S16",
+      "name" : "Vestby"
+    }, {
+      "id" : "S15",
+      "name" : "Ås"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S28",
+      "name" : "Göteborg C"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 6, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S27",
+      "name" : "Trollhättan C"
+    },
+    "arrivalTime" : [ 6, 10 ],
+    "departureTime" : [ 6, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S26",
+      "name" : "Öxnered"
+    },
+    "arrivalTime" : [ 6, 25 ],
+    "departureTime" : [ 6, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S25",
+      "name" : "Ed"
+    },
+    "arrivalTime" : [ 6, 40 ],
+    "departureTime" : [ 6, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S24",
+      "name" : "Halden"
+    },
+    "arrivalTime" : [ 6, 55 ],
+    "departureTime" : [ 7, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S23",
+      "name" : "Sarpsborg"
+    },
+    "arrivalTime" : [ 7, 10 ],
+    "departureTime" : [ 7, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S22",
+      "name" : "Fredrikstad"
+    },
+    "arrivalTime" : [ 7, 25 ],
+    "departureTime" : [ 7, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S21",
+      "name" : "Råde"
+    },
+    "arrivalTime" : [ 7, 40 ],
+    "departureTime" : [ 7, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S20",
+      "name" : "Rygge"
+    },
+    "arrivalTime" : [ 7, 55 ],
+    "departureTime" : [ 8, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S19",
+      "name" : "Moss"
+    },
+    "arrivalTime" : [ 8, 10 ],
+    "departureTime" : [ 8, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S18",
+      "name" : "Kambo"
+    },
+    "arrivalTime" : [ 8, 25 ],
+    "departureTime" : [ 8, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    },
+    "arrivalTime" : [ 8, 40 ],
+    "departureTime" : [ 8, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S16",
+      "name" : "Vestby"
+    },
+    "arrivalTime" : [ 8, 55 ],
+    "departureTime" : [ 9, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S15",
+      "name" : "Ås"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : [ 10, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 10, 25 ],
+    "departureTime" : [ 10, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 10, 40 ],
+    "departureTime" : [ 10, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 10, 55 ],
+    "departureTime" : [ 11, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 11, 10 ],
+    "departureTime" : [ 11, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 11, 25 ],
+    "departureTime" : [ 11, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 11, 40 ],
+    "departureTime" : [ 11, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 11, 55 ],
+    "departureTime" : [ 12, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : null,
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T073",
+  "route" : {
+    "id" : "RE20",
+    "name" : "Göteborg C – Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S28",
+      "name" : "Göteborg C"
+    }, {
+      "id" : "S27",
+      "name" : "Trollhättan C"
+    }, {
+      "id" : "S26",
+      "name" : "Öxnered"
+    }, {
+      "id" : "S25",
+      "name" : "Ed"
+    }, {
+      "id" : "S24",
+      "name" : "Halden"
+    }, {
+      "id" : "S23",
+      "name" : "Sarpsborg"
+    }, {
+      "id" : "S22",
+      "name" : "Fredrikstad"
+    }, {
+      "id" : "S21",
+      "name" : "Råde"
+    }, {
+      "id" : "S20",
+      "name" : "Rygge"
+    }, {
+      "id" : "S19",
+      "name" : "Moss"
+    }, {
+      "id" : "S18",
+      "name" : "Kambo"
+    }, {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    }, {
+      "id" : "S16",
+      "name" : "Vestby"
+    }, {
+      "id" : "S15",
+      "name" : "Ås"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S28",
+      "name" : "Göteborg C"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 9, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S27",
+      "name" : "Trollhättan C"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S26",
+      "name" : "Öxnered"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S25",
+      "name" : "Ed"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S24",
+      "name" : "Halden"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S23",
+      "name" : "Sarpsborg"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : [ 10, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S22",
+      "name" : "Fredrikstad"
+    },
+    "arrivalTime" : [ 10, 25 ],
+    "departureTime" : [ 10, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S21",
+      "name" : "Råde"
+    },
+    "arrivalTime" : [ 10, 40 ],
+    "departureTime" : [ 10, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S20",
+      "name" : "Rygge"
+    },
+    "arrivalTime" : [ 10, 55 ],
+    "departureTime" : [ 11, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S19",
+      "name" : "Moss"
+    },
+    "arrivalTime" : [ 11, 10 ],
+    "departureTime" : [ 11, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S18",
+      "name" : "Kambo"
+    },
+    "arrivalTime" : [ 11, 25 ],
+    "departureTime" : [ 11, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    },
+    "arrivalTime" : [ 11, 40 ],
+    "departureTime" : [ 11, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S16",
+      "name" : "Vestby"
+    },
+    "arrivalTime" : [ 11, 55 ],
+    "departureTime" : [ 12, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S15",
+      "name" : "Ås"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : [ 13, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 13, 25 ],
+    "departureTime" : [ 13, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 13, 40 ],
+    "departureTime" : [ 13, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 13, 55 ],
+    "departureTime" : [ 14, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 14, 10 ],
+    "departureTime" : [ 14, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 14, 25 ],
+    "departureTime" : [ 14, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 14, 40 ],
+    "departureTime" : [ 14, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 14, 55 ],
+    "departureTime" : [ 15, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 15, 10 ],
+    "departureTime" : [ 15, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 15, 25 ],
+    "departureTime" : [ 15, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 15, 40 ],
+    "departureTime" : null,
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T053",
+  "route" : {
+    "id" : "RE20",
+    "name" : "Göteborg C – Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S28",
+      "name" : "Göteborg C"
+    }, {
+      "id" : "S27",
+      "name" : "Trollhättan C"
+    }, {
+      "id" : "S26",
+      "name" : "Öxnered"
+    }, {
+      "id" : "S25",
+      "name" : "Ed"
+    }, {
+      "id" : "S24",
+      "name" : "Halden"
+    }, {
+      "id" : "S23",
+      "name" : "Sarpsborg"
+    }, {
+      "id" : "S22",
+      "name" : "Fredrikstad"
+    }, {
+      "id" : "S21",
+      "name" : "Råde"
+    }, {
+      "id" : "S20",
+      "name" : "Rygge"
+    }, {
+      "id" : "S19",
+      "name" : "Moss"
+    }, {
+      "id" : "S18",
+      "name" : "Kambo"
+    }, {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    }, {
+      "id" : "S16",
+      "name" : "Vestby"
+    }, {
+      "id" : "S15",
+      "name" : "Ås"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S28",
+      "name" : "Göteborg C"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 12, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S27",
+      "name" : "Trollhättan C"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S26",
+      "name" : "Öxnered"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S25",
+      "name" : "Ed"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S24",
+      "name" : "Halden"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S23",
+      "name" : "Sarpsborg"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : [ 13, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S22",
+      "name" : "Fredrikstad"
+    },
+    "arrivalTime" : [ 13, 25 ],
+    "departureTime" : [ 13, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S21",
+      "name" : "Råde"
+    },
+    "arrivalTime" : [ 13, 40 ],
+    "departureTime" : [ 13, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S20",
+      "name" : "Rygge"
+    },
+    "arrivalTime" : [ 13, 55 ],
+    "departureTime" : [ 14, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S19",
+      "name" : "Moss"
+    },
+    "arrivalTime" : [ 14, 10 ],
+    "departureTime" : [ 14, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S18",
+      "name" : "Kambo"
+    },
+    "arrivalTime" : [ 14, 25 ],
+    "departureTime" : [ 14, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    },
+    "arrivalTime" : [ 14, 40 ],
+    "departureTime" : [ 14, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S16",
+      "name" : "Vestby"
+    },
+    "arrivalTime" : [ 14, 55 ],
+    "departureTime" : [ 15, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S15",
+      "name" : "Ås"
+    },
+    "arrivalTime" : [ 15, 10 ],
+    "departureTime" : [ 15, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 15, 25 ],
+    "departureTime" : [ 15, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 15, 40 ],
+    "departureTime" : [ 15, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 15, 55 ],
+    "departureTime" : [ 16, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 16, 10 ],
+    "departureTime" : [ 16, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 16, 25 ],
+    "departureTime" : [ 16, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 16, 40 ],
+    "departureTime" : [ 16, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 16, 55 ],
+    "departureTime" : [ 17, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 17, 10 ],
+    "departureTime" : [ 17, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 17, 25 ],
+    "departureTime" : [ 17, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 17, 40 ],
+    "departureTime" : [ 17, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 17, 55 ],
+    "departureTime" : [ 18, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 18, 10 ],
+    "departureTime" : [ 18, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 18, 25 ],
+    "departureTime" : [ 18, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 18, 40 ],
+    "departureTime" : null,
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T042",
+  "route" : {
+    "id" : "R21",
+    "name" : "Oslo S – Moss",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S15",
+      "name" : "Ås"
+    }, {
+      "id" : "S16",
+      "name" : "Vestby"
+    }, {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    }, {
+      "id" : "S18",
+      "name" : "Kambo"
+    }, {
+      "id" : "S19",
+      "name" : "Moss"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 6, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 6, 10 ],
+    "departureTime" : [ 6, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 6, 25 ],
+    "departureTime" : [ 6, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 6, 40 ],
+    "departureTime" : [ 6, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 6, 55 ],
+    "departureTime" : [ 7, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 7, 10 ],
+    "departureTime" : [ 7, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 7, 25 ],
+    "departureTime" : [ 7, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 7, 40 ],
+    "departureTime" : [ 7, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 7, 55 ],
+    "departureTime" : [ 8, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 8, 10 ],
+    "departureTime" : [ 8, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 8, 25 ],
+    "departureTime" : [ 8, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 8, 40 ],
+    "departureTime" : [ 8, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 8, 55 ],
+    "departureTime" : [ 9, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S15",
+      "name" : "Ås"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S16",
+      "name" : "Vestby"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S18",
+      "name" : "Kambo"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S19",
+      "name" : "Moss"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : null,
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T047",
+  "route" : {
+    "id" : "R21",
+    "name" : "Oslo S – Moss",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S15",
+      "name" : "Ås"
+    }, {
+      "id" : "S16",
+      "name" : "Vestby"
+    }, {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    }, {
+      "id" : "S18",
+      "name" : "Kambo"
+    }, {
+      "id" : "S19",
+      "name" : "Moss"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 9, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : [ 10, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 10, 25 ],
+    "departureTime" : [ 10, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 10, 40 ],
+    "departureTime" : [ 10, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 10, 55 ],
+    "departureTime" : [ 11, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 11, 10 ],
+    "departureTime" : [ 11, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 11, 25 ],
+    "departureTime" : [ 11, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 11, 40 ],
+    "departureTime" : [ 11, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 11, 55 ],
+    "departureTime" : [ 12, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S15",
+      "name" : "Ås"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S16",
+      "name" : "Vestby"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S18",
+      "name" : "Kambo"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S19",
+      "name" : "Moss"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : null,
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T016",
+  "route" : {
+    "id" : "R21",
+    "name" : "Oslo S – Moss",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S15",
+      "name" : "Ås"
+    }, {
+      "id" : "S16",
+      "name" : "Vestby"
+    }, {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    }, {
+      "id" : "S18",
+      "name" : "Kambo"
+    }, {
+      "id" : "S19",
+      "name" : "Moss"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 12, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : [ 13, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 13, 25 ],
+    "departureTime" : [ 13, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 13, 40 ],
+    "departureTime" : [ 13, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 13, 55 ],
+    "departureTime" : [ 14, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 14, 10 ],
+    "departureTime" : [ 14, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 14, 25 ],
+    "departureTime" : [ 14, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 14, 40 ],
+    "departureTime" : [ 14, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 14, 55 ],
+    "departureTime" : [ 15, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S15",
+      "name" : "Ås"
+    },
+    "arrivalTime" : [ 15, 10 ],
+    "departureTime" : [ 15, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S16",
+      "name" : "Vestby"
+    },
+    "arrivalTime" : [ 15, 25 ],
+    "departureTime" : [ 15, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    },
+    "arrivalTime" : [ 15, 40 ],
+    "departureTime" : [ 15, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S18",
+      "name" : "Kambo"
+    },
+    "arrivalTime" : [ 15, 55 ],
+    "departureTime" : [ 16, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S19",
+      "name" : "Moss"
+    },
+    "arrivalTime" : [ 16, 10 ],
+    "departureTime" : null,
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T083",
+  "route" : {
+    "id" : "R21",
+    "name" : "Moss - Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S19",
+      "name" : "Moss"
+    }, {
+      "id" : "S18",
+      "name" : "Kambo"
+    }, {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    }, {
+      "id" : "S16",
+      "name" : "Vestby"
+    }, {
+      "id" : "S15",
+      "name" : "Ås"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S19",
+      "name" : "Moss"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 6, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S18",
+      "name" : "Kambo"
+    },
+    "arrivalTime" : [ 6, 10 ],
+    "departureTime" : [ 6, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    },
+    "arrivalTime" : [ 6, 25 ],
+    "departureTime" : [ 6, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S16",
+      "name" : "Vestby"
+    },
+    "arrivalTime" : [ 6, 40 ],
+    "departureTime" : [ 6, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S15",
+      "name" : "Ås"
+    },
+    "arrivalTime" : [ 6, 55 ],
+    "departureTime" : [ 7, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 7, 10 ],
+    "departureTime" : [ 7, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 7, 25 ],
+    "departureTime" : [ 7, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 7, 40 ],
+    "departureTime" : [ 7, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 7, 55 ],
+    "departureTime" : [ 8, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 8, 10 ],
+    "departureTime" : [ 8, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 8, 25 ],
+    "departureTime" : [ 8, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 8, 40 ],
+    "departureTime" : [ 8, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 8, 55 ],
+    "departureTime" : [ 9, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : null,
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T043",
+  "route" : {
+    "id" : "R21",
+    "name" : "Moss - Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S19",
+      "name" : "Moss"
+    }, {
+      "id" : "S18",
+      "name" : "Kambo"
+    }, {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    }, {
+      "id" : "S16",
+      "name" : "Vestby"
+    }, {
+      "id" : "S15",
+      "name" : "Ås"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S19",
+      "name" : "Moss"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 9, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S18",
+      "name" : "Kambo"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S16",
+      "name" : "Vestby"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S15",
+      "name" : "Ås"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : [ 10, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 10, 25 ],
+    "departureTime" : [ 10, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 10, 40 ],
+    "departureTime" : [ 10, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 10, 55 ],
+    "departureTime" : [ 11, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 11, 10 ],
+    "departureTime" : [ 11, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 11, 25 ],
+    "departureTime" : [ 11, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 11, 40 ],
+    "departureTime" : [ 11, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 11, 55 ],
+    "departureTime" : [ 12, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : null,
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T039",
+  "route" : {
+    "id" : "R21",
+    "name" : "Moss - Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S19",
+      "name" : "Moss"
+    }, {
+      "id" : "S18",
+      "name" : "Kambo"
+    }, {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    }, {
+      "id" : "S16",
+      "name" : "Vestby"
+    }, {
+      "id" : "S15",
+      "name" : "Ås"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S19",
+      "name" : "Moss"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 12, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S18",
+      "name" : "Kambo"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S17",
+      "name" : "Sonsveien"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S16",
+      "name" : "Vestby"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S15",
+      "name" : "Ås"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : [ 13, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 13, 25 ],
+    "departureTime" : [ 13, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 13, 40 ],
+    "departureTime" : [ 13, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 13, 55 ],
+    "departureTime" : [ 14, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 14, 10 ],
+    "departureTime" : [ 14, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 14, 25 ],
+    "departureTime" : [ 14, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 14, 40 ],
+    "departureTime" : [ 14, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 14, 55 ],
+    "departureTime" : [ 15, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 15, 10 ],
+    "departureTime" : [ 15, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 15, 25 ],
+    "departureTime" : [ 15, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 15, 40 ],
+    "departureTime" : [ 15, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 15, 55 ],
+    "departureTime" : [ 16, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 16, 10 ],
+    "departureTime" : null,
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T086",
+  "route" : {
+    "id" : "R22",
+    "name" : "Oslo S – Rakkestad",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S29",
+      "name" : "Kråkstad"
+    }, {
+      "id" : "S30",
+      "name" : "Skotbu"
+    }, {
+      "id" : "S31",
+      "name" : "Tomter"
+    }, {
+      "id" : "S32",
+      "name" : "Knapstad"
+    }, {
+      "id" : "S33",
+      "name" : "Spydeberg"
+    }, {
+      "id" : "S34",
+      "name" : "Askim"
+    }, {
+      "id" : "S35",
+      "name" : "Slitu"
+    }, {
+      "id" : "S36",
+      "name" : "Mysen"
+    }, {
+      "id" : "S37",
+      "name" : "Eidsberg"
+    }, {
+      "id" : "S38",
+      "name" : "Heia"
+    }, {
+      "id" : "S39",
+      "name" : "Rakkestad"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 6, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 6, 10 ],
+    "departureTime" : [ 6, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 6, 25 ],
+    "departureTime" : [ 6, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 6, 40 ],
+    "departureTime" : [ 6, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 6, 55 ],
+    "departureTime" : [ 7, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 7, 10 ],
+    "departureTime" : [ 7, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 7, 25 ],
+    "departureTime" : [ 7, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 7, 40 ],
+    "departureTime" : [ 7, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 7, 55 ],
+    "departureTime" : [ 8, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 8, 10 ],
+    "departureTime" : [ 8, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 8, 25 ],
+    "departureTime" : [ 8, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 8, 40 ],
+    "departureTime" : [ 8, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 8, 55 ],
+    "departureTime" : [ 9, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S29",
+      "name" : "Kråkstad"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S30",
+      "name" : "Skotbu"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S31",
+      "name" : "Tomter"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S32",
+      "name" : "Knapstad"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : [ 10, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S33",
+      "name" : "Spydeberg"
+    },
+    "arrivalTime" : [ 10, 25 ],
+    "departureTime" : [ 10, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S34",
+      "name" : "Askim"
+    },
+    "arrivalTime" : [ 10, 40 ],
+    "departureTime" : [ 10, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S35",
+      "name" : "Slitu"
+    },
+    "arrivalTime" : [ 10, 55 ],
+    "departureTime" : [ 11, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S36",
+      "name" : "Mysen"
+    },
+    "arrivalTime" : [ 11, 10 ],
+    "departureTime" : [ 11, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S37",
+      "name" : "Eidsberg"
+    },
+    "arrivalTime" : [ 11, 25 ],
+    "departureTime" : [ 11, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S38",
+      "name" : "Heia"
+    },
+    "arrivalTime" : [ 11, 40 ],
+    "departureTime" : [ 11, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S39",
+      "name" : "Rakkestad"
+    },
+    "arrivalTime" : [ 11, 55 ],
+    "departureTime" : null,
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T040",
+  "route" : {
+    "id" : "R22",
+    "name" : "Oslo S – Rakkestad",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S29",
+      "name" : "Kråkstad"
+    }, {
+      "id" : "S30",
+      "name" : "Skotbu"
+    }, {
+      "id" : "S31",
+      "name" : "Tomter"
+    }, {
+      "id" : "S32",
+      "name" : "Knapstad"
+    }, {
+      "id" : "S33",
+      "name" : "Spydeberg"
+    }, {
+      "id" : "S34",
+      "name" : "Askim"
+    }, {
+      "id" : "S35",
+      "name" : "Slitu"
+    }, {
+      "id" : "S36",
+      "name" : "Mysen"
+    }, {
+      "id" : "S37",
+      "name" : "Eidsberg"
+    }, {
+      "id" : "S38",
+      "name" : "Heia"
+    }, {
+      "id" : "S39",
+      "name" : "Rakkestad"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 9, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : [ 10, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 10, 25 ],
+    "departureTime" : [ 10, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 10, 40 ],
+    "departureTime" : [ 10, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 10, 55 ],
+    "departureTime" : [ 11, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 11, 10 ],
+    "departureTime" : [ 11, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 11, 25 ],
+    "departureTime" : [ 11, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 11, 40 ],
+    "departureTime" : [ 11, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 11, 55 ],
+    "departureTime" : [ 12, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S29",
+      "name" : "Kråkstad"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S30",
+      "name" : "Skotbu"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S31",
+      "name" : "Tomter"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S32",
+      "name" : "Knapstad"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : [ 13, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S33",
+      "name" : "Spydeberg"
+    },
+    "arrivalTime" : [ 13, 25 ],
+    "departureTime" : [ 13, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S34",
+      "name" : "Askim"
+    },
+    "arrivalTime" : [ 13, 40 ],
+    "departureTime" : [ 13, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S35",
+      "name" : "Slitu"
+    },
+    "arrivalTime" : [ 13, 55 ],
+    "departureTime" : [ 14, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S36",
+      "name" : "Mysen"
+    },
+    "arrivalTime" : [ 14, 10 ],
+    "departureTime" : [ 14, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S37",
+      "name" : "Eidsberg"
+    },
+    "arrivalTime" : [ 14, 25 ],
+    "departureTime" : [ 14, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S38",
+      "name" : "Heia"
+    },
+    "arrivalTime" : [ 14, 40 ],
+    "departureTime" : [ 14, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S39",
+      "name" : "Rakkestad"
+    },
+    "arrivalTime" : [ 14, 55 ],
+    "departureTime" : null,
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T093",
+  "route" : {
+    "id" : "R22",
+    "name" : "Oslo S – Rakkestad",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S29",
+      "name" : "Kråkstad"
+    }, {
+      "id" : "S30",
+      "name" : "Skotbu"
+    }, {
+      "id" : "S31",
+      "name" : "Tomter"
+    }, {
+      "id" : "S32",
+      "name" : "Knapstad"
+    }, {
+      "id" : "S33",
+      "name" : "Spydeberg"
+    }, {
+      "id" : "S34",
+      "name" : "Askim"
+    }, {
+      "id" : "S35",
+      "name" : "Slitu"
+    }, {
+      "id" : "S36",
+      "name" : "Mysen"
+    }, {
+      "id" : "S37",
+      "name" : "Eidsberg"
+    }, {
+      "id" : "S38",
+      "name" : "Heia"
+    }, {
+      "id" : "S39",
+      "name" : "Rakkestad"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 12, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : [ 13, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 13, 25 ],
+    "departureTime" : [ 13, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 13, 40 ],
+    "departureTime" : [ 13, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 13, 55 ],
+    "departureTime" : [ 14, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 14, 10 ],
+    "departureTime" : [ 14, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 14, 25 ],
+    "departureTime" : [ 14, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 14, 40 ],
+    "departureTime" : [ 14, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 14, 55 ],
+    "departureTime" : [ 15, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 15, 10 ],
+    "departureTime" : [ 15, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S29",
+      "name" : "Kråkstad"
+    },
+    "arrivalTime" : [ 15, 25 ],
+    "departureTime" : [ 15, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S30",
+      "name" : "Skotbu"
+    },
+    "arrivalTime" : [ 15, 40 ],
+    "departureTime" : [ 15, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S31",
+      "name" : "Tomter"
+    },
+    "arrivalTime" : [ 15, 55 ],
+    "departureTime" : [ 16, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S32",
+      "name" : "Knapstad"
+    },
+    "arrivalTime" : [ 16, 10 ],
+    "departureTime" : [ 16, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S33",
+      "name" : "Spydeberg"
+    },
+    "arrivalTime" : [ 16, 25 ],
+    "departureTime" : [ 16, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S34",
+      "name" : "Askim"
+    },
+    "arrivalTime" : [ 16, 40 ],
+    "departureTime" : [ 16, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S35",
+      "name" : "Slitu"
+    },
+    "arrivalTime" : [ 16, 55 ],
+    "departureTime" : [ 17, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S36",
+      "name" : "Mysen"
+    },
+    "arrivalTime" : [ 17, 10 ],
+    "departureTime" : [ 17, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S37",
+      "name" : "Eidsberg"
+    },
+    "arrivalTime" : [ 17, 25 ],
+    "departureTime" : [ 17, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S38",
+      "name" : "Heia"
+    },
+    "arrivalTime" : [ 17, 40 ],
+    "departureTime" : [ 17, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S39",
+      "name" : "Rakkestad"
+    },
+    "arrivalTime" : [ 17, 55 ],
+    "departureTime" : null,
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T048",
+  "route" : {
+    "id" : "R22",
+    "name" : "Rakkestad - Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S39",
+      "name" : "Rakkestad"
+    }, {
+      "id" : "S38",
+      "name" : "Heia"
+    }, {
+      "id" : "S37",
+      "name" : "Eidsberg"
+    }, {
+      "id" : "S36",
+      "name" : "Mysen"
+    }, {
+      "id" : "S35",
+      "name" : "Slitu"
+    }, {
+      "id" : "S34",
+      "name" : "Askim"
+    }, {
+      "id" : "S33",
+      "name" : "Spydeberg"
+    }, {
+      "id" : "S32",
+      "name" : "Knapstad"
+    }, {
+      "id" : "S31",
+      "name" : "Tomter"
+    }, {
+      "id" : "S30",
+      "name" : "Skotbu"
+    }, {
+      "id" : "S29",
+      "name" : "Kråkstad"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S39",
+      "name" : "Rakkestad"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 6, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S38",
+      "name" : "Heia"
+    },
+    "arrivalTime" : [ 6, 10 ],
+    "departureTime" : [ 6, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S37",
+      "name" : "Eidsberg"
+    },
+    "arrivalTime" : [ 6, 25 ],
+    "departureTime" : [ 6, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S36",
+      "name" : "Mysen"
+    },
+    "arrivalTime" : [ 6, 40 ],
+    "departureTime" : [ 6, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S35",
+      "name" : "Slitu"
+    },
+    "arrivalTime" : [ 6, 55 ],
+    "departureTime" : [ 7, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S34",
+      "name" : "Askim"
+    },
+    "arrivalTime" : [ 7, 10 ],
+    "departureTime" : [ 7, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S33",
+      "name" : "Spydeberg"
+    },
+    "arrivalTime" : [ 7, 25 ],
+    "departureTime" : [ 7, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S32",
+      "name" : "Knapstad"
+    },
+    "arrivalTime" : [ 7, 40 ],
+    "departureTime" : [ 7, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S31",
+      "name" : "Tomter"
+    },
+    "arrivalTime" : [ 7, 55 ],
+    "departureTime" : [ 8, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S30",
+      "name" : "Skotbu"
+    },
+    "arrivalTime" : [ 8, 10 ],
+    "departureTime" : [ 8, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S29",
+      "name" : "Kråkstad"
+    },
+    "arrivalTime" : [ 8, 25 ],
+    "departureTime" : [ 8, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 8, 40 ],
+    "departureTime" : [ 8, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 8, 55 ],
+    "departureTime" : [ 9, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : [ 10, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 10, 25 ],
+    "departureTime" : [ 10, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 10, 40 ],
+    "departureTime" : [ 10, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 10, 55 ],
+    "departureTime" : [ 11, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 11, 10 ],
+    "departureTime" : [ 11, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 11, 25 ],
+    "departureTime" : [ 11, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 11, 40 ],
+    "departureTime" : [ 11, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 11, 55 ],
+    "departureTime" : null,
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T087",
+  "route" : {
+    "id" : "R22",
+    "name" : "Rakkestad - Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S39",
+      "name" : "Rakkestad"
+    }, {
+      "id" : "S38",
+      "name" : "Heia"
+    }, {
+      "id" : "S37",
+      "name" : "Eidsberg"
+    }, {
+      "id" : "S36",
+      "name" : "Mysen"
+    }, {
+      "id" : "S35",
+      "name" : "Slitu"
+    }, {
+      "id" : "S34",
+      "name" : "Askim"
+    }, {
+      "id" : "S33",
+      "name" : "Spydeberg"
+    }, {
+      "id" : "S32",
+      "name" : "Knapstad"
+    }, {
+      "id" : "S31",
+      "name" : "Tomter"
+    }, {
+      "id" : "S30",
+      "name" : "Skotbu"
+    }, {
+      "id" : "S29",
+      "name" : "Kråkstad"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S39",
+      "name" : "Rakkestad"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 9, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S38",
+      "name" : "Heia"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S37",
+      "name" : "Eidsberg"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S36",
+      "name" : "Mysen"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S35",
+      "name" : "Slitu"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S34",
+      "name" : "Askim"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : [ 10, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S33",
+      "name" : "Spydeberg"
+    },
+    "arrivalTime" : [ 10, 25 ],
+    "departureTime" : [ 10, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S32",
+      "name" : "Knapstad"
+    },
+    "arrivalTime" : [ 10, 40 ],
+    "departureTime" : [ 10, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S31",
+      "name" : "Tomter"
+    },
+    "arrivalTime" : [ 10, 55 ],
+    "departureTime" : [ 11, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S30",
+      "name" : "Skotbu"
+    },
+    "arrivalTime" : [ 11, 10 ],
+    "departureTime" : [ 11, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S29",
+      "name" : "Kråkstad"
+    },
+    "arrivalTime" : [ 11, 25 ],
+    "departureTime" : [ 11, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 11, 40 ],
+    "departureTime" : [ 11, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 11, 55 ],
+    "departureTime" : [ 12, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : [ 13, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 13, 25 ],
+    "departureTime" : [ 13, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 13, 40 ],
+    "departureTime" : [ 13, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 13, 55 ],
+    "departureTime" : [ 14, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 14, 10 ],
+    "departureTime" : [ 14, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 14, 25 ],
+    "departureTime" : [ 14, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 14, 40 ],
+    "departureTime" : [ 14, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 14, 55 ],
+    "departureTime" : null,
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T009",
+  "route" : {
+    "id" : "R22",
+    "name" : "Rakkestad - Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S39",
+      "name" : "Rakkestad"
+    }, {
+      "id" : "S38",
+      "name" : "Heia"
+    }, {
+      "id" : "S37",
+      "name" : "Eidsberg"
+    }, {
+      "id" : "S36",
+      "name" : "Mysen"
+    }, {
+      "id" : "S35",
+      "name" : "Slitu"
+    }, {
+      "id" : "S34",
+      "name" : "Askim"
+    }, {
+      "id" : "S33",
+      "name" : "Spydeberg"
+    }, {
+      "id" : "S32",
+      "name" : "Knapstad"
+    }, {
+      "id" : "S31",
+      "name" : "Tomter"
+    }, {
+      "id" : "S30",
+      "name" : "Skotbu"
+    }, {
+      "id" : "S29",
+      "name" : "Kråkstad"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S39",
+      "name" : "Rakkestad"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 12, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S38",
+      "name" : "Heia"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S37",
+      "name" : "Eidsberg"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S36",
+      "name" : "Mysen"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S35",
+      "name" : "Slitu"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S34",
+      "name" : "Askim"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : [ 13, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S33",
+      "name" : "Spydeberg"
+    },
+    "arrivalTime" : [ 13, 25 ],
+    "departureTime" : [ 13, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S32",
+      "name" : "Knapstad"
+    },
+    "arrivalTime" : [ 13, 40 ],
+    "departureTime" : [ 13, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S31",
+      "name" : "Tomter"
+    },
+    "arrivalTime" : [ 13, 55 ],
+    "departureTime" : [ 14, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S30",
+      "name" : "Skotbu"
+    },
+    "arrivalTime" : [ 14, 10 ],
+    "departureTime" : [ 14, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S29",
+      "name" : "Kråkstad"
+    },
+    "arrivalTime" : [ 14, 25 ],
+    "departureTime" : [ 14, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 14, 40 ],
+    "departureTime" : [ 14, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 14, 55 ],
+    "departureTime" : [ 15, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 15, 10 ],
+    "departureTime" : [ 15, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 15, 25 ],
+    "departureTime" : [ 15, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 15, 40 ],
+    "departureTime" : [ 15, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 15, 55 ],
+    "departureTime" : [ 16, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 16, 10 ],
+    "departureTime" : [ 16, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 16, 25 ],
+    "departureTime" : [ 16, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 16, 40 ],
+    "departureTime" : [ 16, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 16, 55 ],
+    "departureTime" : [ 17, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 17, 10 ],
+    "departureTime" : [ 17, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 17, 25 ],
+    "departureTime" : [ 17, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 17, 40 ],
+    "departureTime" : [ 17, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 17, 55 ],
+    "departureTime" : null,
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T019",
+  "route" : {
+    "id" : "R23",
+    "name" : "Oslo S – Ski",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 6, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 6, 10 ],
+    "departureTime" : [ 6, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 6, 25 ],
+    "departureTime" : [ 6, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 6, 40 ],
+    "departureTime" : [ 6, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 6, 55 ],
+    "departureTime" : [ 7, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 7, 10 ],
+    "departureTime" : [ 7, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 7, 25 ],
+    "departureTime" : [ 7, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 7, 40 ],
+    "departureTime" : [ 7, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 7, 55 ],
+    "departureTime" : [ 8, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 8, 10 ],
+    "departureTime" : [ 8, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 8, 25 ],
+    "departureTime" : [ 8, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 8, 40 ],
+    "departureTime" : [ 8, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 8, 55 ],
+    "departureTime" : [ 9, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : null,
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T061",
+  "route" : {
+    "id" : "R23",
+    "name" : "Oslo S – Ski",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 9, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : [ 10, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 10, 25 ],
+    "departureTime" : [ 10, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 10, 40 ],
+    "departureTime" : [ 10, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 10, 55 ],
+    "departureTime" : [ 11, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 11, 10 ],
+    "departureTime" : [ 11, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 11, 25 ],
+    "departureTime" : [ 11, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 11, 40 ],
+    "departureTime" : [ 11, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 11, 55 ],
+    "departureTime" : [ 12, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : null,
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T092",
+  "route" : {
+    "id" : "R23",
+    "name" : "Oslo S – Ski",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 12, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : [ 13, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 13, 25 ],
+    "departureTime" : [ 13, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 13, 40 ],
+    "departureTime" : [ 13, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 13, 55 ],
+    "departureTime" : [ 14, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 14, 10 ],
+    "departureTime" : [ 14, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 14, 25 ],
+    "departureTime" : [ 14, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 14, 40 ],
+    "departureTime" : [ 14, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 14, 55 ],
+    "departureTime" : [ 15, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 15, 10 ],
+    "departureTime" : null,
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T051",
+  "route" : {
+    "id" : "R23",
+    "name" : "Ski – Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 6, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 6, 10 ],
+    "departureTime" : [ 6, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 6, 25 ],
+    "departureTime" : [ 6, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 6, 40 ],
+    "departureTime" : [ 6, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 6, 55 ],
+    "departureTime" : [ 7, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 7, 10 ],
+    "departureTime" : [ 7, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 7, 25 ],
+    "departureTime" : [ 7, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 7, 40 ],
+    "departureTime" : [ 7, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 7, 55 ],
+    "departureTime" : [ 8, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 8, 10 ],
+    "departureTime" : [ 8, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 8, 25 ],
+    "departureTime" : [ 8, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 8, 40 ],
+    "departureTime" : [ 8, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 8, 55 ],
+    "departureTime" : [ 9, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : null,
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T096",
+  "route" : {
+    "id" : "R23",
+    "name" : "Ski – Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 9, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : [ 10, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 10, 25 ],
+    "departureTime" : [ 10, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 10, 40 ],
+    "departureTime" : [ 10, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 10, 55 ],
+    "departureTime" : [ 11, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 11, 10 ],
+    "departureTime" : [ 11, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 11, 25 ],
+    "departureTime" : [ 11, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 11, 40 ],
+    "departureTime" : [ 11, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 11, 55 ],
+    "departureTime" : [ 12, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : null,
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T065",
+  "route" : {
+    "id" : "R23",
+    "name" : "Ski – Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 12, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : [ 13, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 13, 25 ],
+    "departureTime" : [ 13, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 13, 40 ],
+    "departureTime" : [ 13, 45 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 13, 55 ],
+    "departureTime" : [ 14, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 14, 10 ],
+    "departureTime" : [ 14, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 14, 25 ],
+    "departureTime" : [ 14, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 14, 40 ],
+    "departureTime" : [ 14, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 14, 55 ],
+    "departureTime" : [ 15, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 15, 10 ],
+    "departureTime" : null,
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T036",
+  "route" : {
+    "id" : "L2",
+    "name" : "Oslo S - Ski",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 6, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 6, 10 ],
+    "departureTime" : [ 6, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 6, 25 ],
+    "departureTime" : [ 6, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 6, 40 ],
+    "departureTime" : [ 6, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 6, 55 ],
+    "departureTime" : [ 7, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 7, 10 ],
+    "departureTime" : [ 7, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 7, 25 ],
+    "departureTime" : [ 7, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 7, 40 ],
+    "departureTime" : [ 7, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 7, 55 ],
+    "departureTime" : [ 8, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 8, 10 ],
+    "departureTime" : [ 8, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 8, 25 ],
+    "departureTime" : [ 8, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 8, 40 ],
+    "departureTime" : [ 8, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 8, 55 ],
+    "departureTime" : [ 9, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : null,
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T046",
+  "route" : {
+    "id" : "L2",
+    "name" : "Oslo S - Ski",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 9, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : [ 10, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 10, 25 ],
+    "departureTime" : [ 10, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 10, 40 ],
+    "departureTime" : [ 10, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 10, 55 ],
+    "departureTime" : [ 11, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 11, 10 ],
+    "departureTime" : [ 11, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 11, 25 ],
+    "departureTime" : [ 11, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 11, 40 ],
+    "departureTime" : [ 11, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 11, 55 ],
+    "departureTime" : [ 12, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : null,
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T074",
+  "route" : {
+    "id" : "L2",
+    "name" : "Oslo S - Ski",
+    "outbound" : true,
+    "stops" : [ {
+      "id" : "S01",
+      "name" : "Oslo S"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S14",
+      "name" : "Ski"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 12, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : [ 13, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 13, 25 ],
+    "departureTime" : [ 13, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 13, 40 ],
+    "departureTime" : [ 13, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 13, 55 ],
+    "departureTime" : [ 14, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 14, 10 ],
+    "departureTime" : [ 14, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 14, 25 ],
+    "departureTime" : [ 14, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 14, 40 ],
+    "departureTime" : [ 14, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 14, 55 ],
+    "departureTime" : [ 15, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : [ 15, 10 ],
+    "departureTime" : null,
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T008",
+  "route" : {
+    "id" : "L2",
+    "name" : "Ski - Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 6, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 6, 10 ],
+    "departureTime" : [ 6, 15 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 6, 25 ],
+    "departureTime" : [ 6, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 6, 40 ],
+    "departureTime" : [ 6, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 6, 55 ],
+    "departureTime" : [ 7, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 7, 10 ],
+    "departureTime" : [ 7, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 7, 25 ],
+    "departureTime" : [ 7, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 7, 40 ],
+    "departureTime" : [ 7, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 7, 55 ],
+    "departureTime" : [ 8, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 8, 10 ],
+    "departureTime" : [ 8, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 8, 25 ],
+    "departureTime" : [ 8, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 8, 40 ],
+    "departureTime" : [ 8, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 8, 55 ],
+    "departureTime" : [ 9, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : null,
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T078",
+  "route" : {
+    "id" : "L2",
+    "name" : "Ski - Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 9, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 9, 10 ],
+    "departureTime" : [ 9, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 9, 25 ],
+    "departureTime" : [ 9, 30 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 9, 40 ],
+    "departureTime" : [ 9, 45 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 9, 55 ],
+    "departureTime" : [ 10, 0 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 10, 10 ],
+    "departureTime" : [ 10, 15 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 10, 25 ],
+    "departureTime" : [ 10, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 10, 40 ],
+    "departureTime" : [ 10, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 10, 55 ],
+    "departureTime" : [ 11, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 11, 10 ],
+    "departureTime" : [ 11, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 11, 25 ],
+    "departureTime" : [ 11, 30 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 11, 40 ],
+    "departureTime" : [ 11, 45 ],
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 11, 55 ],
+    "departureTime" : [ 12, 0 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : null,
+    "track" : 2,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+}, {
+  "id" : "T022",
+  "route" : {
+    "id" : "L2",
+    "name" : "Ski - Oslo S",
+    "outbound" : false,
+    "stops" : [ {
+      "id" : "S14",
+      "name" : "Ski"
+    }, {
+      "id" : "S13",
+      "name" : "Langhus"
+    }, {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    }, {
+      "id" : "S11",
+      "name" : "Oppegård"
+    }, {
+      "id" : "S10",
+      "name" : "Greverud"
+    }, {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    }, {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    }, {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    }, {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    }, {
+      "id" : "S05",
+      "name" : "Holmlia"
+    }, {
+      "id" : "S04",
+      "name" : "Hauketo"
+    }, {
+      "id" : "S03",
+      "name" : "Ljan"
+    }, {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    }, {
+      "id" : "S01",
+      "name" : "Oslo S"
+    } ]
+  },
+  "trainStops" : [ {
+    "stop" : {
+      "id" : "S14",
+      "name" : "Ski"
+    },
+    "arrivalTime" : null,
+    "departureTime" : [ 12, 0 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S13",
+      "name" : "Langhus"
+    },
+    "arrivalTime" : [ 12, 10 ],
+    "departureTime" : [ 12, 15 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S12",
+      "name" : "Vevelstad"
+    },
+    "arrivalTime" : [ 12, 25 ],
+    "departureTime" : [ 12, 30 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S11",
+      "name" : "Oppegård"
+    },
+    "arrivalTime" : [ 12, 40 ],
+    "departureTime" : [ 12, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S10",
+      "name" : "Greverud"
+    },
+    "arrivalTime" : [ 12, 55 ],
+    "departureTime" : [ 13, 0 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S09",
+      "name" : "Myrvoll"
+    },
+    "arrivalTime" : [ 13, 10 ],
+    "departureTime" : [ 13, 15 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S08",
+      "name" : "Solbråtan"
+    },
+    "arrivalTime" : [ 13, 25 ],
+    "departureTime" : [ 13, 30 ],
+    "track" : 1,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S07",
+      "name" : "Kolbotn"
+    },
+    "arrivalTime" : [ 13, 40 ],
+    "departureTime" : [ 13, 45 ],
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S06",
+      "name" : "Rosenholm"
+    },
+    "arrivalTime" : [ 13, 55 ],
+    "departureTime" : [ 14, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S05",
+      "name" : "Holmlia"
+    },
+    "arrivalTime" : [ 14, 10 ],
+    "departureTime" : [ 14, 15 ],
+    "track" : 3,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S04",
+      "name" : "Hauketo"
+    },
+    "arrivalTime" : [ 14, 25 ],
+    "departureTime" : [ 14, 30 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S03",
+      "name" : "Ljan"
+    },
+    "arrivalTime" : [ 14, 40 ],
+    "departureTime" : [ 14, 45 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S02",
+      "name" : "Nordstrand"
+    },
+    "arrivalTime" : [ 14, 55 ],
+    "departureTime" : [ 15, 0 ],
+    "track" : 5,
+    "cancelled" : false,
+    "delayed" : false
+  }, {
+    "stop" : {
+      "id" : "S01",
+      "name" : "Oslo S"
+    },
+    "arrivalTime" : [ 15, 10 ],
+    "departureTime" : null,
+    "track" : 4,
+    "cancelled" : false,
+    "delayed" : false
+  } ]
+} ]
