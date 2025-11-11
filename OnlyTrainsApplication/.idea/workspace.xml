@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="lagde tester i traintest">
-      <change beforePath="$PROJECT_DIR$/../.idea/Software-engineer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Software-engineer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="legger til trains2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Train.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/StationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/StationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,12 +39,12 @@
     &quot;assignee&quot;: &quot;Jsorens&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Leorita/Software-engineer.git",
-    "accountId": "318e4cc2-b74e-4c62-8c87-043b6027a119"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Leorita/Software-engineer.git&quot;,
+    &quot;accountId&quot;: &quot;318e4cc2-b74e-4c62-8c87-043b6027a119&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
         &quot;customColor&quot;: &quot;&quot;,
         &quot;associatedIndex&quot;: 5
@@ -52,26 +54,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.TrainTest.ArrivalTimeLessThanDepartureTime.executor": "Run",
-    "JUnit.TrainTest.arrivalTimeNullAtFirstStop.executor": "Run",
-    "JUnit.TrainTest.departureTimeNullAtLastStop.executor": "Run",
-    "JUnit.TrainTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Develop",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Skole/Desktop/Software-engineer/OnlyTrainsApplication/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainTest.ArrivalTimeLessThanDepartureTime.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainTest.arrivalTimeNullAtFirstStop.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainTest.departureTimeNullAtLastStop.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.OnlyTrainsApplication [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Develop&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Skole/Desktop/Software-engineer/OnlyTrainsApplication/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Skole\Informatikk\Semester 3\Software Engineering\GithubRepo\Software-engineer\OnlyTrainsApplication\src\main\java\org\example\model" />
@@ -199,6 +203,10 @@
       <workItem from="1762351690046" duration="2642000" />
       <workItem from="1762427994905" duration="1028000" />
       <workItem from="1762765504008" duration="321000" />
+      <workItem from="1762766369787" duration="247000" />
+      <workItem from="1762766821364" duration="1709000" />
+      <workItem from="1762856329955" duration="3499000" />
+      <workItem from="1762880627210" duration="414000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -333,7 +341,15 @@
       <option name="presentableId" value="LOCAL−00019" />
       <updated>1762353738655</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="legger til trains2">
+      <option name="closed" value="true" />
+      <created>1762766606913</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1762766606913</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +397,8 @@
     <MESSAGE value="Lagde et par enhetstester for tog: testet om ankomsttid var større enn avgangstiden, testet også ankomsttiden var null på første stopp, og avgangstiden var null på siste stopp" />
     <MESSAGE value="lagde et script som printer ut n togavganger etter x tidspunkt fra y stasjon" />
     <MESSAGE value="lagde tester i traintest" />
-    <option name="LAST_COMMIT_MESSAGE" value="lagde tester i traintest" />
+    <MESSAGE value="legger til trains2" />
+    <option name="LAST_COMMIT_MESSAGE" value="legger til trains2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

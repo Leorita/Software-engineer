@@ -59,8 +59,6 @@ public class Train {
         this.id = id;
     }
 
-
-
     public Rute getRoute() {
         return route;
     }
