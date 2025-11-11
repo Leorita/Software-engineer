@@ -11,6 +11,8 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" afterDir="false" />
     <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Endret navn på metode for å skrive togdata til json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Lagde ekstra metoder for RuteRepository for å finne felles stasjoner mellom to ruter.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,8 +81,13 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Skole\Informatikk\Semester 3\Software Engineering\GithubRepo\Software-engineer\OnlyTrainsApplication\src\main\java\org\example\model" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Skole\Informatikk\Semester 3\Software Engineering\GithubRepo\Software-engineer\OnlyTrainsApplication\src\main\java\org\example\json" />
+      <recent name="\src\main\java\org\example\json" />
+      <recent name="C:\Skole\Informatikk\Semester 3\Software Engineering\GithubRepo\Software-engineer\OnlyTrainsApplication\src\main\java\org\example\dto" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.TrainTest">
+  <component name="RunManager">
     <configuration name="TrainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OnlyTrainsApplication" />
       <extension name="coverage">
@@ -203,7 +210,7 @@
       <workItem from="1762427994905" duration="1028000" />
       <workItem from="1762765504008" duration="321000" />
       <workItem from="1762427994905" duration="2113000" />
-      <workItem from="1762761809810" duration="1310000" />
+      <workItem from="1762761809810" duration="6097000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -345,7 +352,21 @@
       <option name="presentableId" value="LOCAL−00020" />
       <updated>1762430480999</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL−00021" summary="COMMIT TEST">
+      <option name="closed" value="true" />
+      <created>1762765978416</created>
+      <option name="number" value="LOCAL−00021" />
+      <option name="presentableId" value="LOCAL−00021" />
+      <updated>1762765978416</updated>
+    </task>
+    <task id="LOCAL−00022" summary="Lagde ekstra metoder for RuteRepository for å finne felles stasjoner mellom to ruter.">
+      <option name="closed" value="true" />
+      <created>1762771870574</created>
+      <option name="number" value="LOCAL−00022" />
+      <option name="presentableId" value="LOCAL−00022" />
+      <updated>1762771870574</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +415,20 @@
     <MESSAGE value="lagde et script som printer ut n togavganger etter x tidspunkt fra y stasjon" />
     <MESSAGE value="lagde tester i traintest" />
     <MESSAGE value="Endret navn på metode for å skrive togdata til json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Endret navn på metode for å skrive togdata til json" />
+    <MESSAGE value="COMMIT TEST" />
+    <MESSAGE value="Lagde ekstra metoder for RuteRepository for å finne felles stasjoner mellom to ruter." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lagde ekstra metoder for RuteRepository for å finne felles stasjoner mellom to ruter." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
