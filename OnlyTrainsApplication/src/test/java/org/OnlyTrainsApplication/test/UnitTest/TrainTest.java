@@ -10,12 +10,14 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.junit.jupiter.api.Assertions;
+import reactor.core.publisher.Mono;
 
 import java.time.LocalTime;
+import java.util.Arrays;
 import java.util.function.Supplier;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
+import static reactor.core.publisher.Mono.when;
 
 /**
  *
@@ -67,7 +69,7 @@ public class TrainTest {
     }
 
     @Test
-    public void ArrivalTimeLessThanDepartureTime() throws Exception{
+    public void ArrivalTimeLessThanDepartureTime() throws Exception {
         // TODO Vi ønsker å teste om ankomsttiden er større enn avgangstiden.
         // Arrange
         Train train1 = trainRepository.getTrains().get(0);
