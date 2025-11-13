@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="lagde tester i traintest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/RouteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/OnlyTrainsApplication/test/UnitTest/TrainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="Develop" />
+        <entry key="$PROJECT_DIR$/.." value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -51,37 +50,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.RouteTest.executor": "Run",
-    "JUnit.RouteTest.testCommonStopsBetweenTwoRoutes.executor": "Run",
-    "JUnit.RouteTest.testGetRuteByIdReturnsCorrectRoute.executor": "Run",
-    "JUnit.TrainTest.ArrivalTimeLessThanDepartureTime.executor": "Run",
-    "JUnit.TrainTest.arrivalTimeNullAtFirstStop.executor": "Run",
-    "JUnit.TrainTest.departureTimeNullAtLastStop.executor": "Run",
-    "JUnit.TrainTest.executor": "Run",
-    "JUnit.TrainTest.getTrainsByRouteReturnsCorrectValue.executor": "Run",
-    "JUnit.TrainTest.trainStopsAtStationReturnsCorrectValue.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Develop",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Skole/Desktop/Software-engineer/OnlyTrainsApplication/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Run.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RouteTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RouteTest.testCommonStopsBetweenTwoRoutes.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RouteTest.testGetRuteByIdReturnsCorrectRoute.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainTest.ArrivalTimeLessThanDepartureTime.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainTest.arrivalTimeNullAtFirstStop.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainTest.departureTimeNullAtLastStop.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainTest.getTrainsByRouteReturnsCorrectValue.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainTest.trainStopsAtStationReturnsCorrectValue.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Develop&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Skole/Desktop/Software-engineer/OnlyTrainsApplication/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Skole\Informatikk\Semester 3\Software Engineering\GithubRepo\Software-engineer\OnlyTrainsApplication\src\main\java\org\example\model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TrainTest.getTrainsByRouteReturnsCorrectValue">
+  <component name="RunManager">
     <configuration name="RouteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OnlyTrainsApplication" />
       <extension name="coverage">
@@ -220,6 +223,7 @@
       <workItem from="1762351690046" duration="2642000" />
       <workItem from="1762427994905" duration="1028000" />
       <workItem from="1762765504008" duration="321000" />
+      <workItem from="1763064191028" duration="1339000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
