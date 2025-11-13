@@ -1,96 +1,93 @@
 package org.example;
-
-import com.fasterxml.jackson.core.exc.StreamWriteException;
-import com.fasterxml.jackson.databind.DatabindException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import org.example.model.*;
-import org.example.repository.RuteRepository;
-import org.example.repository.StationRepository;
+import org.example.model.Train;
 import org.example.repository.TrainRepository;
 
-import java.io.File;
-import java.io.IOException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
-        System.out.println("Hello, World!");
-        // TODO vi tester Station repository
-        StationRepository stationRepository = new StationRepository("json");
 
-        System.out.println(stationRepository.getStations() + "\n\n");
-        System.out.println(stationRepository.getStations().size());
+    public static void start(){
 
-        // TODO vi tester rute repository
-        RuteRepository ruteRepository = new RuteRepository();
+        Scanner scanner = new Scanner(System.in);
 
-        for (Rute rute : ruteRepository.getRuter()) {
-            System.out.println("Rute ID: " + rute.getId() + " Origin-Destinasjon: " + rute.getStops().getFirst().getName()
-                    + " -> " +
-                    rute.getStops().getLast().getName());
+        System.out.println("=== Velkommen til OnlyTrains ===");
+
+        boolean loggedIn = false;
+
+        while (!loggedIn) {
+            System.out.print("Brukernavn: ");
+            String username = scanner.nextLine();
+
+            System.out.print("Passord: ");
+            String password = scanner.nextLine();
+
+            if (username.equals("admin") && password.equals("admin123")) {
+                System.out.println("Innlogging vellykket!\n");
+                loggedIn = true;
+            } else {
+                System.out.println("Feil brukernavn eller passord. Prøv igjen.\n");
+            }
         }
 
-        System.out.println("Felles stasjoner for rute RE20 og R21");
-        for (Station station : ruteRepository.commonStopsBetweenTwoRoutes("RE20", "R2221")){
-            System.out.println(station);
-        }
-        // TODO vi tester train repository
         TrainRepository trainRepository = new TrainRepository("json");
-        //File trainJsonFile = new File("src/main/java/org/example/json/trains2.json");
-        //writeTrainsToJSON(trainRepository.getTrains(), trainJsonFile);
+
+        // Her kan du fortsette med meny eller funksjoner etter innlogging
+        System.out.println("Du er nå logget inn som admin.");
 
 
+        boolean running = true;
+        while (running) {
+            System.out.println("\n=== Hovedmeny ===");
+            System.out.println("1 - Vis tog fra en stasjon");
+            System.out.println("2 - Fjern Tog fra lista");
+            System.out.println("0 - Avslutt applikasjonen");
+            System.out.print("Velg et alternativ: ");
 
-        LocalTime departureTime = LocalTime.of(12, 0);
-        System.out.println("KL: " + departureTime + "\n");
-        int visAntall = 5;
-        int counter = 1;
-        String stationID = "S02";
-        for (Train train : trainRepository.getTrainsWithStopFromTime(stationID, departureTime)) {
-            System.out.println("Tog ID: " + train.getId() + ", Rute: " + train.getRoute().getId() + " ," + train.getRoute().getName()
-                    + "\nTrain Stops: ");
-            for (TrainStop trainstop : train.getTrainStops()) {
-                {
-                    if (trainstop.getStop().getId().equals(stationID)){
-                        System.out.println("   ---- Train Stop ----");
-                        System.out.println("   Stopp: " + trainstop.getStop().getName());
-                        System.out.println("   ArrivalTime: " + trainstop.getArrivalTime());
-                        System.out.println("   DepartureTime: " + trainstop.getDepartureTime());
-                        System.out.println("   Track: " + trainstop.getTrack());
-                        System.out.println("   isDelayed: " + trainstop.isDelayed());
-                        System.out.println("   isCancelled: " + trainstop.isCancelled());
-                        System.out.println("   -----------------");
+            String choice = scanner.nextLine();
+
+            switch (choice) {
+                case "1":
+                    System.out.print("Skriv inn stasjons-ID (f.eks. S01): ");
+                    String stationId = scanner.nextLine().trim();
+
+                    System.out.print("Skriv inn tid (HH:MM): ");
+                    String timeInput = scanner.nextLine().trim();
+                    LocalTime time = LocalTime.parse(timeInput);
+
+                    ArrayList<Train> result = trainRepository.getTrainsWithStopFromTime(stationId, time);
+
+                    if (result.isEmpty()) {
+                        System.out.println("Ingen tog funnet fra stasjon " + stationId + " etter " + time);
+                    } else {
+                        System.out.println("Tog fra stasjon " + stationId + " etter " + time + ":");
+                        for (Train t : result) {
+                            System.out.println("• Tog " + t.getId() + " | Rute: " + t.getRoute().getId());
+                        }
                     }
-                }
+                    break;
+                case "2":
+                    System.out.print("Skriv inn tog-ID som skal fjernes (f.eks. T064): ");
+                    String trainIdToRemove = scanner.nextLine().trim();
+
+                    if (trainRepository.getTrainById(trainIdToRemove) == null) {
+                        System.out.println("Fant ikke tog med ID: " + trainIdToRemove);
+                    } else {
+                        trainRepository.removeTrain(trainIdToRemove);
+                        System.out.println("Tog " + trainIdToRemove + " ble fjernet.");
+                    }
+                    break;
+                case "0":
+                    System.out.println("Avslutter applikasjonen...");
+                    running = false;
+                    break;
+                default:
+                    System.out.println("Ugyldig valg. Prøv igjen.");
             }
-            System.out.println("-----------------------------------");
-            if (counter >= visAntall){
-                System.out.println("Viste " + visAntall + " tog. Avslutter.");
-                break;
-            }
-            counter++;
         }
 
-
+        scanner.close();
     }
 
-    public static void writeTrainsToJSON(ArrayList<Train> listOfTrains, File file) {
-        ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.registerModule(new JavaTimeModule());
-        try {
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, listOfTrains);
-        } catch (DatabindException exception) {
-            System.err.println(exception.getMessage());
-        } catch (StreamWriteException exception) {
-            System.err.println(exception);
-        } catch (IOException exception) {
-            System.err.println(exception.getMessage());
-        }
-    }
 }
