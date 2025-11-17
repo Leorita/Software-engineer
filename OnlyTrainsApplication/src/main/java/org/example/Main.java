@@ -86,7 +86,7 @@ public class Main {
                     System.out.println("Ugyldig valg. Prøv igjen.");
             }
         }
-
+        // en kommentar et eller annet sted
         scanner.close();
     }
 
