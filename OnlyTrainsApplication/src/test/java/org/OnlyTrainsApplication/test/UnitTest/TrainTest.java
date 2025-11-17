@@ -10,15 +10,20 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.junit.jupiter.api.Assertions;
+import reactor.core.publisher.Mono;
 
 import java.time.LocalTime;
+import java.util.Arrays;
 import java.util.function.Supplier;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
+import static reactor.core.publisher.Mono.when;
+
 /**
- * **/
+ *
+ **/
 public class TrainTest {
+
     private TrainRepository trainRepository;
     // Mocker ArtistRepositoryPort slik at vi kan definere hvordan denne skal fungere i testene våre
 
@@ -51,6 +56,7 @@ public class TrainTest {
         Train train1 = trainRepository.getTrains().get(0);
         Train train2 = trainRepository.getTrains().get(1);
         Train train3 = trainRepository.getTrains().get(2);
+
         // Act
         LocalTime departureTimeTimeTrain1 = train1.getTrainStops().getLast().getDepartureTime();
         LocalTime departureTimeTrain2 = train2.getTrainStops().getLast().getDepartureTime();
@@ -63,7 +69,7 @@ public class TrainTest {
     }
 
     @Test
-    public void ArrivalTimeLessThanDepartureTime() throws Exception{
+    public void ArrivalTimeLessThanDepartureTime() throws Exception {
         // TODO Vi ønsker å teste om ankomsttiden er større enn avgangstiden.
         // Arrange
         Train train1 = trainRepository.getTrains().get(0);
@@ -109,4 +115,45 @@ public class TrainTest {
         assertTrue(result3);
 
     }
+
+    @Test
+    void trainStopsAtStationReturnsCorrectValue(){
+        // TODO Vi ønsker å teste om tog x stopper innom stasjon y.
+        // Arrange
+        Train train1 = trainRepository.getTrains().get(0);
+        Train train2 = trainRepository.getTrains().get(1);
+        Train train3 = trainRepository.getTrains().get(2);
+        Train train4 = trainRepository.getTrainsByRoute("R22").getFirst();
+
+        // Act
+        boolean result1 = train1.trainStopsAtStation("Ski");
+        boolean result2 = train4.trainStopsAtStation("Heia");
+        boolean result3 = train1.trainStopsAtStation("Heia");
+
+        // Assert
+        assertTrue(result1);
+        assertTrue(result2);
+        assertFalse(result3);
+
+    }
+
+    @Test
+    void getTrainsByRouteReturnsCorrectValue(){
+        // TODO Vi ønsker å teste funksjonen som henter tog basert på rute.
+        // Arrange
+        Train train1 = trainRepository.getTrainsByRoute("RE20").getFirst();
+        Train train2 = trainRepository.getTrainsByRoute("R21").getFirst();
+        Train train3 = trainRepository.getTrainsByRoute("L2").getFirst();
+        Train train4 = trainRepository.getTrainsByRoute("R22").getFirst();
+
+        // Act
+
+        // Assert
+        assertEquals("RE20", train1.getRoute().getId());
+        assertEquals("R21", train2.getRoute().getId());
+        assertEquals("L2", train3.getRoute().getId());
+        assertEquals("R22", train4.getRoute().getId());
+        assertEquals(null, trainRepository.getTrainsByRoute("Denne ruten finnes ikke!."));
+    }
+
 }

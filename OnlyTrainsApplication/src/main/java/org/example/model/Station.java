@@ -3,6 +3,7 @@ package org.example.model;
 public class Station {
     private String id;
     private String name;
+
     public Station(String stationName){
         // Konstruktør
         this.name = stationName;

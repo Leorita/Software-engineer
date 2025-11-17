@@ -101,6 +101,7 @@ public class StationRepository implements StationRepositoryPort {
         return false;
     }
 
+    //Teste
     @Override
     public Station getStationByName(String stationName) {
         for (Station station : stations){
@@ -110,7 +111,7 @@ public class StationRepository implements StationRepositoryPort {
         }
         return null;
     }
-
+    //Teste
     @Override
     public Station getStationByID(String stationId) {
         for (Station station : stations){
