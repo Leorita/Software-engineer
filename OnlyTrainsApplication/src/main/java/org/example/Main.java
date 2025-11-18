@@ -85,13 +85,13 @@ public class Main {
                             // Rute-ID
                             String routeId = t.getRoute().getId();
 
-                            // Destinasjon = siste stasjon i ruten
+                            // Destinasjonen her er siste stoppet i ruta
                             String destination = t.getRoute().getStops().get(t.getRoute().getStops().size() - 1).getName();
 
                             // Spor
                             String trackStr = (stop.getTrack() > 0) ? String.valueOf(stop.getTrack()) : "-";
 
-                            // Print i ønsket rekkefølge
+                            // Print som likner wireframe, se rapport
                             System.out.printf("%-8s  %-6s  %-6s  %-20s  %-4s%n", depStr, trainId, routeId, destination, trackStr);
                         }
                         System.out.println("---------------------------------------------------------------");

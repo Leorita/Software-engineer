@@ -167,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RouteTest" />
-        <item itemvalue="JUnit.TrainTest.getTrainsByRouteReturnsCorrectValue" />
         <item itemvalue="JUnit.TrainTest.trainStopsAtStationReturnsCorrectValue" />
-        <item itemvalue="JUnit.RouteTest.testCommonStopsBetweenTwoRoutes" />
+        <item itemvalue="JUnit.TrainTest.getTrainsByRouteReturnsCorrectValue" />
         <item itemvalue="JUnit.RouteTest.testGetRuteByIdReturnsCorrectRoute" />
+        <item itemvalue="JUnit.RouteTest.testCommonStopsBetweenTwoRoutes" />
+        <item itemvalue="JUnit.RouteTest" />
       </list>
     </recent_temporary>
   </component>
