@@ -111,6 +111,7 @@ class Main{
 ' =======================
 
 class Run{
+
 }
 
 Train --> Rute : følger
@@ -130,4 +131,5 @@ Main --> RuteRepository : bruker
 Main --> StationRepository : bruker
 Main --> TrainRepository : bruker
 
+Run --> Main
 @enduml

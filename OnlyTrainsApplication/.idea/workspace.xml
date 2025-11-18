@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="lagde tester i traintest">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepository.java" afterDir="false" />
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Oppdatert scanner metode">
+      <change beforePath="$PROJECT_DIR$/src/Klassediagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Klassediagram.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,7 +358,15 @@
       <option name="presentableId" value="LOCAL−00019" />
       <updated>1762353738655</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Oppdatert scanner metode">
+      <option name="closed" value="true" />
+      <created>1763482717050</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1763482717050</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +414,8 @@
     <MESSAGE value="Lagde et par enhetstester for tog: testet om ankomsttid var større enn avgangstiden, testet også ankomsttiden var null på første stopp, og avgangstiden var null på siste stopp" />
     <MESSAGE value="lagde et script som printer ut n togavganger etter x tidspunkt fra y stasjon" />
     <MESSAGE value="lagde tester i traintest" />
-    <option name="LAST_COMMIT_MESSAGE" value="lagde tester i traintest" />
+    <MESSAGE value="Oppdatert scanner metode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oppdatert scanner metode" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
