@@ -1,5 +1,6 @@
 package org.example;
 import org.example.model.Train;
+import org.example.model.TrainStop;
 import org.example.repository.TrainRepository;
 
 import java.time.LocalTime;
@@ -42,6 +43,8 @@ public class Main {
             System.out.println("\n=== Hovedmeny ===");
             System.out.println("1 - Vis tog fra en stasjon");
             System.out.println("2 - Fjern Tog fra lista");
+            System.out.println("3 - Legg til tog");
+            System.out.println("4 - Legg til forsinkelse");
             System.out.println("0 - Avslutt applikasjonen");
             System.out.print("Velg et alternativ: ");
 
@@ -50,7 +53,7 @@ public class Main {
             switch (choice) {
                 case "1":
                     System.out.print("Skriv inn stasjons-ID (f.eks. S01): ");
-                    String stationId = scanner.nextLine().trim();
+                    String stationId = scanner.nextLine().trim().toUpperCase(); // gjør input enkel og case-insensitiv
 
                     System.out.print("Skriv inn tid (HH:MM): ");
                     String timeInput = scanner.nextLine().trim();
@@ -61,15 +64,42 @@ public class Main {
                     if (result.isEmpty()) {
                         System.out.println("Ingen tog funnet fra stasjon " + stationId + " etter " + time);
                     } else {
-                        System.out.println("Tog fra stasjon " + stationId + " etter " + time + ":");
+                        System.out.println("\nTog fra stasjon " + stationId + " etter " + time + ":");
+                        System.out.println("---------------------------------------------------------------");
+                        System.out.printf("%-8s  %-6s  %-6s  %-20s  %-4s%n", "Avgang", "Tog", "Rute", "Destinasjon", "Spor");
+                        System.out.println("---------------------------------------------------------------");
+
                         for (Train t : result) {
-                            System.out.println("• Tog " + t.getId() + " | Rute: " + t.getRoute().getId());
+                            // Finn stoppet for denne stasjonen
+                            TrainStop stop = t.getStopByName(
+                                    trainRepository.availableRoutes.getAvailableStations().getStationByID(stationId).getName()
+                            );
+
+                            // Avgangstid (bruk ankomst hvis avgang er null)
+                            LocalTime dep = (stop.getDepartureTime() != null) ? stop.getDepartureTime() : stop.getArrivalTime();
+                            String depStr = (dep != null) ? dep.toString() : "-";
+
+                            // Tog-ID
+                            String trainId = t.getId();
+
+                            // Rute-ID
+                            String routeId = t.getRoute().getId();
+
+                            // Destinasjon = siste stasjon i ruten
+                            String destination = t.getRoute().getStops().get(t.getRoute().getStops().size() - 1).getName();
+
+                            // Spor
+                            String trackStr = (stop.getTrack() > 0) ? String.valueOf(stop.getTrack()) : "-";
+
+                            // Print i ønsket rekkefølge
+                            System.out.printf("%-8s  %-6s  %-6s  %-20s  %-4s%n", depStr, trainId, routeId, destination, trackStr);
                         }
+                        System.out.println("---------------------------------------------------------------");
                     }
                     break;
                 case "2":
                     System.out.print("Skriv inn tog-ID som skal fjernes (f.eks. T064): ");
-                    String trainIdToRemove = scanner.nextLine().trim();
+                    String trainIdToRemove = scanner.nextLine().trim().toUpperCase();
 
                     if (trainRepository.getTrainById(trainIdToRemove) == null) {
                         System.out.println("Fant ikke tog med ID: " + trainIdToRemove);
@@ -77,6 +107,12 @@ public class Main {
                         trainRepository.removeTrain(trainIdToRemove);
                         System.out.println("Tog " + trainIdToRemove + " ble fjernet.");
                     }
+                    break;
+                case "3":
+                    System.out.println("Metoden er under utvikling");
+                    break;
+                case "4":
+                    System.out.println("Metoden er under utvikling");
                     break;
                 case "0":
                     System.out.println("Avslutter applikasjonen...");
@@ -86,7 +122,6 @@ public class Main {
                     System.out.println("Ugyldig valg. Prøv igjen.");
             }
         }
-        // en kommentar et eller annet sted
         scanner.close();
     }
 

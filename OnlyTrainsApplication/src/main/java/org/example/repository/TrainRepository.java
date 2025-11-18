@@ -18,7 +18,7 @@ import java.util.Random;
 public class TrainRepository implements TrainRepositoryPort {
 
     private ArrayList<Train> trains = new ArrayList<>();
-    private final RuteRepository availableRoutes = new RuteRepository();
+    public final RuteRepository availableRoutes = new RuteRepository();
 
     public TrainRepository() {
         // DEFINERER TOG I SYSTEMET
