@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Oppdatert scanner metode">
-      <change beforePath="$PROJECT_DIR$/src/Klassediagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Klassediagram.puml" afterDir="false" />
+    <list default="true" id="a8c393a5-e064-4296-bd42-552b41e58970" name="Changes" comment="Oppdatert scanner metode + oppdatert Klassediagram.puml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="main" />
+        <entry key="$PROJECT_DIR$/.." value="Develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -49,32 +50,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Run.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RouteTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RouteTest.testCommonStopsBetweenTwoRoutes.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RouteTest.testGetRuteByIdReturnsCorrectRoute.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TrainTest.ArrivalTimeLessThanDepartureTime.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TrainTest.arrivalTimeNullAtFirstStop.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TrainTest.departureTimeNullAtLastStop.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TrainTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TrainTest.getTrainsByRouteReturnsCorrectValue.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TrainTest.trainStopsAtStationReturnsCorrectValue.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Develop&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Skole/Desktop/Software-engineer/OnlyTrainsApplication/pom.xml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Run.executor": "Run",
+    "JUnit.RouteTest.executor": "Run",
+    "JUnit.RouteTest.testCommonStopsBetweenTwoRoutes.executor": "Run",
+    "JUnit.RouteTest.testGetRuteByIdReturnsCorrectRoute.executor": "Run",
+    "JUnit.TrainTest.ArrivalTimeLessThanDepartureTime.executor": "Run",
+    "JUnit.TrainTest.arrivalTimeNullAtFirstStop.executor": "Run",
+    "JUnit.TrainTest.departureTimeNullAtLastStop.executor": "Run",
+    "JUnit.TrainTest.executor": "Run",
+    "JUnit.TrainTest.getTrainsByRouteReturnsCorrectValue.executor": "Run",
+    "JUnit.TrainTest.trainStopsAtStationReturnsCorrectValue.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Feature",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Skole/Desktop/Software-engineer/OnlyTrainsApplication/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -224,6 +225,7 @@
       <workItem from="1762765504008" duration="321000" />
       <workItem from="1763064191028" duration="1339000" />
       <workItem from="1763480577953" duration="1472000" />
+      <workItem from="1763550013222" duration="795000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -366,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763482717050</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Oppdatert scanner metode + oppdatert Klassediagram.puml">
+      <option name="closed" value="true" />
+      <created>1763482878398</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1763482878398</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +425,8 @@
     <MESSAGE value="lagde et script som printer ut n togavganger etter x tidspunkt fra y stasjon" />
     <MESSAGE value="lagde tester i traintest" />
     <MESSAGE value="Oppdatert scanner metode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oppdatert scanner metode" />
+    <MESSAGE value="Oppdatert scanner metode + oppdatert Klassediagram.puml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oppdatert scanner metode + oppdatert Klassediagram.puml" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
