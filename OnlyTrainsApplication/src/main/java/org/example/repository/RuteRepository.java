@@ -194,6 +194,10 @@ public class RuteRepository implements AutoCloseable, RuteRepositoryPort {
         }
     }
 
+    @Override
+    public void loadRoutesFromNeo4j(String uri, String user, String password) {
+
+    }
 
 
     @Override

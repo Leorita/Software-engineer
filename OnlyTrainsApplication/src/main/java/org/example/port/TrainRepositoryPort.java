@@ -15,6 +15,8 @@ public interface TrainRepositoryPort {
     // TODO Metode for å opprette
     public void loadTrainsFromJson(String filepath);
 
+    public void loadTrainsFromNeo4j(String uri, String user, String password);
+
     public void removeTrain(String trainId);
 
     // TODO lage metode for å oppdatere tog

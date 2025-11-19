@@ -209,6 +209,11 @@ public class TrainRepository implements TrainRepositoryPort {
         }
     }
 
+    @Override
+    public void loadTrainsFromNeo4j(String uri, String user, String password) {
+
+    }
+
 
     // TODO lage metode for å fjerne tog
     @Override

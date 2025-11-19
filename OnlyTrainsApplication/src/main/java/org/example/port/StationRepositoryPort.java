@@ -8,7 +8,8 @@ public interface StationRepositoryPort {
 
     public void loadStationsFromJson(String filepath);
 
-    public void loadStationsFromNeo4j(String filepath);
+    public void loadStationsFromNeo4j(String uri, String user, String password);
+
 
     public void addStation(String stationName);
 
