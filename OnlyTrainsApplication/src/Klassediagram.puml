@@ -10,10 +10,40 @@ skinparam class {
 ' =======================
 ' Klasser
 ' =======================
+interface TrainRepositoryPort{
+    + AddTrain(train : Train) : void
+    + getTrainsWithStopFromTime(stationName : String, time : LocalTime) : ArrayList<Train>
+    + loadTrainsFromJson(filepath : String) : void
+    + removeTrain(trainId : String) : void
+    + UpdateTrain(train : Train) : void
+    + clearAllTrains(password : String) : void
+    + getTrainById(trainId : String) : Train
+    + getTrainsByRoute(routeId : String) : ArrayList<Train>
+}
+interface RuteRepositoryPort{
+    + loadRoutesFromJson(filepath : String)) : void
+    + getRuteByName(name : String) : Rute
+    + getRuteById(id : String) : Rute
+    + commonStopsBetweenTwoRoutes(IdRoute1 : String, IdRoute2 : String) : ArrayList<Station>
+    + stopExistsInRoute(stop : Station, route : Rute) : boolean
+}
+
+interface StationRepositoryPort{
+    + loadStationsFromCSV(filepath : String) : void
+    + loadStationsFromJson(filepath : String) : void
+    + loadStationsFromNeo4j((filepath : String) : void
+    + addStation(stationName : String)) : void
+    + stationExists(stationName : String)) : boolean
+    + getStationByName(stationName : String) : Station
+    + getStationById(stationId : String) : station
+}
 
 class Rute {
     - id : String
+    - name : String
     - stops : ArrayList<Station>
+    - outbound : boolean
+    + addTrainStop(stop : Station) : void
     + getId() : String
     + setId(id : String)
     + getStops() : ArrayList<Station>
@@ -25,70 +55,81 @@ class Station {
     - name : String
     + getId() : String
     + getName() : String
-    + setId(id : String)
-    + setName(name : String)
+    + setId(id : String) : void
+    + setName(name : String) : void
 }
 
 class Train {
     - id : String
-    - rute : Rute
-    + getId() : String
-    + getRute() : Rute
-    + getOrigin() : Station
-    + getDestination() : Station
+    - route : Rute
+    - trainStops: ArrayList<TrainStop>
+    + trainStopsAtStation(stationName : String) : boolean
+    + getStopByName(stationName : String): TrainStop
+    + addTrainStop(trainStop : TrainStop) : void
 }
 
 class TrainStop {
-    - station : Station
+    - stop : Station
     - arrivalTime : LocalTime
+    - track : int
+    - isDelayed : boolean
+    - IsCancelled: boolean
     - departureTime : LocalTime
     + getStation() : Station
     + getArrivalTime() : LocalTime
     + getDepartureTime() : LocalTime
 }
 
-class RuteRepository {
+class RuteRepository implements RuteRepositoryPort{
     - ruter : ArrayList<Rute>
+    - AvailableStations : StationRepository
     + getAll() : ArrayList<Rute>
     + addRute(r : Rute)
     + findById(id : String) : Rute
 }
 
-class RuteTiderRepository {
-    - tider : ArrayList<TrainStop>
-    + getAll() : ArrayList<TrainStop>
-    + addTider(t : TrainStop)
-}
 
-class StationRepository {
+class StationRepository implements StationRepositoryPort{
     - stations : ArrayList<Station>
     + getAll() : ArrayList<Station>
     + addStation(s : Station)
 }
 
-class TrainRepository {
+class TrainRepository implements TrainRepositoryPort {
     - trains : ArrayList<Train>
+    - availableRoutes : RuteRepository
     + getAll() : ArrayList<Train>
     + addTrain(t : Train)
 }
 
-class Main
+class Main{
+ + start() : void
+}
 
 ' =======================
 ' Relasjoner
 ' =======================
 
-Rute "1" *-- "*" TrainStop : består av
-TrainStop --> Station : refererer til
+class Run{
+
+}
+
 Train --> Rute : følger
-Train --> Station : origin/destination
-RuteRepository o-- Rute : lagrer
-RuteTiderRepository o-- TrainStop : lagrer
+Train o-- TrainStop : lagrer
+TrainStop --> Station : refererer til
+
+Rute o-- Station
+StationRepository <-- RuteRepository
 StationRepository o-- Station : lagrer
+
+RuteRepository o-- Rute : lagrer
+
+TrainRepository --> RuteRepository
 TrainRepository o-- Train : lagrer
+
 Main --> RuteRepository : bruker
 Main --> StationRepository : bruker
 Main --> TrainRepository : bruker
-Main --> RuteTiderRepository : bruker
 
+Run --> Main
 @enduml
