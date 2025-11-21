@@ -74,7 +74,7 @@ public class StationRepository implements StationRepositoryPort {
     }
 
     @Override
-    public void loadStationsFromNeo4j(String filepath) {
+    public void loadStationsFromNeo4j(String uri, String user, String password) {
 
     }
 

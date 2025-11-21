@@ -7,6 +7,8 @@ import java.util.ArrayList;
 
 public interface RuteRepositoryPort {
     public void loadRoutesFromJson(String filepath);
+    public void loadRoutesFromNeo4j(String uri, String user, String password);
+
     public Rute getRuteByName(String name);
     public Rute getRuteById(String id);
     public ArrayList<Station> commonStopsBetweenTwoRoutes(String IdRoute1, String IdRoute2);
