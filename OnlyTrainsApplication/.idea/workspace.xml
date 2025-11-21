@@ -13,6 +13,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/RuteRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/StationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/TrainRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/api/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Klassediagram-Klassediagram___Togsystem__OnlyTrains_.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Klassediagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Klassediagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/json/routes.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/json/routes.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +50,10 @@
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Leorita/Software-engineer.git",
     "accountId": "96f2a179-dca2-4392-956b-63759dab0d70"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Leorita/Software-engineer.git&quot;,
+    &quot;accountId&quot;: &quot;ab328359-e5bc-4135-9d76-326ef24ca17f&quot;
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -85,6 +94,28 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.TrainTest.ArrivalTimeLessThanDepartureTime.executor": "Run",
+    "JUnit.TrainTest.arrivalTimeNullAtFirstStop.executor": "Run",
+    "JUnit.TrainTest.departureTimeNullAtLastStop.executor": "Run",
+    "JUnit.TrainTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Skole/Informatikk/Semester 3/Software Engineering/GithubRepo/Software-engineer/OnlyTrainsApplication/src/main/java/org/example/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Skole\Informatikk\Semester 3\Software Engineering\GithubRepo\Software-engineer\OnlyTrainsApplication\src\main\java\org\example\model" />
@@ -92,6 +123,8 @@
   </component>
   <component name="RunManager" selected="JUnit.RouteTest">
     <configuration name="RouteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="TrainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OnlyTrainsApplication" />
       <extension name="coverage">
         <pattern>
@@ -100,45 +133,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.OnlyTrainsApplication.test.UnitTest" />
-      <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.RouteTest" />
+      <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.TrainTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RouteTest.testCommonStopsBetweenTwoRoutes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OnlyTrainsApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.OnlyTrainsApplication.test.UnitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.OnlyTrainsApplication.test.UnitTest" />
-      <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.RouteTest" />
-      <option name="METHOD_NAME" value="testCommonStopsBetweenTwoRoutes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RouteTest.testGetRuteByIdReturnsCorrectRoute" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OnlyTrainsApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.OnlyTrainsApplication.test.UnitTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.OnlyTrainsApplication.test.UnitTest" />
-      <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.RouteTest" />
-      <option name="METHOD_NAME" value="testGetRuteByIdReturnsCorrectRoute" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrainTest.getTrainsByRouteReturnsCorrectValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrainTest.ArrivalTimeLessThanDepartureTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OnlyTrainsApplication" />
       <extension name="coverage">
         <pattern>
@@ -148,13 +149,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.OnlyTrainsApplication.test.UnitTest" />
       <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.TrainTest" />
-      <option name="METHOD_NAME" value="getTrainsByRouteReturnsCorrectValue" />
+      <option name="METHOD_NAME" value="ArrivalTimeLessThanDepartureTime" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrainTest.trainStopsAtStationReturnsCorrectValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrainTest.arrivalTimeNullAtFirstStop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OnlyTrainsApplication" />
       <extension name="coverage">
         <pattern>
@@ -164,7 +165,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.OnlyTrainsApplication.test.UnitTest" />
       <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.TrainTest" />
-      <option name="METHOD_NAME" value="trainStopsAtStationReturnsCorrectValue" />
+      <option name="METHOD_NAME" value="arrivalTimeNullAtFirstStop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrainTest.departureTimeNullAtLastStop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlyTrainsApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.OnlyTrainsApplication.test.UnitTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.OnlyTrainsApplication.test.UnitTest" />
+      <option name="MAIN_CLASS_NAME" value="org.OnlyTrainsApplication.test.UnitTest.TrainTest" />
+      <option name="METHOD_NAME" value="departureTimeNullAtLastStop" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,6 +194,11 @@
         <item itemvalue="JUnit.RouteTest.testCommonStopsBetweenTwoRoutes" />
         <item itemvalue="JUnit.RouteTest.testGetRuteByIdReturnsCorrectRoute" />
         <item itemvalue="JUnit.RouteTest" />
+        <item itemvalue="JUnit.TrainTest.departureTimeNullAtLastStop" />
+        <item itemvalue="JUnit.TrainTest.arrivalTimeNullAtFirstStop" />
+        <item itemvalue="JUnit.TrainTest.ArrivalTimeLessThanDepartureTime" />
+        <item itemvalue="JUnit.TrainTest" />
+        <item itemvalue="JUnit.TrainTest" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +207,8 @@
       <set>
         <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
         <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
       </set>
     </attachedChunks>
   </component>
@@ -231,6 +255,9 @@
       <workItem from="1762765504008" duration="321000" />
       <workItem from="1763064191028" duration="1339000" />
       <workItem from="1763552011793" duration="345000" />
+      <workItem from="1763366634488" duration="5327000" />
+      <workItem from="1763395798106" duration="9183000" />
+      <workItem from="1763678903307" duration="5838000" />
     </task>
     <task id="LOCAL−00001" summary="La til klassene, som representerer entitetene som inneholder dataene vi trenger.">
       <option name="closed" value="true" />
@@ -382,7 +409,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Develop" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
